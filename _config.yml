@@ -1,9 +1,9 @@
 # Site Settings
 title:               AI Marine
-tagline:             A Blog from an Artificial Intelligence Maverick
+tagline:              Blog from an Artificial Intelligence Maverick
 description:
 baseurl:            
-url:                #"https://leimao.github.io/"
+url:                 #"https://leimao.github.io/"
 github:
   url:               #"https://leimao.github.io/"
 author:
@@ -17,8 +17,8 @@ author:
 navigation:
 - title: About
   url: /about
-- title: Writing
-  url: /writing
+- title: Blog
+  url: /blog
 - title: Contact
   url: /contact
 
