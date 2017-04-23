@@ -1,8 +1,8 @@
 # Site Settings
 title:               AI Marine
-tagline:             a minimalist Jekyll theme
+tagline:             A Blog from an Artificial Intelligence Maverick
 description:
-baseurl:            #"/Lagrange"
+baseurl:            
 url:                #"https://leimao.github.io/"
 github:
   url:               #"https://leimao.github.io/"
@@ -13,7 +13,7 @@ author:
   instagram:         
   github:            "leimao"
   facebook:          
-  linkedin:          "leimao"
+  linkedin:          "lei-mao"
 navigation:
 - title: About
   url: /about
