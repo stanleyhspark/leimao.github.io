@@ -4,8 +4,8 @@ title: "Deep Q-Learning on the Flappy Bird Game"
 categories: journal
 tags: [documentation,sample]
 image:
-  feature: blog_images/2017-04-23-Blog-Post-Test/fb.jpg
-  teaser: blog_images/2017-04-23-Blog-Post-Test/fb_teaser.jpg
+  feature: blog_images/2017-04-26-Flappy-Bird-AI/fb.jpg
+  teaser: blog_images/2017-04-26-Flappy-Bird-AI/fb_teaser.jpg
   credit: 
   creditlink: ""
 ---
