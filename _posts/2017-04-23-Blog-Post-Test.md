@@ -4,8 +4,8 @@ title: "Blog Post Test"
 categories: journal
 tags: [documentation,sample]
 image:
-  feature: mountains.jpg
-  teaser: mountains-teaser.jpg
+  feature: /images/blog_images/2017-04-23-Blog-Post-Test/mountains.jpg
+  teaser: /images/blog_images/2017-04-23-Blog-Post-Test/mountains-teaser.jpg
   credit: Death to Stock Photo
   creditlink: ""
 ---
