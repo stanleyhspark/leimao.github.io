@@ -46,4 +46,4 @@ The whole training took roughly 600,000 game frames in 36 hours, and the trained
 
 ### Links to GitHub
 
-https://github.com/leimao/Flappy_Bird_AI
+<https://github.com/leimao/Flappy_Bird_AI>
