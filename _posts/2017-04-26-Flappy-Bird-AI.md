@@ -43,3 +43,7 @@ One of the key aspect of implementing Q-Learning is that the learning algorithm 
 ### Algorithm Performance
 
 The whole training took roughly 600,000 game frames in 36 hours, and the trained bird would never hit the barriers. It has should also be noted that after training with 300,000 game frames, the bird started to fly reasonably, passing 0 to 100 barries in one single trial. 
+
+### Links to GitHub
+
+https://github.com/leimao/Flappy_Bird_AI
