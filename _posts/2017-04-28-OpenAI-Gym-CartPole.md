@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "OpenAI Gym - CartPole"
+title: "Deep Q-Learning in CartPole Environment in OpenAI-Gym"
 categories: journal
 tags: [documentation,sample]
 image:
-  feature: blog_images/2017-04-28-OpenAI-Gym-CartPole/OpenAI_logo.png
-  teaser: blog_images/2017-04-28-OpenAI-Gym-CartPole/OpenAI_logo.png
+  feature: blog_images/2017-04-28-OpenAI-Gym-CartPole/OpenAI_Logo.png
+  teaser: blog_images/2017-04-28-OpenAI-Gym-CartPole/OpenAI_Logo.png
   credit: 
   creditlink: ""
 ---

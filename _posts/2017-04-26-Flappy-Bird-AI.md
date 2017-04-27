@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Deep Q-Learning on Flappy Bird Game"
+title: "Deep Q-Learning in Flappy Bird Game"
 categories: journal
 tags: [documentation,sample]
 image:
