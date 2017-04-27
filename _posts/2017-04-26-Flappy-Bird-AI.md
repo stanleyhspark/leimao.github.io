@@ -12,7 +12,7 @@ image:
 
 ### Preface
 
-Although I am a beginner to Deep Reinforcement Learning, I have a strong feeling that many details in one learning program on a certain task could be applied to another learning program on a different task. These details include the implementation of algorithms, the tuning of the parameters, the construction of input data, and the way of optimization, under different circumstances of the problems. Therefore, I think it is necessary to keep these intuitions and "discoveries" somewhere, because human brain tends to forget things and becomes confused if things are overwelmed.
+Although I am a beginner to Deep Reinforcement Learning, I have a strong feeling that many details in one learning program on a certain task could be applied to another learning program on a different task. These details include the implementation of algorithms, the tuning of the parameters, the construction of input data, and the way of optimization, under different circumstances of the problems. Therefore, I think it is necessary to keep these intuitions and "discoveries" somewhere, because human brain tends to forget things and becomes confused if things are overwelming.
 
 ### Introduction
 
