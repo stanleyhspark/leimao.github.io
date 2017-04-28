@@ -63,7 +63,14 @@ I was also suprised that if counting game frames, it also took nearly 1,000,000 
 
 ### Algorithm Performance
 
+Before Training:
+
+![](/images/blog_images/2017-04-28-OpenAI-Gym-CartPole/episode_0.gif)
+
+After Training:
+
+![](/images/blog_images/2017-04-28-OpenAI-Gym-CartPole/episode_27000.gif)
 
 ### Links to GitHub
 
-<>
+<https://github.com/leimao/OpenAI_Gym_AI/tree/master/CartPole-v0/Deep_Q-Learning>
