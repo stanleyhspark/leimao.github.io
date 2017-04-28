@@ -51,7 +51,7 @@ Because the observation space of CartPole is only 3 and the action space of Cart
 
 Learning rate is usually the most import parameter to the success of an algorithm in an application. Deep Learning is different to traditional Machine Learning. One may systematically explore all most all the hyperparameters in a Machine Learning task in a short period of time, however, the training of Deep Learning usually takes much longer time, which makes it much more difficult to tune deep learning hyperparameters using limited computation resources. In this situation, the experience, which I lack, becomes very important.
 
-In this CartPole game, I firstly set the learning rate to 0.0001 in Adam Optimizer, and started to observe the loss during the training. The loss increased right after the start of training, and the learning performance was extremely poor. So I thought the learning rate is too high. I immediately terminated the program and set the learning rate to smaller numbers. After training with smaller learning rates, say 0.000001, the loss decreasd after the start of training. But it stopped decreasing when the loss reaches around 0.4. The learning performance, in some rare cases, is extremely good. However, for the most of the time, the learning performance is extremely poor. I did not understand what's happening at that time. Later, I think the optimization was trapped in local minimum at that time. The learning rate was too small for the optimization to overcome the barriers around the local minimum.
+In this CartPole game, I firstly set the learning rate to 0.0001 in Adam Optimizer, and started to observe the loss during the training. The loss increased right after the start of training, and the learning performance was extremely poor. So I thought the learning rate is too high. I immediately terminated the program and set the learning rate to smaller numbers. After training with smaller learning rates, say 0.000001, the loss decreasd after the start of training. But it stopped decreasing when the loss reaches around 0.4. The learning performance, in some rare cases, is extremely good. However, for the most of the time, the learning performance is extremely poor. I did not understand what's happening at that time. Later, I think the optimization was trapped in local minimum at that time. The learning rate was too small for the optimization to overcome the barriers around the local minimum. That small learning rate in ordinary gradient descent leads to bad optimization outcome rarely happen in ordinary machine learning task to my knowledge, though it may take very long time to reach the minimum. I am not sure whether small learning rate sometimes would never lead the optimization to reach minimum if we use stochastic gradient descent, like what we used to use in Deep Learning tasks. 
 
 It turned out that the learning rate of 0.0001 is the right one to use in CartPole game. The loss firstly increased then decreased. The algorithm was able to play CartPole very well after 5,000 to 8,000 episodes of training.
 
@@ -70,6 +70,10 @@ Before Training:
 After Training:
 
 ![](/images/blog_images/2017-04-28-OpenAI-Gym-CartPole/episode_27000.gif)
+
+OpenAI Gym Evaluation
+
+<https://gym.openai.com/evaluations/eval_ewr0DWHeTmGE6x1NGQ1LiQ>
 
 ### Links to GitHub
 
