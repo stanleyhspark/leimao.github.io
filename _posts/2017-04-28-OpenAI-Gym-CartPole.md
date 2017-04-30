@@ -65,7 +65,7 @@ I was also suprised that if counting game frames, it also took nearly 1,000,000 
 
 FC-20
 
-```python
+```
 GAME_STATE_FRAMES = 1  # number of game state frames used as input
 GAMMA = 0.9 # decay rate of past observations
 EPSILON_INITIALIZED = 0.5 # probability epsilon used to determine random actions
@@ -107,7 +107,7 @@ Parameters
 
 FC-128 -> FC-128
 
-```python
+```
 GAME_STATE_FRAMES = 1  # number of game state frames used as input
 GAMMA = 0.95 # decay rate of past observations
 EPSILON_INITIALIZED = 0.5 # probability epsilon used to determine random actions
@@ -135,7 +135,7 @@ Parameters
 
 FC-128 -> FC-128
 
-```python
+```
 GAME_STATE_FRAMES = 1  # number of game state frames used as input
 GAMMA = 0.95 # decay rate of past observations
 EPSILON_INITIALIZED = 0.5 # probability epsilon used to determine random actions
