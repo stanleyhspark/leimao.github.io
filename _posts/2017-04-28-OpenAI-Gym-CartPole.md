@@ -90,7 +90,7 @@ After Training:
 
 OpenAI Gym Evaluation
 
-Solved after 9919 episodes. Best 100-episode average reward was 200.00 ¡À 0.00.
+Solved after 9919 episodes. Best 100-episode average reward was 200.00 Â± 0.00.
 <https://gym.openai.com/evaluations/eval_ewr0DWHeTmGE6x1NGQ1LiQ>
 
 ### Links to GitHub
@@ -122,7 +122,7 @@ EXPLORATION_TIME = 10000 # time steps used for decaying epsilon during training 
 
 OpenAI Gym Evaluation
 
-Solved after 293 episodes. Best 100-episode average reward was 197.39 ¡À 1.68.
+Solved after 293 episodes. Best 100-episode average reward was 197.39 Â± 1.68.
 <https://gym.openai.com/evaluations/eval_Jr2oXkrS8KMUQEkCBurAw>
 
 Links to GitHub
@@ -150,7 +150,7 @@ EXPLORATION_TIME = 10000 # time steps used for decaying epsilon during training 
 
 OpenAI Gym Evaluation
 
-Solved after 138 episodes. Best 100-episode average reward was 196.58 ¡À 1.34.
+Solved after 138 episodes. Best 100-episode average reward was 196.58 Â± 1.34.
 <https://gym.openai.com/evaluations/eval_F90GxQxrQK2J6ESQkLVaA>
 
 Links to GitHub
