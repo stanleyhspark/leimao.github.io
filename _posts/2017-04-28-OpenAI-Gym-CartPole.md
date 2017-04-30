@@ -66,6 +66,7 @@ I was also suprised that if counting game frames, it also took nearly 1,000,000 
 FC-20
 
 ```
+
 GAME_STATE_FRAMES = 1  # number of game state frames used as input
 GAMMA = 0.9 # decay rate of past observations
 EPSILON_INITIALIZED = 0.5 # probability epsilon used to determine random actions
@@ -76,6 +77,7 @@ FRAME_PER_ACTION = 1 # number of frames per action
 REPLAYS_SIZE = 1000 # maximum number of replays in cache
 TRAINING_DELAY = 1000 # time steps before starting training for the purpose of collecting sufficient replays to initialize training
 EXPLORATION_TIME = 10000 # time steps used for decaying epsilon during training before epsilon decreases to zero
+
 ```
 
 ### Algorithm Performance
@@ -108,6 +110,7 @@ Parameters
 FC-128 -> FC-128
 
 ```
+
 GAME_STATE_FRAMES = 1  # number of game state frames used as input
 GAMMA = 0.95 # decay rate of past observations
 EPSILON_INITIALIZED = 0.5 # probability epsilon used to determine random actions
@@ -118,11 +121,13 @@ FRAME_PER_ACTION = 1 # number of frames per action
 REPLAYS_SIZE = 2000 # maximum number of replays in cache
 TRAINING_DELAY = 2000 # time steps before starting training for the purpose of collecting sufficient replays to initialize training
 EXPLORATION_TIME = 10000 # time steps used for decaying epsilon during training before epsilon decreases to zero
+
 ```
 
 OpenAI Gym Evaluation
 
 Solved after 293 episodes. Best 100-episode average reward was 197.39 ± 1.68.
+
 <https://gym.openai.com/evaluations/eval_Jr2oXkrS8KMUQEkCBurAw>
 
 Links to GitHub
@@ -136,6 +141,7 @@ Parameters
 FC-128 -> FC-128
 
 ```
+
 GAME_STATE_FRAMES = 1  # number of game state frames used as input
 GAMMA = 0.95 # decay rate of past observations
 EPSILON_INITIALIZED = 0.5 # probability epsilon used to determine random actions
@@ -146,11 +152,13 @@ FRAME_PER_ACTION = 1 # number of frames per action
 REPLAYS_SIZE = 5000 # maximum number of replays in cache
 TRAINING_DELAY = 1000 # time steps before starting training for the purpose of collecting sufficient replays to initialize training
 EXPLORATION_TIME = 10000 # time steps used for decaying epsilon during training before epsilon decreases to zero
+
 ```
 
 OpenAI Gym Evaluation
 
 Solved after 138 episodes. Best 100-episode average reward was 196.58 ± 1.34.
+
 <https://gym.openai.com/evaluations/eval_F90GxQxrQK2J6ESQkLVaA>
 
 Links to GitHub
