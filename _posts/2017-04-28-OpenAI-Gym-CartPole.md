@@ -55,12 +55,6 @@ In this CartPole game, I firstly set the learning rate to 0.0001 in Adam Optimiz
 
 It turned out that the learning rate of 0.0001 is the right one to use in CartPole game. The loss firstly increased then decreased. The algorithm was able to play CartPole very well after 5,000 to 8,000 episodes of training.
 
-### Notes
-
-When I was training the algorithm, I found that if the algorithm was trained for sufficient long time, the learning performance would fluctuate. Say, the learning performance reached maximum at episode 5000 for 300 episodes. Then the learning performance dropped significantly. After training for some more time, the learning performance reached maximum again for another while. This phenomenon repeated throughout the training. From my personal point of view, the optimization might have deviated from the optimal because I could often see some large loss number even in the later stage of the training. Is it because the learning rate is sometimes to big to make cause the optimization jump out of the optimal, or it is often not possible to train an Deep Q-Learning algorithm to have an absolute perfect solution, or the neural network is just not sophiscated enough? I am not able to answer this question with my current knowledge.
-
-I was also suprised that if counting game frames, it also took nearly 1,000,000 game frames to reach good performance. Recall the a similar algorithm only took 600,000 game frames to have a extremely good performance in Flappy Bird game. 
-
 ### Key Parameters
 
 FC-20
@@ -164,3 +158,21 @@ Solved after 138 episodes. Best 100-episode average reward was 196.58 ± 1.34.
 Links to GitHub
 
 <https://github.com/leimao/OpenAI_Gym_AI/tree/master/CartPole-v0/Deep_Q-Learning/2017-04-29-v2>
+
+### Notes
+
+#### 2017-4-28
+
+When I was training the algorithm, I found that if the algorithm was trained for sufficient long time, the learning performance would fluctuate. Say, the learning performance reached maximum at episode 5000 for 300 episodes. Then the learning performance dropped significantly. After training for some more time, the learning performance reached maximum again for another while. This phenomenon repeated throughout the training. From my personal point of view, the optimization might have deviated from the optimal because I could often see some large loss number even in the later stage of the training. Is it because the learning rate is sometimes to big to make cause the optimization jump out of the optimal, or it is often not possible to train an Deep Q-Learning algorithm to have an absolute perfect solution, or the neural network is just not sophiscated enough? I am not able to answer this question with my current knowledge.
+
+I was also suprised that if counting game frames, it also took nearly 1,000,000 game frames to reach good performance. Recall the a similar algorithm only took 600,000 game frames to have a extremely good performance in Flappy Bird game. 
+
+#### 2017-4-28
+
+Specifically for the problem in OpenAI Gym, to achieve both learning efficiency and performance robustness, I think learning rate decay might be a good strategy. I may try it if I have chance in the future.
+
+I also found that, in addition to Q-Learning, Policy Gradient might work better. I may implement this algorithm in the future.
+
+<https://github.com/lancerts/Reinforcement-Learning>
+
+<https://gym.openai.com/evaluations/eval_9niu4HNZTgm0VLJ0b8MUtA>
