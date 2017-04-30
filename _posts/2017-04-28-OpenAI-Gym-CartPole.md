@@ -59,7 +59,7 @@ It turned out that the learning rate of 0.0001 is the right one to use in CartPo
 
 FC-20
 
-```
+```python
 
 GAME_STATE_FRAMES = 1  # number of game state frames used as input
 GAMMA = 0.9 # decay rate of past observations
@@ -103,7 +103,7 @@ Parameters
 
 FC-128 -> FC-128
 
-```
+```python
 
 GAME_STATE_FRAMES = 1  # number of game state frames used as input
 GAMMA = 0.95 # decay rate of past observations
@@ -134,7 +134,7 @@ Parameters
 
 FC-128 -> FC-128
 
-```
+```python
 
 GAME_STATE_FRAMES = 1  # number of game state frames used as input
 GAMMA = 0.95 # decay rate of past observations
