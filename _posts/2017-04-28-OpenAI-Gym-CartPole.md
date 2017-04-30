@@ -61,6 +61,23 @@ When I was training the algorithm, I found that if the algorithm was trained for
 
 I was also suprised that if counting game frames, it also took nearly 1,000,000 game frames to reach good performance. Recall the a similar algorithm only took 600,000 game frames to have a extremely good performance in Flappy Bird game. 
 
+### Key Parameters
+
+FC-20
+
+```python
+GAME_STATE_FRAMES = 1  # number of game state frames used as input
+GAMMA = 0.9 # decay rate of past observations
+EPSILON_INITIALIZED = 0.5 # probability epsilon used to determine random actions
+EPSILON_FINAL = 0.01 # final epsilon after decay
+BATCH_SIZE = 32 # number of sample size in one minibatch
+LEARNING_RATE = 0.0001 # learning rate in deep learning
+FRAME_PER_ACTION = 1 # number of frames per action
+REPLAYS_SIZE = 1000 # maximum number of replays in cache
+TRAINING_DELAY = 1000 # time steps before starting training for the purpose of collecting sufficient replays to initialize training
+EXPLORATION_TIME = 10000 # time steps used for decaying epsilon during training before epsilon decreases to zero
+```
+
 ### Algorithm Performance
 
 Before Training:
@@ -73,8 +90,69 @@ After Training:
 
 OpenAI Gym Evaluation
 
+Solved after 9919 episodes. Best 100-episode average reward was 200.00 ¡À 0.00.
 <https://gym.openai.com/evaluations/eval_ewr0DWHeTmGE6x1NGQ1LiQ>
 
 ### Links to GitHub
 
-<https://github.com/leimao/OpenAI_Gym_AI/tree/master/CartPole-v0/Deep_Q-Learning>
+<https://github.com/leimao/OpenAI_Gym_AI/tree/master/CartPole-v0/Deep_Q-Learning/2017-04-28-v1>
+
+### Follow-up Optimizations
+
+I used one single layer of fully-connected neural network with only 20 hidden unit in the first implementation. I found that increasing the depth and the size of neural network, and increasing the batch size for stochastic gradient descent could improve the learning efficiency and performance robustness. Personally I think the depth and the size of neural network helped to improve the robustness of performance, and the batch size helped to prevent random sampling bias and optimization bias during the stochastic gradient descent. As the result, the learning became faster, and the learning performance robustness was improved.
+
+#### 2017-04-29-v1
+
+Parameters
+
+FC-128 -> FC-128
+
+```python
+GAME_STATE_FRAMES = 1  # number of game state frames used as input
+GAMMA = 0.95 # decay rate of past observations
+EPSILON_INITIALIZED = 0.5 # probability epsilon used to determine random actions
+EPSILON_FINAL = 0.0001 # final epsilon after decay
+BATCH_SIZE = 128 # number of sample size in one minibatch
+LEARNING_RATE = 0.0005 # learning rate in deep learning
+FRAME_PER_ACTION = 1 # number of frames per action
+REPLAYS_SIZE = 2000 # maximum number of replays in cache
+TRAINING_DELAY = 2000 # time steps before starting training for the purpose of collecting sufficient replays to initialize training
+EXPLORATION_TIME = 10000 # time steps used for decaying epsilon during training before epsilon decreases to zero
+```
+
+OpenAI Gym Evaluation
+
+Solved after 293 episodes. Best 100-episode average reward was 197.39 ¡À 1.68.
+<https://gym.openai.com/evaluations/eval_Jr2oXkrS8KMUQEkCBurAw>
+
+Links to GitHub
+
+<https://github.com/leimao/OpenAI_Gym_AI/tree/master/CartPole-v0/Deep_Q-Learning/2017-04-29-v1>
+
+#### 2017-04-29-v2
+
+Parameters
+
+FC-128 -> FC-128
+
+```python
+GAME_STATE_FRAMES = 1  # number of game state frames used as input
+GAMMA = 0.95 # decay rate of past observations
+EPSILON_INITIALIZED = 0.5 # probability epsilon used to determine random actions
+EPSILON_FINAL = 0.0005 # final epsilon after decay
+BATCH_SIZE = 128 # number of sample size in one minibatch
+LEARNING_RATE = 0.0005 # learning rate in deep learning
+FRAME_PER_ACTION = 1 # number of frames per action
+REPLAYS_SIZE = 5000 # maximum number of replays in cache
+TRAINING_DELAY = 1000 # time steps before starting training for the purpose of collecting sufficient replays to initialize training
+EXPLORATION_TIME = 10000 # time steps used for decaying epsilon during training before epsilon decreases to zero
+```
+
+OpenAI Gym Evaluation
+
+Solved after 138 episodes. Best 100-episode average reward was 196.58 ¡À 1.34.
+<https://gym.openai.com/evaluations/eval_F90GxQxrQK2J6ESQkLVaA>
+
+Links to GitHub
+
+<https://github.com/leimao/OpenAI_Gym_AI/tree/master/CartPole-v0/Deep_Q-Learning/2017-04-29-v2>
