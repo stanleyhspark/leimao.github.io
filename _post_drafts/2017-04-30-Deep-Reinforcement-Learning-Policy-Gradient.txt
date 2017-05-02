@@ -1,1 +1,7 @@
 http://karpathy.github.io/2016/05/31/rl/
+
+https://yanpanlau.github.io/2016/10/11/Torcs-Keras.html
+
+http://blog.csdn.net/mmc2015/article/details/52918158
+
+https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/5-2-policy-gradient-softmax2/
