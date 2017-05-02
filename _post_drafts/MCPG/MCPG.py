@@ -4,7 +4,21 @@ Author: Lei Mao
 Date: 5/2/2017
 Introduction: 
 The REINFORCE_AI used REINFORCE, one of the Monte Carlo Policy Gradient methods, to optimize the AI actions in certain environment.
+This script used Keras to implement the neural network and loss functions. There is also another script using Tensorflow and customized loss functions available. Personally I think the Keras version is not as good as the Tensorflow version because it used some approximations due to lacking some of the functions in Keras.
 '''
+
+import numpy as np
+import keras
+
+GAME_STATE_FRAMES = 1  # number of game state frames used as input
+GAMMA = 0.9 # decay rate of past observations
+LEARNING_RATE = 0.0001 # learning rate in deep learning
+FRAME_PER_ACTION = 1 # number of frames per action
+REPLAYS_SIZE = 1000 # maximum number of replays in cache
+SAVING_PERIOD = 5000 # period of time steps to save the model
+LOG_PERIOD = 500 # period of time steps to save the log of training
+MODEL_DIR = 'model/' # path for saving the model
+LOG_DIR = 'log/' # path for saving the training log
 
 class OpenAI_REINFORCE_FC():
 
@@ -18,10 +32,12 @@ class OpenAI_REINFORCE_FC():
         self.input_shape = self.num_features * GAME_STATE_FRAMES
         # Initialize the model
         self.model = self.REINFORCE_FC_Setup()
+        # Initialize the episode number
+        self.episode = 0
         # Initialize episode replays used for caching game transitions in one single episode
-        self.episode_states = list()
-        self.episode_actions = list()
-        self.episode_rewards = list()
+        self.episode_states = list() # state feature list
+        self.episode_actions = list() # one-hot encoded action
+        self.episode_rewards = list() # immediate reward
         # Initialize time_step to count the time steps during training
         self.time_step = 0
         # Initialize the mode of AI
@@ -45,7 +61,7 @@ class OpenAI_REINFORCE_FC():
         # FC layer_3
         #model.add(Dense(128, activation = 'relu'))
         # FC layer_4
-        model.add(Dense(self.num_actions))
+        model.add(Dense(self.num_actions, activation='softmax'))
         # Optimizer
         optimizer = keras.optimizers.Adam(lr = LEARNING_RATE)
         # Compile the model
@@ -53,11 +69,19 @@ class OpenAI_REINFORCE_FC():
         
         return model
 
-    def Store_Transition(self, state, action, mc_return):
+    def Store_Transition(self, observation, action, reward):
 
         # Store game transitions used for updating the weights in the Policy Neural Network
 
-        self.episode_replay.append((state, action, reward))
+        self.episode_states.append(observation)
+        self.episode_actions.append(action)
+        self.episode_rewards.append(reward)
+
+    def Clear_Episode_Replays(self):
+
+        self.episode_states = list()
+        self.episode_actions = list()
+        self.episode_rewards = list()
 
     def Calculate_Value(self):
 
@@ -75,5 +99,51 @@ class OpenAI_REINFORCE_FC():
         state_values /= np.std(state_values)
 
         return state_values
+
+    def Softmax_Cross_Entropy(softmax_1, softmax_2):
+
+        return (-1.) * np.dot(softmax_1, np.log(softmax_2.T))
+
+    def One_Hot_Encoding(self, indices):
+
+        matrix_encoded = np.zeros(len(indices), self.num_actions, dtype = np.bool)
+        matrix_encoded[np.arrange(len(indices)), indices] = 1
+
+        return matrix_encoded
+
+    def REINFORCE_FC_Train(self):
+
+        # In principle, to find the optimal weights theta for policy network, we need to make d(neg_log_prob(theta) * state_value)/d(theta) = 0. So a loss function of neg_log_prob(theta) * state_value would be good.
+        # However, Keras does not provide functions to use user-defined loss functions. We have to engineer the expression of target value to achieve the same goal.
+
+        inputs = np.array(self.episode_states)
+        state_values = self.Calculate_Value()
+
+        episode_actions_encoded = self.One_Hot_Encoding(indices = np.array(self.episode_actions))
+
+        targets = np.multiply(self.softmax_cross_entropy(self.model.predict(inputs), episode_actions_encoded), state_values)
+
+        train_loss = self.model.fit(inputs, targets)
+
+        print('Episode: %d Train Loss: %f' %(self.episode, train_loss))
+        
+        # Save model routinely
+        if self.time_step % SAVING_PERIOD == 0:
+            if not os.path.exists(MODEL_DIR):
+                os.makedirs(MODEL_DIR)
+            self.model.save(MODEL_DIR + 'AI_model.h5')
+
+        return train_loss
+        
+    def AI_Action(self, observation):
+        
+        action_probs = self.model.predict(observation)[0]
+        action = np.random.choice(range(len(action_probs)), p = action_probs)
+
+        return action
+
+
+
+
 
 
