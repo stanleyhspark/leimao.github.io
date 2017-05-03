@@ -23,6 +23,7 @@ Deep Q-Learning has been widely used to play video games. I firstly noticed this
 #### Touch the Algorithm
 
 The [NIPS 2013 Deep Q-Learning algorithm](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf) was implemented.
+
 ![](/images/blog_images/2017-04-26-Flappy-Bird-AI/NIPS_2013.png)
 
 #### Input Image
