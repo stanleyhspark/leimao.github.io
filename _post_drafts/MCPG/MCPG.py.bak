@@ -125,7 +125,7 @@ class OpenAI_REINFORCE_FC():
 
         train_loss = self.model.fit(inputs, targets)
 
-        print(train_loss)
+        print('Episode: %d Train Loss: %f' %(self.episode, train_loss))
         
         # Save model routinely
         if self.time_step % SAVING_PERIOD == 0:
