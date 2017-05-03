@@ -20,11 +20,6 @@ Deep Q-Learning has been widely used to play video games. I firstly noticed this
 
 ### Setting Up Deep Q-Learning Algorithm
 
-#### Touch the Algorithm
-
-The [NIPS 2013 Deep Q-Learning algorithm](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf) was implemented.
-![](/images/blog_images/2017-04-26-Flappy-Bird-AI/NIPS_2013.png)
-
 #### Input Image
 
 The raw screenshot of the game requires to be preprocessed before send as input to the learning algorithm. The size of image matters a lot for the training efficiency and performance. Ben Lau and songrotek used 80 x 80 images as input. However, this did not retain the original height/width ratio of the raw image. So I changed it to 72 x 40, which matches the original height/width ratio. This might also reduce the calculation task to the computer to some extent.
