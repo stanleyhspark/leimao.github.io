@@ -4,8 +4,8 @@ title: "Monte Carlo Policy Gradient in OpenAI-Gym LunarLander"
 categories: journal
 tags: [documentation,sample]
 image:
-  feature: blog_images/2017-05-04-REINFORCE-Policy_Gradient/lunarlander.png
-  teaser: blog_images/2017-05-04-REINFORCE-Policy_Gradient/lunarlander.png
+  feature: blog_images/2017-05-04-REINFORCE-Policy-Gradient/lunarlander.png
+  teaser: blog_images/2017-05-04-REINFORCE-Policy-Gradient/lunarlander.png
   credit: 
   creditlink: ""
 ---
@@ -20,11 +20,11 @@ Here I am going to tackle this LunarLander problem using a new alogirthm called 
 
 Algorithm from [Sutton Book draft]()
 
-![](/images/blog_images/2017-05-04-REINFORCE-Policy_Gradient/Sutton_REINFORCE.png)
+![](/images/blog_images/2017-05-04-REINFORCE-Policy-Gradient/Sutton_REINFORCE.png)
 
 Algorithm from [Silver Courseware](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html)
 
-![](/images/blog_images/2017-05-04-REINFORCE-Policy_Gradient/Silver_REINFORCE.png)
+![](/images/blog_images/2017-05-04-REINFORCE-Policy-Gradient/Silver_REINFORCE.png)
 
 Note that the Gt item in Sutton's REINFORCE algorithm and the vt item in Silver's REINFORCE algorithm are the same thing.
 
@@ -63,7 +63,7 @@ Solved after 1476 episodes. Best 100-episode average reward was 203.29 ± 4.98.
 
 This algorithm did solve the problem as OpenAI Gym requested. However, it suffered from high vairance problem. I tried to tune the hyperparameters and change the size of neural network. But this did not help significantly.
 
-![](/images/blog_images/2017-05-04-REINFORCE-Policy_Gradient/training_record_lunarlander.jpeg)
+![](/images/blog_images/2017-05-04-REINFORCE-Policy-Gradient/training_record_lunarlander.jpeg)
 
 #### Links to Github
 
@@ -83,6 +83,7 @@ I also tried REINFORCE to solve CartPole and MountainCar Problem in OpenAI Gym.
 REINFORCE successfully solved CartPole in a very shot period of time. However, it still suffered from high variance problem ([example](https://gym.openai.com/evaluations/eval_juc7UYABTFmahgF80oBIA)). After tuning the model, one may get reasonable learning performance without too much variance([example](https://gym.openai.com/evaluations/eval_KINLU2HNSHiI331ecc6F8A)). The code example could be found [here](https://github.com/leimao/OpenAI_Gym_AI/tree/master/CartPole-v0/REINFORCE/2017-05-03-v1).
 
 REINFORCE never solved MountainCar problem unless I cheated. This is because it is extremely difficult (probability is extremely low) to get the top of the mountain without learning thoroughly. The learning agent always get -200 reward in each episode. Therefore, the learning algorithm is useless. However, if the MountainCar problem is unwrapped, which means the game lasts forever unless the car goes to the top of the mountain, there could be appropriate gradient descent to solve the problem. Alternatively, one could engineer the reward that the API returns. By rewarding differently, say the higher the car goes the more reward it received, the car could easily learn how to climb. However, these are considered cheating because these does not provide any proof of the goodness of the learning algorithm itself.
+
 
 
 
