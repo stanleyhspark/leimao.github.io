@@ -26,13 +26,13 @@ Algorithm from [Silver Courseware](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/T
 
 ![](/images/blog_images/2017-05-04-REINFORCE-Policy-Gradient/Silver_REINFORCE.png)
 
-Note that the Gt item in Sutton's REINFORCE algorithm and the vt item in Silver's REINFORCE algorithm are the same thing.
+Note that the $G_t$ item in Sutton's REINFORCE algorithm and the $v_t$ item in Silver's REINFORCE algorithm are the same thing.
 
 $$
-G_{t} = R_{t+1} + \gamma \times R_{t+2} + \gamma^2 \times R_{t+3} + ... + \gamma^{T-t+1} \times R_{T}
+G_t = R_{t+1} + \gamma \times R_{t+2} + \gamma^2 \times R_{t+3} + ... + \gamma^{T-t+1} \times R_{T}
 $$
 
-However, Silver's REINFORCE algorithm lacked a gamma^t item than Sutton's algorithm. I personally believe that Silver was wrong and Sutton was correct. It may not have an significanty impact on the optimization of the algorithm. I will confirm this and explore the effect of lacking this item if I have chance in the future. For now, I am going to implement Silver's REINFORCE algorithm without including the gamma^t item.
+However, Silver's REINFORCE algorithm lacked a $\gamma^t$ item than Sutton's algorithm. I personally believe that Silver was wrong and Sutton was correct. It may not have an significanty impact on the optimization of the algorithm. I will confirm this and explore the effect of lacking this item if I have chance in the future. For now, I am going to implement Silver's REINFORCE algorithm without including the $\gamma^t$ item.
 
 ### Make OpenAI Deep REINFORCE Class
 
@@ -40,7 +40,7 @@ The main neural network in Deep REINFORCE Class, which is called policy network,
 
 This algorithm is very conceptually simple. However, I got stuck for a while when I firstly tried to implement it on my computer. We have got used to use deep learning libraries, such as tensorflow, to calculate derivatives for convenience. The tensorflow allows us to optimize the parameters in the neural network by minimizing some loss functions. However, from the REINFORCE algorithm, it seems that we have to manually calculate the derivatives and optimize the parameters through iterations. 
 
-One of way to overcome this is to construct a loss function whose minimization derivative udpate is exactly the same to the one in the algorithm. One simple loss function could be (-log_p * vt) note that -log_p is the cross entropy of softmaxed action prediction and labeled action.
+One of way to overcome this is to construct a loss function whose minimization derivative udpate is exactly the same to the one in the algorithm. One simple loss function could be $-\log{\pi}(A_t|S_t,\theta) \times v_t$(-log_p * vt) note that -log_p is the cross entropy of softmaxed action prediction and labeled action.
 
 ### Test OpenAI Deep REINFORCE Class in OpenAI Gym LunarLander Environment
 
