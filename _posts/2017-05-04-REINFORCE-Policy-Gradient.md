@@ -14,8 +14,6 @@ image:
  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
 
-aaa
-
 ### Introduction
 
 [LunarLander](https://gym.openai.com/envs/LunarLander-v2) is one of the learning environment in OpenAI Gym. I have actually tried to solve this learning problem using Deep Q-Learning which I have successfully used to train the CartPole environment in OpenAI Gym and the Flappy Bird game. However, I was not able to get good training performance in a reasonable amount of episodes. The lunarlander controlled by AI only learned how to steadily float in the air but was not able to successfully land within the time requested.
@@ -38,9 +36,6 @@ $$
 G_t = R_{t+1} + \gamma \times R_{t+2} + \gamma^2 \times R_{t+3} + ... + \gamma^{T-t+1} \times R_{T}
 $$
 
-Let's test some inline math $x$, $y$, $x_1$, $y_1$.
-
-
 However, Silver's REINFORCE algorithm lacked a $ \gamma^t $ item than Sutton's algorithm. I personally believe that Silver was wrong and Sutton was correct. It may not have an significanty impact on the optimization of the algorithm. I will confirm this and explore the effect of lacking this item if I have chance in the future. For now, I am going to implement Silver's REINFORCE algorithm without including the $ \gamma^t $ item.
 
 ### Make OpenAI Deep REINFORCE Class
@@ -49,7 +44,7 @@ The main neural network in Deep REINFORCE Class, which is called policy network,
 
 This algorithm is very conceptually simple. However, I got stuck for a while when I firstly tried to implement it on my computer. We have got used to use deep learning libraries, such as tensorflow, to calculate derivatives for convenience. The tensorflow allows us to optimize the parameters in the neural network by minimizing some loss functions. However, from the REINFORCE algorithm, it seems that we have to manually calculate the derivatives and optimize the parameters through iterations. 
 
-One of way to overcome this is to construct a loss function whose minimization derivative udpate is exactly the same to the one in the algorithm. One simple loss function could be $ -\log{\pi}(A_t|S_t,\theta) \times v_t $(-log_p * vt) note that -log_p is the cross entropy of softmaxed action prediction and labeled action.
+One of way to overcome this is to construct a loss function whose minimization derivative udpate is exactly the same to the one in the algorithm. One simple loss function could be $ -\log{\pi}(A_t||S_t,\theta) \times v_t $(-log_p * vt) note that -log_p is the cross entropy of softmaxed action prediction and labeled action.
 
 ### Test OpenAI Deep REINFORCE Class in OpenAI Gym LunarLander Environment
 
