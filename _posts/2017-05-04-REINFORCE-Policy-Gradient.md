@@ -32,6 +32,9 @@ $$
 G_t = R_{t+1} + \gamma \times R_{t+2} + \gamma^2 \times R_{t+3} + ... + \gamma^{T-t+1} \times R_{T}
 $$
 
+Let's test some inline math $x$, $y$, $x_1$, $y_1$.
+
+
 However, Silver's REINFORCE algorithm lacked a $ \gamma^t $ item than Sutton's algorithm. I personally believe that Silver was wrong and Sutton was correct. It may not have an significanty impact on the optimization of the algorithm. I will confirm this and explore the effect of lacking this item if I have chance in the future. For now, I am going to implement Silver's REINFORCE algorithm without including the $ \gamma^t $ item.
 
 ### Make OpenAI Deep REINFORCE Class
