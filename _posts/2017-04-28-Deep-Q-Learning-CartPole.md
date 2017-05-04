@@ -78,11 +78,11 @@ EXPLORATION_TIME = 10000 # time steps used for decaying epsilon during training 
 
 Before Training:
 
-![](/images/blog_images/2017-04-28-OpenAI-Gym-CartPole/episode_0.gif)
+![](/images/blog_images/2017-04-28-Deep-Q-Learning-CartPole/episode_0.gif)
 
 After Training:
 
-![](/images/blog_images/2017-04-28-OpenAI-Gym-CartPole/episode_27000.gif)
+![](/images/blog_images/2017-04-28-Deep-Q-Learning-CartPole/episode_27000.gif)
 
 OpenAI Gym Evaluation
 
