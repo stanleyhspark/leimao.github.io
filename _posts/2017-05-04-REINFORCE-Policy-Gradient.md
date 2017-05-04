@@ -14,6 +14,8 @@ image:
  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
 
+aaa
+
 ### Introduction
 
 [LunarLander](https://gym.openai.com/envs/LunarLander-v2) is one of the learning environment in OpenAI Gym. I have actually tried to solve this learning problem using Deep Q-Learning which I have successfully used to train the CartPole environment in OpenAI Gym and the Flappy Bird game. However, I was not able to get good training performance in a reasonable amount of episodes. The lunarlander controlled by AI only learned how to steadily float in the air but was not able to successfully land within the time requested.
