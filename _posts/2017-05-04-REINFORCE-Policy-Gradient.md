@@ -69,7 +69,6 @@ After Training:
 
 ![](/images/blog_images/2017-05-04-REINFORCE-Policy-Gradient/episode_3000.gif)
 
-
 OpenAI Gym Evaluation
 
 Solved after 1476 episodes. Best 100-episode average reward was 203.29 ± 4.98.
@@ -80,7 +79,7 @@ This algorithm did solve the problem as OpenAI Gym requested. However, it suffer
 
 ![](/images/blog_images/2017-05-04-REINFORCE-Policy-Gradient/training_record_lunarlander.jpeg)
 
-#### Links to Github
+### Links to Github
 
 <https://github.com/leimao/OpenAI_Gym_AI/tree/master/LunarLander-v2/REINFORCE/2017-05-24-v1>
 
