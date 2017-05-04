@@ -92,6 +92,8 @@ REINFORCE Monte Carlo Policy Gradient solved the LunarLander problem which Deep 
 
 #### 2017-5-4
 
+To implement Policy Gradients Reinforcement Learning, I recommended to use Tensorflow but not Keras, because you may have to introduce a lot of user-defined loss functions. Some of the customized loss functions could be easily defined in Keras, some of them are not. If you are comfortable with doing gradient descent by yourself, you do not even have to use tensorflow.
+
 I also tried REINFORCE to solve CartPole and MountainCar Problem in OpenAI Gym. 
 
 REINFORCE successfully solved CartPole in a very shot period of time. However, it still suffered from high variance problem ([example](https://gym.openai.com/evaluations/eval_juc7UYABTFmahgF80oBIA)). After tuning the model, one may get reasonable learning performance without too much variance([example](https://gym.openai.com/evaluations/eval_KINLU2HNSHiI331ecc6F8A)). The code example could be found [here](https://github.com/leimao/OpenAI_Gym_AI/tree/master/CartPole-v0/REINFORCE/2017-05-03-v1).
