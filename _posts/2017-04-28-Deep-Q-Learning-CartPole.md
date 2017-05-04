@@ -89,6 +89,10 @@ OpenAI Gym Evaluation
 Solved after 9919 episodes. Best 100-episode average reward was 200.00 ± 0.00.
 <https://gym.openai.com/evaluations/eval_ewr0DWHeTmGE6x1NGQ1LiQ>
 
+### Conclusions
+
+Deep Q-Learning is a good technique to solve CartPole problem. However, it seems that it suffered from high variance and its convergences seems to be slow.
+
 ### Links to GitHub
 
 <https://github.com/leimao/OpenAI_Gym_AI/tree/master/CartPole-v0/Deep_Q-Learning/2017-04-28-v1>
