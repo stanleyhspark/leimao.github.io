@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 ![](/images/about_images/Lei.jpg)
-Lei Mao at University of Cambridge in 2011.
+Lei Mao, photoed at University of Cambridge in 2011.
 
 My name is Lei Mao. I am an incoming computer science graduate student at University of Chicago. My research interests are mainly in the areas of artificial intelligence and machine learning, and partly in the area of data science. 
 
