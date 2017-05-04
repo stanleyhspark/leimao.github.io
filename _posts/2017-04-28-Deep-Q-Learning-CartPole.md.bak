@@ -4,8 +4,8 @@ title: "Deep Q-Learning in OpenAI-Gym CartPole"
 categories: journal
 tags: [documentation,sample]
 image:
-  feature: blog_images/2017-04-28-Deep-Q-Learning-CartPole/cartpole.png
-  teaser: blog_images/2017-04-28-Deep-Q-Learning-CartPole/cartpole.png
+  feature: blog_images/2017-04-28-OpenAI-Gym-CartPole/OpenAI_Logo.png
+  teaser: blog_images/2017-04-28-OpenAI-Gym-CartPole/OpenAI_Logo.png
   credit: 
   creditlink: ""
 ---
