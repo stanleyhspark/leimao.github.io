@@ -55,15 +55,6 @@ RAND_SEED = 0 # random seed
 ```
 #### Algorithm Performance
 
-Before Training:
-
-![](/images/blog_images/2017-05-04-REINFORCE-Policy-Gradient/episode_0.gif)
-
-After Training:
-
-![](/images/blog_images/2017-05-04-REINFORCE-Policy-Gradient/episode_3000.gif)
-
-
 OpenAI Gym Evaluation
 
 Solved after 1476 episodes. Best 100-episode average reward was 203.29 ± 4.98.
