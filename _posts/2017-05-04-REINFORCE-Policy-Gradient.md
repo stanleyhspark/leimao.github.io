@@ -44,7 +44,7 @@ The main neural network in Deep REINFORCE Class, which is called policy network,
 
 This algorithm is very conceptually simple. However, I got stuck for a while when I firstly tried to implement it on my computer. We have got used to use deep learning libraries, such as tensorflow, to calculate derivatives for convenience. The tensorflow allows us to optimize the parameters in the neural network by minimizing some loss functions. However, from the REINFORCE algorithm, it seems that we have to manually calculate the derivatives and optimize the parameters through iterations. 
 
-One of way to overcome this is to construct a loss function whose minimization derivative udpate is exactly the same to the one in the algorithm. One simple loss function could be $ -\log{\pi}(A_t \mid S_t,\theta) \times v_t $. Note that $ -\log{\pi} $ is the cross entropy of softmaxed action prediction and labeled action.
+One of way to overcome this is to construct a loss function whose minimization derivative udpate is exactly the same to the one in the algorithm. One simple loss function could be $ -\log{\pi}(A_t \mid S_t,\theta) \times v_t $. Note that $ -\log{\pi}(A_t \mid S_t,\theta) $ is the cross entropy of softmaxed action prediction and labeled action.
 
 ### Test OpenAI Deep REINFORCE Class in OpenAI Gym LunarLander Environment
 
