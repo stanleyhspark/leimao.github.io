@@ -34,7 +34,7 @@ However, Silver's REINFORCE algorithm lacked a gamma^t item than Sutton's algori
 
 ### Make OpenAI Deep REINFORCE Class
 
-The main neural network in Deep REINFORCE Class taks the observation as input and outputs the softmaxed probability for all actions available.
+The main neural network in Deep REINFORCE Class, which is called policy network, taks the observation as input and outputs the softmaxed probability for all actions available.
 
 This algorithm is very conceptually simple. However, I got stuck for a while when I firstly tried to implement it on my computer. We have got used to use deep learning libraries, such as tensorflow, to calculate derivatives for convenience. The tensorflow allows us to optimize the parameters in the neural network by minimizing some loss functions. However, from the REINFORCE algorithm, it seems that we have to manually calculate the derivatives and optimize the parameters through iterations. 
 
@@ -44,126 +44,45 @@ One of way to overcome this is to construct a loss function whose minimization d
 
 #### Key Parameters
 
-FC-20
+FC-16 -> FC-32
 
 ```python
 
-GAME_STATE_FRAMES = 1  # number of game state frames used as input
-GAMMA = 0.9 # decay rate of past observations
-EPSILON_INITIALIZED = 0.5 # probability epsilon used to determine random actions
-EPSILON_FINAL = 0.01 # final epsilon after decay
-BATCH_SIZE = 32 # number of sample size in one minibatch
-LEARNING_RATE = 0.0001 # learning rate in deep learning
-FRAME_PER_ACTION = 1 # number of frames per action
-REPLAYS_SIZE = 1000 # maximum number of replays in cache
-TRAINING_DELAY = 1000 # time steps before starting training for the purpose of collecting sufficient replays to initialize training
-EXPLORATION_TIME = 10000 # time steps used for decaying epsilon during training before epsilon decreases to zero
+GAMMA = 0.99 # decay rate of past observations
+LEARNING_RATE = 0.005 # learning rate in deep learning
+RAND_SEED = 0 # random seed
 
 ```
-
-### Algorithm Performance
-
-Before Training:
-
-![](/images/blog_images/2017-04-28-OpenAI-Gym-CartPole/episode_0.gif)
-
-After Training:
-
-![](/images/blog_images/2017-04-28-OpenAI-Gym-CartPole/episode_27000.gif)
+#### Algorithm Performance
 
 OpenAI Gym Evaluation
 
-Solved after 9919 episodes. Best 100-episode average reward was 200.00 ¡À 0.00.
-<https://gym.openai.com/evaluations/eval_ewr0DWHeTmGE6x1NGQ1LiQ>
+Solved after 1476 episodes. Best 100-episode average reward was 203.29 Â± 4.98.
+
+<https://gym.openai.com/evaluations/eval_6QdRxa5TuOD6GbmpbpsCw>
+
+This algorithm did solve the problem as OpenAI Gym requested. However, it suffered from high vairance problem. I tried to tune the hyperparameters and change the size of neural network. But this did not help significantly.
+
+![](/images/blog_images/2017-05-04-REINFORCE-Policy_Gradient/training_record_lunarlander.jpeg)
+
+#### Links to Github
+
+<https://github.com/leimao/OpenAI_Gym_AI/tree/master/LunarLander-v2/REINFORCE/2017-05-24-v1>
+
 
 ### Conclusions
 
-Deep Q-Learning is a good technique to solve CartPole problem. However, it seems that it suffered from high variance and its convergences seems to be slow.
-
-### Links to GitHub
-
-<https://github.com/leimao/OpenAI_Gym_AI/tree/master/CartPole-v0/Deep_Q-Learning/2017-04-28-v1>
-
-### Follow-up Optimizations
-
-I used one single layer of fully-connected neural network with only 20 hidden unit in the first implementation. I found that increasing the depth and the size of neural network, and increasing the batch size for stochastic gradient descent could improve the learning efficiency and performance robustness. Personally I think the depth and the size of neural network helped to improve the robustness of performance, and the batch size helped to prevent random sampling bias and optimization bias during the stochastic gradient descent. As the result, the learning became faster, and the learning performance robustness was improved.
-
-#### 2017-04-29-v1
-
-Parameters
-
-FC-128 -> FC-128
-
-```python
-
-GAME_STATE_FRAMES = 1  # number of game state frames used as input
-GAMMA = 0.95 # decay rate of past observations
-EPSILON_INITIALIZED = 0.5 # probability epsilon used to determine random actions
-EPSILON_FINAL = 0.0001 # final epsilon after decay
-BATCH_SIZE = 128 # number of sample size in one minibatch
-LEARNING_RATE = 0.0005 # learning rate in deep learning
-FRAME_PER_ACTION = 1 # number of frames per action
-REPLAYS_SIZE = 2000 # maximum number of replays in cache
-TRAINING_DELAY = 2000 # time steps before starting training for the purpose of collecting sufficient replays to initialize training
-EXPLORATION_TIME = 10000 # time steps used for decaying epsilon during training before epsilon decreases to zero
-
-```
-
-OpenAI Gym Evaluation
-
-Solved after 293 episodes. Best 100-episode average reward was 197.39 ¡À 1.68.
-
-<https://gym.openai.com/evaluations/eval_Jr2oXkrS8KMUQEkCBurAw>
-
-Links to GitHub
-
-<https://github.com/leimao/OpenAI_Gym_AI/tree/master/CartPole-v0/Deep_Q-Learning/2017-04-29-v1>
-
-#### 2017-04-29-v2
-
-Parameters
-
-FC-128 -> FC-128
-
-```python
-
-GAME_STATE_FRAMES = 1  # number of game state frames used as input
-GAMMA = 0.95 # decay rate of past observations
-EPSILON_INITIALIZED = 0.5 # probability epsilon used to determine random actions
-EPSILON_FINAL = 0.0005 # final epsilon after decay
-BATCH_SIZE = 128 # number of sample size in one minibatch
-LEARNING_RATE = 0.0005 # learning rate in deep learning
-FRAME_PER_ACTION = 1 # number of frames per action
-REPLAYS_SIZE = 5000 # maximum number of replays in cache
-TRAINING_DELAY = 1000 # time steps before starting training for the purpose of collecting sufficient replays to initialize training
-EXPLORATION_TIME = 10000 # time steps used for decaying epsilon during training before epsilon decreases to zero
-
-```
-
-OpenAI Gym Evaluation
-
-Solved after 138 episodes. Best 100-episode average reward was 196.58 ¡À 1.34.
-
-<https://gym.openai.com/evaluations/eval_F90GxQxrQK2J6ESQkLVaA>
-
-Links to GitHub
-
-<https://github.com/leimao/OpenAI_Gym_AI/tree/master/CartPole-v0/Deep_Q-Learning/2017-04-29-v2>
+REINFORCE Monte Carlo Policy Gradient solved the LunarLander problem which Deep Q-Learning did not solve. However, it suffered from high variance problem. One may try REINFORCE with baseline Policy Gradient or actor-critic method to reduce variance during the training. I will write a blog once I implemented these new algorithm to solve the LunarLander problem.
 
 ### Notes
 
-#### 2017-4-28
+#### 2017-5-4
 
-When I was training the algorithm, I found that if the algorithm was trained for sufficient long time, the learning performance would fluctuate. Say, the learning performance reached maximum at episode 5000 for 300 episodes. Then the learning performance dropped significantly. After training for some more time, the learning performance reached maximum again for another while. This phenomenon repeated throughout the training. From my personal point of view, the optimization might have deviated from the optimal because I could often see some large loss number even in the later stage of the training. Is it because the learning rate is sometimes to big to make cause the optimization jump out of the optimal, or it is often not possible to train an Deep Q-Learning algorithm to have an absolute perfect solution, or the neural network is just not sophiscated enough? I am not able to answer this question with my current knowledge.
+I also tried REINFORCE to solve CartPole and MountainCar Problem in OpenAI Gym. 
 
-I was also suprised that if counting game frames, it also took nearly 1,000,000 game frames to reach good performance. Recall the a similar algorithm only took 600,000 game frames to have a extremely good performance in Flappy Bird game. 
+REINFORCE successfully solved CartPole in a very shot period of time. However, it still suffered from high variance problem ([example](https://gym.openai.com/evaluations/eval_juc7UYABTFmahgF80oBIA)). After tuning the model, one may get reasonable learning performance without too much variance([example](https://gym.openai.com/evaluations/eval_KINLU2HNSHiI331ecc6F8A)). The code example could be found [here](https://github.com/leimao/OpenAI_Gym_AI/tree/master/CartPole-v0/REINFORCE/2017-05-03-v1).
 
-#### 2017-4-28
+REINFORCE never solved MountainCar problem unless I cheated. This is because it is extremely difficult (probability is extremely low) to get the top of the mountain without learning thoroughly. The learning agent always get -200 reward in each episode. Therefore, the learning algorithm is useless. However, if the MountainCar problem is unwrapped, which means the game lasts forever unless the car goes to the top of the mountain, there could be appropriate gradient descent to solve the problem. Alternatively, one could engineer the reward that the API returns. By rewarding differently, say the higher the car goes the more reward it received, the car could easily learn how to climb. However, these are considered cheating because these does not provide any proof of the goodness of the learning algorithm itself.
 
-Specifically for the problem in OpenAI Gym, to achieve both learning efficiency and performance robustness, I think learning rate decay might be a good strategy. I may try it if I have chance in the future.
 
-I also found that, in addition to Q-Learning, Policy Gradient might work better. I may implement this algorithm in the future.
 
-<https://github.com/lancerts/Reinforcement-Learning>
-
-<https://gym.openai.com/evaluations/eval_9niu4HNZTgm0VLJ0b8MUtA>
