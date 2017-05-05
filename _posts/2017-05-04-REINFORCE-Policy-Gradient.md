@@ -36,7 +36,7 @@ $$
 G_t = R_{t+1} + \gamma \times R_{t+2} + \gamma^2 \times R_{t+3} + ... + \gamma^{T-t+1} \times R_{T}
 $$
 
-However, Silver's REINFORCE algorithm lacked a $ \gamma^t $ item than Sutton's algorithm. It turned out that both of the algorithms are correct. Sutton's algorithm worked for the episodic case while Silver's algorithm worked for the continuing case. The lunarlander problem is a continuing case, so I am going to implement Silver's REINFORCE algorithm without including the $ \gamma^t $ item.
+However, Silver's REINFORCE algorithm lacked a $ \gamma^t $ item than Sutton's algorithm. It turned out that both of the algorithms are correct. Sutton's algorithm worked for the episodic case maximizing the value of start state, while Silver's algorithm worked for the continuing case maximizing the averaged value. The lunarlander problem is a continuing case, so I am going to implement Silver's REINFORCE algorithm without including the $ \gamma^t $ item.
 
 ### Make OpenAI Deep REINFORCE Class
 
