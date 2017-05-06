@@ -23,7 +23,7 @@ navigation:
   url: /contact
 
 paginate:            5
-disqus:              "dukeleimao"
+disqus:              "lei_mao"
 
 # Build settings
 markdown:            kramdown
