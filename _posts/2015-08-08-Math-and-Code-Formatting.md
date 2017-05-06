@@ -9,6 +9,26 @@ image:
   credit:
   creditlink:
 ---
+
+
+
+Plenty of social media sites offer the option of embedding certain parts of their site on your own site:
+
+<script src="https://gist.github.com/LeNPaul/e4a87bba80cc97045848bae3b6d89aa2.js"></script>
+
+<br/><br/>
+<a href="https://www.goodreads.com/review/list/54220411-paul-le">View all my reviews</a>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mthtn1X4eUY" frameborder="0" allowfullscreen></iframe>
+
+<a class="twitter-grid" data-partner="tweetdeck" href="https://twitter.com/paululele/timelines/755079130027352064">New Collection</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+
+
+
 <div class="page">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/SIaFtAKnqBU?autoplay=1&start=3" frameborder="0" allowfullscreen></iframe>
 <div class="page">
