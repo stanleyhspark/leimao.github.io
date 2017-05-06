@@ -23,7 +23,7 @@ navigation:
   url: /contact
 
 paginate:            5
-disqus:              #"leimao.github.io.disqus.com"
+disqus:              "leimao.github.io.disqus.com"
 
 # Build settings
 markdown:            kramdown
