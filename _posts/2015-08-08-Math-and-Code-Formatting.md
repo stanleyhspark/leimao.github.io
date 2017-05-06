@@ -13,6 +13,18 @@ image:
 <iframe width="560" height="315" src="http://www.youtube.com/embed/PWf4WUoMXwg" frameborder="0"> </iframe>
 
 
+<div class="page">
+  <h1 class="page-title">404: Page not found</h1>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/SIaFtAKnqBU?autoplay=1&start=3" frameborder="0" allowfullscreen></iframe>
+
+  <h1>Ahhhhh!</h1>
+
+  <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="{{ site.baseurl }}/">Head back home</a> to try finding it again, or search for it on the <a href="{{ site.baseurl }}/menu/writing.html">archives page</a>.</p>
+</div>
+
+
+
 
 
 Lagrange comes out of the box with [MathJax](https://www.mathjax.org/) and syntax highlighting through [fenced code blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks/). MathJax allows you to display mathematical equations in your posts through the use of [LaTeX](http://www.andy-roberts.net/writing/latex/mathematics_1). Syntax highlighting allows you to display source code in different colors and fonts depending on what programming language is being displayed.
