@@ -91,7 +91,6 @@ class Actor():
         # Start gradient descent
         _, train_loss = self.sess.run([self.optimizer, self.loss], feed_dict = { self.tf_observation: observation, self.tf_action: action, self.tf_value: value})
 
-        # Save trained neural network routinely
         if self.time_step_total % SAVE_PERIOD == 0:
             if not os.path.exists(MODEL_DIR):
                 os.makedirs(MODEL_DIR)
@@ -187,7 +186,6 @@ class Critic():
 
         _, train_loss = self.sess.run([self.optimizer, self.loss], feed_dict = { self.tf_observation: observation, self.tf_reward: reward, self.tf_value_next: value_next})
 
-        # Save trained neural network routinely
         if self.time_step_total % SAVE_PERIOD == 0:
             if not os.path.exists(MODEL_DIR):
                 os.makedirs(MODEL_DIR)
@@ -235,9 +233,6 @@ class OpenAI_ACPG_AI():
         self.time_step = 0
         # Initialize the total number of time steps
         self.time_step_total = 0
-        # Save hyperparameters
-        self.Save_HP()
-
 
     def Load(self):
 
@@ -248,65 +243,20 @@ class OpenAI_ACPG_AI():
     def Train(self, observation, action, reward, done, observation_next):
 
         # Train the critic value network
-        train_loss_critic = self.critic.Value_FC_Train(observation = observation, reward = reward, observation_next = observation_next)
+        self.critic.Value_FC_Train(observation = observation, reward = reward, observation_next = observation_next)
         # Get the value of the current observation
         value = self.critic.Get_Value(observation = observation)
         # Train the actor policy network
-        train_loss_actor = self.actor.Policy_FC_Train(observation = observation, action = action, value = value)
-
-        self.Save_Train_Log(train_loss_actor = train_loss_actor, train_loss_critic = train_loss_critic)
-        
+        self.actor.Policy_FC_Train(observation = observation, action = action, value = value)
         if done:
             # Update episode information
-            self.Episode_Update()
             self.critic.Episode_Update()
             self.actor.Episode_Update()
-            return train_loss_actor, train_loss_critic
-
-        self.time_step += 1
-
-        return train_loss_actor, train_loss_critic
     
     def Test(self, observation):
 
         # Get action instruction from the actor
         return self.actor.Get_Action(observation = observation)
 
-    def Episode_Update(self):
 
-        # Update episode number when the new epsidoe starts
-        self.episode += 1
-        # Reset time_step to 0 when the new episode starts
-        self.time_step = 0
-
-    def Save_HP(self):
-
-        # Save hyperparameters
-        if not os.path.exists(LOG_DIR):
-            os.makedirs(LOG_DIR)
-        # Create training parameters file
-        fhand = open(LOG_DIR + 'training_parameters.txt', 'w')
-        fhand.write('RAND_SEED\t' + str(RAND_SEED) + '\n')
-        fhand.write('NUM_FEATURES\t' + str(self.num_features) + '\n')
-        fhand.write('NUM_ACTIONS\t' + str(self.actions) + '\n')
-        fhand.write('GAMMA\t' + str(GAMMA) + '\n')
-        fhand.write('LEARNING_RATE_ACTOR\t' + str(LEARNING_RATE_ACTOR) + '\n')
-        fhand.write('LEARNING_RATE_CRITIC\t' + str(LEARNING_RATE_CRITIC) + '\n')
-        fhand.write('SAVE_PERIOD\t' + str(SAVE_PERIOD) + '\n')
-        fhand.write('LOG_PERIOD\t' + str(LOG_PERIOD) + '\n')
-        fhand.close()
-
-        # Create file for training log
-        fhand = open(LOG_DIR + 'training_log.txt', 'w')
-        fhand.write('EPISODE\tTIME_STEP\tACTOR_LOSS\tCRITIC_LOSS')
-        fhand.write('\n')
-        fhand.close()
-
-    def Save_Train_Log(self, train_loss_actor, train_loss_critic):
-
-        # Save training logs
-        fhand = open(LOG_DIR + 'training_log.txt', 'a')
-        fhand.write(str(self.episode) + '\t' + str(self.time_step) + '\t' + str(train_loss_actor) + '\t' + str(train_loss_critic))
-        fhand.write('\n')
-        fhand.close()
 
