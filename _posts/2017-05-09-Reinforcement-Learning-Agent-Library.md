@@ -37,7 +37,7 @@ The [Sutton Book draft](http://incompleteideas.net/sutton/book/the-book-2nd.html
 
 I did not find a pseudocode continuing case in this draft. However, we just have to modify this pseudocode a little bit to get the pseudocode for the continuing case. To do this, simply remove everything that is related to I (see below). 
 
-![](/images/blog_images/2017-05-09-Reinforcement-Learning-Agent-Library/actor-critic_continuing.png)
+![](/images/blog_images/2017-05-09-Reinforcement-Learning-Agent-Library/actor-critic_continuing.jpg)
 
 I should also mention that the value we used to guide our gradient descent is different to what we used in REINFORCE. This value is called time-dependent error (td_error). It will not affect the direction of our gradient descent mathematically but tune the step width to make our training have less variance (in principal). Please see "REINFORCE with Baseline" in the Sutton Book draft for more details.
 
@@ -45,7 +45,7 @@ Despite the update for the critic value network, everything is very similar to t
 
 I tested the algorithm in the CartPole environment and uploaded to my GitHub:
 
-https://github.com/leimao/OpenAI/tree/master/OpenAI_Gym_Solutions/CartPole-v0/Actor-Critic/2017-05-08-v1
+<https://github.com/leimao/OpenAI/tree/master/OpenAI_Gym_Solutions/CartPole-v0/Actor-Critic/2017-05-08-v1>
 
 The learning performance of the algorithm was submitted to OpenAI Gym:
 
@@ -62,7 +62,7 @@ It should also be noted that there is slight gradient descent detail that is dif
 
 I tested the algorithm in the CartPole environment and uploaded to my GitHub:
 
-https://github.com/leimao/OpenAI/tree/master/OpenAI_Gym_Solutions/CartPole-v0/Sarsa_Actor-Critic/2017-05-09-v1
+<https://github.com/leimao/OpenAI/tree/master/OpenAI_Gym_Solutions/CartPole-v0/Sarsa_Actor-Critic/2017-05-09-v1>
 
 The learning performance of the algorithm was submitted to OpenAI Gym:
 
@@ -77,7 +77,7 @@ The [Sutton Book draft](http://incompleteideas.net/sutton/book/the-book-2nd.html
 
 I tested the algorithm in the CartPole environment and uploaded to my GitHub:
 
-https://github.com/leimao/OpenAI/tree/master/OpenAI_Gym_Solutions/CartPole-v0/Sarsa/2017-05-09-v1
+<https://github.com/leimao/OpenAI/tree/master/OpenAI_Gym_Solutions/CartPole-v0/Sarsa/2017-05-09-v1>
 
 The learning performance of the algorithm was submitted to OpenAI Gym:
 
