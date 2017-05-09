@@ -84,3 +84,7 @@ I tested the algorithm in the CartPole environment and uploaded to my GitHub:
 The learning performance of the algorithm was submitted to OpenAI Gym:
 
 <https://gym.openai.com/evaluations/eval_dgUQcF9tSiioTjqMyVOiA>
+
+### Comments
+
+All the three learning algorithms above are one-stepped. Although they have all solved the problem as is shown in OpenAI Gym evaluations, the still have very big training performance fluctuations, which makes me frustrated. One of my friend told me that I could save the model that has the best averaged training performance during the training, and use it for test. I did that and it worked well. The code is reflected in the code for Sarsa algorithm. To further solve the fluctuation issue, I may try n-stepped version of these algorithms in the future.
