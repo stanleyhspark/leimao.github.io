@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Monte Carlo Policy Gradient in OpenAI-Gym LunarLander"
-categories: journal
+categories: article
 tags: [documentation,sample]
 image:
   feature: blog_images/2017-05-04-REINFORCE-Policy-Gradient/lunarlander.png

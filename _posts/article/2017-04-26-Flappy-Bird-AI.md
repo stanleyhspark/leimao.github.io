@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Deep Q-Learning in Flappy Bird Game"
-categories: journal
+categories: article
 tags: [documentation,sample]
 image:
   feature: blog_images/2017-04-26-Flappy-Bird-AI/fb.jpg
