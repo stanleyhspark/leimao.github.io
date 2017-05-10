@@ -15,8 +15,6 @@ author:
   facebook:          
   linkedin:          "lei-mao"
 navigation:
-- title: Article
-  url: /article
 - title: Blog
   url: /blog
 - title: About
