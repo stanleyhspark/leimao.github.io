@@ -15,10 +15,12 @@ author:
   facebook:          
   linkedin:          "lei-mao"
 navigation:
-- title: About
-  url: /about
+- title: Article
+  url: /article
 - title: Blog
   url: /blog
+- title: About
+  url: /about
 - title: Contact
   url: /contact
 
