@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deep Q-Learning in OpenAI-Gym CartPole
-excerpt: "Implementation of Deep Q-Learning in OpenAI Gym environments."
+excerpt: "Implementation of Deep Q-Learning algorithm in OpenAI Gym environments."
 modified: 2017-04-26T14:17:25-04:00
 categories: article
 tags: [artificial intelligence, deep learning, reinforcement learning]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deep Q-Learning in Flappy Bird Game
-excerpt: "Implementation of Deep Q-Learning to Play Flappy Bird."
+excerpt: "Implementation of Deep Q-Learning algorithm to Play Flappy Bird."
 modified: 2017-04-26T14:17:25-04:00
 categories: article
 tags: [artificial intelligence, deep learning, reinforcement learning, computer vision]
