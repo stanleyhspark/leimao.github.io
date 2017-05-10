@@ -13,12 +13,13 @@ comments: true
 share: true
 ---
 
-
 <script type="text/x-mathjax-config">
  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
 
 ### Ideas
+
+test
 
 When I was developing learning agents using different reinforcement learning algorithms, somehow I made these learning agents into class. All these learning agents take the current environment state, the action for the current environment state, the reward got after taking the action, the next environment state, and also possible the next action for the next environment state, as input. They all output actions when given the environment state. So all these learning agents could be employed and tested in different learning enviroments, especially the OpenAI Gym environment.
 
