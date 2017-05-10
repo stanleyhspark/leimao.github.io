@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Monte Carlo Policy Gradient in OpenAI-Gym LunarLander
-excerpt: ""
+excerpt: "Implementation of Deep Monte Carlo Policy Gradient learning algorithm in OpenAI Gym environments."
 modified: 2017-05-04T14:17:25-04:00
 categories: article
 tags: [artificial intelligence, deep learning, reinforcement learning]

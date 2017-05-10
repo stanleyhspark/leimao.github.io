@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Making Reinforcement Learning Agent Library
-excerpt: ""
+excerpt: "An idea to develop a universal learning agent library; Implementation of Sarsa and Actor-Critic learning algorithm in OpenAI Gym environments."
 modified: 2017-05-09T14:17:25-04:00
 categories: article
 tags: [artificial intelligence, deep learning, reinforcement learning]
