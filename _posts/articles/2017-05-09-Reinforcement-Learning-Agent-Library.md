@@ -18,7 +18,7 @@ share: true
  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
 
-![](article_images/2017-05-09-Reinforcement-Learning-Agent-Library/rl.jpg)
+![](/images/article_images/2017-05-09-Reinforcement-Learning-Agent-Library/rl.jpg)
 
 ### Ideas
 
@@ -33,17 +33,17 @@ I just came up with this idea. So there is still no documentation of how to use 
 
 ### Actor-Critic Policy Gradient
 
-In the [REINFORCE Policy Gradient reinforcement learning algorithm](https://leimao.github.io/journal/REINFORCE-Policy-Gradient.html), we calculate the value of the next state after taking the action $G_t$ ($v_t$) from the rewards in the whole episode and use it to guide our gradient descent. So it is a statistically sampled value. One could actually construct another neural network to represent the value of the state and update it routinely until we get the a good estimate of the true value of the state. 
+In the [REINFORCE Policy Gradient reinforcement learning algorithm](https://leimao.github.io/article/REINFORCE-Policy-Gradient.html), we calculate the value of the next state after taking the action $G_t$ ($v_t$) from the rewards in the whole episode and use it to guide our gradient descent. So it is a statistically sampled value. One could actually construct another neural network to represent the value of the state and update it routinely until we get the a good estimate of the true value of the state. 
 
 The policy network output the action and use the value of the next state to guide its future actions. So the policy network is just like an actor learning how to perform. The value network use the reward after the actor taking the action to estimate the value of the state, and provide this information to the actor. So the value network is just like an critic informing whether the actor did good or bad. This circus is called "Actor-Critic" Policy Gradient method.
 
 The [Sutton Book draft](http://incompleteideas.net/sutton/book/the-book-2nd.html) provided the pseudocode for one-step Actor-Critic method. However it is episodic (see below).
 
-![](/images/blog_images/2017-05-09-Reinforcement-Learning-Agent-Library/actor-critic_episodic.png)
+![](/images/article_images/2017-05-09-Reinforcement-Learning-Agent-Library/actor-critic_episodic.png)
 
 I did not find a pseudocode continuing case in this draft. However, we just have to modify this pseudocode a little bit to get the pseudocode for the continuing case. To do this, simply remove everything that is related to I (see below). 
 
-![](/images/blog_images/2017-05-09-Reinforcement-Learning-Agent-Library/actor-critic_continuing.jpg)
+![](/images/article_images/2017-05-09-Reinforcement-Learning-Agent-Library/actor-critic_continuing.jpg)
 
 I should also mention that the value we used to guide our gradient descent is different to what we used in REINFORCE. This value is called time-dependent error (td_error). It will not affect the direction of our gradient descent mathematically but tune the step width to make our training have less variance (in principal). Please see "REINFORCE with Baseline" in the Sutton Book draft for more details.
 
@@ -55,7 +55,7 @@ I tested the algorithm in the CartPole environment and uploaded to my GitHub:
 
 The learning performance of the algorithm was submitted to OpenAI Gym:
 
-![](/images/blog_images/2017-05-09-Reinforcement-Learning-Agent-Library/performance_ac.png)
+![](/images/article_images/2017-05-09-Reinforcement-Learning-Agent-Library/performance_ac.png)
 
 <https://gym.openai.com/evaluations/eval_T51WU12pRlWydRLLI9bdg>
 
@@ -65,7 +65,7 @@ Sarsa Actor-Critic Policy Gradient is a variant of the Actor-Critic Policy Gradi
 
 The [Silver Courseware](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html) provided the pseudocode for one-step Sarsa Actor-Critic method. It is weird that he called it QAC though it does Sarsa.
 
-![](/images/blog_images/2017-05-09-Reinforcement-Learning-Agent-Library/Sarsa_AC.png)
+![](/images/article_images/2017-05-09-Reinforcement-Learning-Agent-Library/Sarsa_AC.png)
 
 It should also be noted that there is slight gradient descent detail that is different to the Actor-Critic Policy Gradient method I mentioned above. It might be tricky to understand, but it is correct. I have not thought of a straightforward way to explain this to you. So I just skipped it for now.
 
@@ -75,7 +75,7 @@ I tested the algorithm in the CartPole environment and uploaded to my GitHub:
 
 The learning performance of the algorithm was submitted to OpenAI Gym:
 
-![](/images/blog_images/2017-05-09-Reinforcement-Learning-Agent-Library/performance_sarsa_ac.png)
+![](/images/article_images/2017-05-09-Reinforcement-Learning-Agent-Library/performance_sarsa_ac.png)
 
 <https://gym.openai.com/evaluations/eval_fiRpY1pESl2KJCq9nsRq3w>
 
@@ -85,7 +85,7 @@ The basic concept of Sarsa is almost the same to the critic value network I ment
 
 The [Sutton Book draft](http://incompleteideas.net/sutton/book/the-book-2nd.html) provided the pseudocode for one-step episodic Sarsa method (see below).
 
-![](/images/blog_images/2017-05-09-Reinforcement-Learning-Agent-Library/Sarsa_episodic.png)
+![](/images/article_images/2017-05-09-Reinforcement-Learning-Agent-Library/Sarsa_episodic.png)
 
 I tested the algorithm in the CartPole environment and uploaded to my GitHub:
 
@@ -93,7 +93,7 @@ I tested the algorithm in the CartPole environment and uploaded to my GitHub:
 
 The learning performance of the algorithm was submitted to OpenAI Gym:
 
-![](/images/blog_images/2017-05-09-Reinforcement-Learning-Agent-Library/performance_sarsa.png)
+![](/images/article_images/2017-05-09-Reinforcement-Learning-Agent-Library/performance_sarsa.png)
 
 <https://gym.openai.com/evaluations/eval_dgUQcF9tSiioTjqMyVOiA>
 
