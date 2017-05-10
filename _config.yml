@@ -37,7 +37,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 # Site owner
 owner:
   name: Lei Mao
-  avatar: Lei-Bio-Large.jpg
+  avatar: author_images/Lei-Bio-Large.jpg
   email: dukeleimao@gmail.com
   disqus-shortname: leimao-github-io
   twitter: #username
