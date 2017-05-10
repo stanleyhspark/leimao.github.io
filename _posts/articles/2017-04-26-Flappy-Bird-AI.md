@@ -7,6 +7,7 @@ categories: article
 tags: [artificial intelligence, deep learning, reinforcement learning, computer vision]
 image:
   feature: site_logos/Logo Umbrella_Corporation.png
+  teaser: article_images/2017-04-26-Flappy-Bird-AI/fb.jpg
   credit: 
   creditlink: 
 comments: true
