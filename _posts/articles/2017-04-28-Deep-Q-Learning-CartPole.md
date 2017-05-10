@@ -3,7 +3,7 @@ layout: post
 title: Deep Q-Learning in OpenAI-Gym CartPole
 excerpt: ""
 modified: 2017-04-26T14:17:25-04:00
-categories: articles
+categories: article
 tags: [artificial intelligence, deep learning, reinforcement learning]
 image:
   feature: article_images/2017-04-28-Deep-Q-Learning-CartPole/cartpole.png

@@ -3,7 +3,7 @@ layout: post
 title: Making Reinforcement Learning Agent Library
 excerpt: ""
 modified: 2017-05-09T14:17:25-04:00
-categories: articles
+categories: article
 tags: [artificial intelligence, deep learning, reinforcement learning]
 image:
   feature: article_images/2017-05-09-Reinforcement-Learning-Agent-Library/river.jpg
@@ -18,8 +18,6 @@ share: true
 </script>
 
 ### Ideas
-
-test
 
 When I was developing learning agents using different reinforcement learning algorithms, somehow I made these learning agents into class. All these learning agents take the current environment state, the action for the current environment state, the reward got after taking the action, the next environment state, and also possible the next action for the next environment state, as input. They all output actions when given the environment state. So all these learning agents could be employed and tested in different learning enviroments, especially the OpenAI Gym environment.
 
