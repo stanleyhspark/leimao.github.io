@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Making Reinforcement Learning Agent Library"
-categories: article
+categories: journal
 tags: [documentation,sample]
 image:
   feature: blog_images/2017-05-09-Reinforcement-Learning-Agent-Library/rl_teaser.jpg
