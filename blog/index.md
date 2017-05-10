@@ -3,6 +3,10 @@ layout: page
 title: Blog
 excerpt: "An archive of blog posts sorted by date."
 search_omit: true
+image:
+  feature: mountain.jpg
+  credit: 
+  creditlink: 
 ---
 
 <ul class="post-list">
