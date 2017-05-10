@@ -6,7 +6,7 @@ modified: 2017-05-09T14:17:25-04:00
 categories: articles
 tags: [artificial intelligence, deep learning, reinforcement learning]
 image:
-  feature: article_images/2017-05-09-Reinforcement-Learning-Agent-Library/rl_teaser.jpg
+  feature: article_images/2017-05-09-Reinforcement-Learning-Agent-Library/river.jpg
   credit: 
   creditlink: 
 comments: true
@@ -18,8 +18,6 @@ share: true
  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
 
-![](/images/article_images/2017-05-09-Reinforcement-Learning-Agent-Library/rl.jpg)
-
 ### Ideas
 
 When I was developing learning agents using different reinforcement learning algorithms, somehow I made these learning agents into class. All these learning agents take the current environment state, the action for the current environment state, the reward got after taking the action, the next environment state, and also possible the next action for the next environment state, as input. They all output actions when given the environment state. So all these learning agents could be employed and tested in different learning enviroments, especially the OpenAI Gym environment.
@@ -28,6 +26,7 @@ I have already implemented several learning agents and prepared the correspondin
 
 I just came up with this idea. So there is still no documentation of how to use these learning agents on your own computer. The Python expert might find easy to use it because you only have to change a little bit in the raw code in order to make it work. However, the Python beginners might have to wait me to get some time to arrange these learning agents to more formal classes and write official documentations.
 
+![](/images/article_images/2017-05-09-Reinforcement-Learning-Agent-Library/rl.jpg)
 
 ### Talk About Algorithms
 
