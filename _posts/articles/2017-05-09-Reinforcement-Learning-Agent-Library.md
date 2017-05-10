@@ -79,7 +79,7 @@ The learning performance of the algorithm was submitted to OpenAI Gym:
 
 ### Sarsa
 
-The basic concept of Sarsa is almost the same to the critic value network I mentioned above, except for the sampling of action. Sarsa Actor-Critic Policy Gradient uses softmax to sample action, Sarsa here use $/epsilon$-greedy to sample action.
+The basic concept of Sarsa is almost the same to the critic value network I mentioned above, except for the sampling of action. Sarsa Actor-Critic Policy Gradient uses softmax to sample action, Sarsa here use $\epsilon$-greedy to sample action.
 
 The [Sutton Book draft](http://incompleteideas.net/sutton/book/the-book-2nd.html) provided the pseudocode for one-step episodic Sarsa method (see below).
 
