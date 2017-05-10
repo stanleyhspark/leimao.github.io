@@ -6,7 +6,7 @@ modified: 2017-05-09T14:17:25-04:00
 categories: article
 tags: [artificial intelligence, deep learning, reinforcement learning]
 image:
-  feature: article_images/2017-05-09-Reinforcement-Learning-Agent-Library/river.jpg
+  feature: site_logos/Logo Umbrella_Corporation.png
   credit: 
   creditlink: 
 comments: true

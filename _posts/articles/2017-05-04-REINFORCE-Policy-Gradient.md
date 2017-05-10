@@ -6,7 +6,7 @@ modified: 2017-05-04T14:17:25-04:00
 categories: article
 tags: [artificial intelligence, deep learning, reinforcement learning]
 image:
-  feature: article_images/2017-05-04-REINFORCE-Policy-Gradient/lunarlander.png
+  feature: site_logos/Logo Umbrella_Corporation.png
   credit: 
   creditlink: 
 comments: true
@@ -18,6 +18,8 @@ share: true
 [LunarLander](https://gym.openai.com/envs/LunarLander-v2) is one of the learning environment in OpenAI Gym. I have actually tried to solve this learning problem using Deep Q-Learning which I have successfully used to train the CartPole environment in OpenAI Gym and the Flappy Bird game. However, I was not able to get good training performance in a reasonable amount of episodes. The lunarlander controlled by AI only learned how to steadily float in the air but was not able to successfully land within the time requested.
 
 Here I am going to tackle this LunarLander problem using a new alogirthm called "REINFORCE" or "Monte Carlo Policy Gradient".
+
+![](/images/article_images/2017-05-04-REINFORCE-Policy-Gradient/lunarlander.png)
 
 ### Touch the Algorithm
 
