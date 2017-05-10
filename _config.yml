@@ -1,32 +1,59 @@
-# Site Settings
-title:               "Red Queen"
-tagline:             "A Blog from an Artificial Intelligence Maverick"
-description:
-baseurl:            
-url:                 #"https://leimao.github.io/"
-github:
-  url:               #"https://leimao.github.io/"
-author:
-  name:              "Lei Mao"
-  email:             "dukeleimao@gmail.com"
-  twitter:           
-  instagram:         
-  github:            "leimao"
-  facebook:          
-  linkedin:          "lei-mao"
-navigation:
-- title: Blog
-  url: /blog
-- title: About
-  url: /about
-- title: Contact
-  url: /contact
+# Site wide configuration
 
-paginate:            5
-disqus:              "leimao-github-io"
+title: Red Queen
+locale: en_US
+description: A Website from an Artificial Intelligence Maverick
+logo: Red-Queen-Logo.jpg
+search: true
+url: https://leimao.github.io/blogtest
 
-# Build settings
-markdown:            kramdown
-highlighter:         rouge
-permalink:           none
-gems:                [jekyll-paginate]
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  enable_coderay: false
+
+mathjax: true
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+
+# Site owner
+owner:
+  name: Lei Mao
+  avatar: Lei-Bio-Large.jpg
+  email: dukeleimao@gmail.com
+  disqus-shortname: leimao-github-io
+  twitter: #username
+  facebook: dukeleimao
+  github: leimao
+  stackexchange: #http://stackoverflow.com/users/123456/username
+  linkedin: lei-mao
+  instagram: #username
+  flickr: #username
+  tumblr: #username
+  pinterest: #username
+  weibo: #userid
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
