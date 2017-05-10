@@ -6,7 +6,7 @@ modified: 2017-04-26T14:17:25-04:00
 categories: article
 tags: [artificial intelligence, deep learning, reinforcement learning]
 image:
-  feature: article_images/2017-04-28-Deep-Q-Learning-CartPole/cartpole.png
+  feature: site_logos/Logo Umbrella_Corporation.png
   credit: 
   creditlink: 
 comments: true
@@ -18,6 +18,8 @@ share: true
 [OpenAI Gym](https://gym.openai.com/) is a platform where you could test your intelligent learning algorithm in various application, including games and virtual physics experiments. It provides APIs for all these applications for the convenience of integrating the algorithms into the application. The API is called "environment" in OpenAI Gym. On one hand, the environment only receives "action" instructions as input and outputs the observation, reward, signal of termination, and other information. On the other hand, your learning algorithm receives observation(s), reward(s), signal(s) of termination as input and outputs the action. So in principle, one can develop a learning algorithm and wrapped it into a class object. It could test all the enviroments in OpenAI Gym.
 
 Because I have already implemented a Deep Q-Learning class to learn flappy bird, I think it would be very convenient to test the Deep Q-Learning algorithm in all these environments in OpenAI Gym.
+
+![](/images/article_images/2017-04-28-Deep-Q-Learning-CartPole/cartpole.png)
 
 ### Make OpenAI Deep Q-Learning Class
 
