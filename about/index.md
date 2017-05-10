@@ -4,10 +4,12 @@ title: About the Website and the Author
 excerpt: ""
 modified: 2017-05-06T17:55:38.564948-04:00
 image:
-  feature: Lei.jpg
+  feature:
   credit: 
   creditlink: 
 ---
+
+![](/images/author_images/Lei.jpg)
 
 My name is Lei Mao. I am an incoming computer science graduate student at University of Chicago. My research interests are mainly in the areas of artificial intelligence and machine learning, and partly in the area of data science. This blog was named after the state-of-the-art artificial intelligence "[Red Queen](http://residentevil.wikia.com/wiki/Red_Queen_(Anderson))" from the film "Resident Evil", because I want to develop artificial intelligence that is highly intelligent, disciplined, and kind like human beings.
 
