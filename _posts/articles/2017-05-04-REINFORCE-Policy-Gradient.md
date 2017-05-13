@@ -19,17 +19,17 @@ share: true
 
 Here I am going to tackle this LunarLander problem using a new alogirthm called "REINFORCE" or "Monte Carlo Policy Gradient".
 
-![](/images/article_images/2017-05-04-REINFORCE-Policy-Gradient/lunarlander.png)
+![](/images/articles/2017-05-04-REINFORCE-Policy-Gradient/lunarlander.png)
 
 ### Touch the Algorithm
 
 Algorithm from [Sutton Book draft](http://incompleteideas.net/sutton/book/the-book-2nd.html)
 
-![](/images/article_images/2017-05-04-REINFORCE-Policy-Gradient/Sutton_REINFORCE.png)
+![](/images/articles/2017-05-04-REINFORCE-Policy-Gradient/Sutton_REINFORCE.png)
 
 Algorithm from [Silver Courseware](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html)
 
-![](/images/article_images/2017-05-04-REINFORCE-Policy-Gradient/Silver_REINFORCE.png)
+![](/images/articles/2017-05-04-REINFORCE-Policy-Gradient/Silver_REINFORCE.png)
 
 Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing.
 
@@ -62,11 +62,11 @@ RAND_SEED = 0 # random seed
 
 Before Training:
 
-![](/images/article_images/2017-05-04-REINFORCE-Policy-Gradient/episode_0.gif)
+![](/images/articles/2017-05-04-REINFORCE-Policy-Gradient/episode_0.gif)
 
 After Training:
 
-![](/images/article_images/2017-05-04-REINFORCE-Policy-Gradient/episode_3000.gif)
+![](/images/articles/2017-05-04-REINFORCE-Policy-Gradient/episode_3000.gif)
 
 OpenAI Gym Evaluation
 
@@ -76,7 +76,7 @@ Solved after 1476 episodes. Best 100-episode average reward was 203.29 ± 4.98.
 
 This algorithm did solve the problem as OpenAI Gym requested. However, it suffered from high vairance problem. I tried to tune the hyperparameters and change the size of neural network. But this did not help significantly.
 
-![](/images/article_images/2017-05-04-REINFORCE-Policy-Gradient/training_record_lunarlander.jpeg)
+![](/images/articles/2017-05-04-REINFORCE-Policy-Gradient/training_record_lunarlander.jpeg)
 
 ### Links to Github
 

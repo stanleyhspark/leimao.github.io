@@ -19,7 +19,7 @@ share: true
 
 Because I have already implemented a Deep Q-Learning class to learn flappy bird, I think it would be very convenient to test the Deep Q-Learning algorithm in all these environments in OpenAI Gym.
 
-![](/images/article_images/2017-04-28-Deep-Q-Learning-CartPole/cartpole.png)
+![](/images/articles/2017-04-28-Deep-Q-Learning-CartPole/cartpole.png)
 
 ### Make OpenAI Deep Q-Learning Class
 
@@ -83,11 +83,11 @@ EXPLORATION_TIME = 10000 # time steps used for decaying epsilon during training 
 
 Before Training:
 
-![](/images/article_images/2017-04-28-Deep-Q-Learning-CartPole/episode_0.gif)
+![](/images/articles/2017-04-28-Deep-Q-Learning-CartPole/episode_0.gif)
 
 After Training:
 
-![](/images/article_images/2017-04-28-Deep-Q-Learning-CartPole/episode_27000.gif)
+![](/images/articles/2017-04-28-Deep-Q-Learning-CartPole/episode_27000.gif)
 
 OpenAI Gym Evaluation
 
