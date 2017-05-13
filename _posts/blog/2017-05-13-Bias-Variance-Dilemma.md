@@ -27,7 +27,7 @@ Unfortunately, although the book is overall a good book that covers most of fund
 
 ### Reading Materials
 
-After doing multiple rounds of google searches, I think the combination of these two materials are the most easy to understand. I have annotated them in the pdf file for clarity. After reading both of them, I think you will fully understand what is bias and variance and their relashionships. This [stackflow answer](https://math.stackexchange.com/questions/676599/expected-value-of-an-expected-value) might also be helpful if you have some troubles reading the derivation. I personally do not recommend the Wikipedia one by the way, though it seems to be correct.
+After doing multiple rounds of google searches, I think the combination of these two materials are the most easy to understand. I have annotated them in the pdf file for clarity. After reading both of them, I think you will fully understand what is bias and variance and their relashionships. This [stackflow answer](https://math.stackexchange.com/questions/1654230/confused-about-meaning-of-a-expectation-of-a-function) might also be helpful if you have some troubles reading the derivation. I personally do not recommend the Wikipedia one by the way, though it seems to be correct.
 
 [Material 1](/downloads/blog/2017-05-13-Bias-Variance-Dilemma/BiasVariance_1.pdf)
 
