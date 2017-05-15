@@ -27,6 +27,7 @@ The perceptron convergence theorem basically states that the perceptron learning
 
 \\(\gamma = \theta^T\\)
 
+\\(\gamma = {\theta}^{*}\\)
 
 
 
