@@ -21,7 +21,11 @@ In case you forget the perceptron learning algorithm, you may find it [here](/do
 
 
 Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing.
-\\(\gamma\\)\\(\left|\left|\frac{1}{2}\right|\right|\\)\\(\left|\left|\{x}\right|\right|\\)\\(\left|\left|\{x}\right|\right| < R\\)
+\\(\left|\left|\{x}\right|\right| < R\\)
+
+
+Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing.\\(\left|\left|\{x}\right|\right| < R\\)
+
 
 fsadfadf, \\(\left|\left|\{x}\right|\right| < R\\)
 
