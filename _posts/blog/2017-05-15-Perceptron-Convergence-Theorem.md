@@ -32,3 +32,8 @@ fsadfadf, \\(\left|\left|\{x}\right|\right| < R\\)
 asdfadsf\\(\left|\left|\{x}\right|\right| < R\\)
 
 The perceptron convergence theorem basically states that the perceptron learning algorithm converges in finite number of steps, given a linearly separable dataset. More precisely, if for each data point x, \\(\left|\left|\{x}\right|\right| < R\\),
+
+
+
+Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing.
+\\(\left|\left|\{x}\right|\right| < R\\)
