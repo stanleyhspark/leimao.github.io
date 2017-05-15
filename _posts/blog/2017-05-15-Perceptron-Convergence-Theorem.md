@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Understand Bias-Variance Dilemma with Intuition and Math
+title: Comprehensive Proof of Perceptron Convergence Theorem
 excerpt: "Mathematical derivation of bias-variance relationship"
 modified: 2017-05-13T14:17:25-04:00
 categories: blog
-tags: [Machine Learning, Regression]
+tags: [Machine Learning]
 image:
   feature: site_logos/Logo Umbrella_Corporation.png
   credit: 
