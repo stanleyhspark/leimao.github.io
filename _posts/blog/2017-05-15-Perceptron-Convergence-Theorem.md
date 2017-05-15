@@ -27,6 +27,7 @@ It should be noted that mathematically \\( \frac{\gamma}{\|\theta^*\|^2} \\) is 
 
 
 
-In some materials, for simplicity, someone added assumption without generality that the weight of separate hyperplane is a unit vector ((\\ \\|\theta\\|^2 = 1 \\)). So in this way \\( \gamma = d \\) and one could claim that the physical meaning of \\( \gamma \\) is the the distance of the closest datapoint to the linear separate hyperplane. However, sometimes people ignored this assumption and claim \\( \gamma \\) is the the distance of the closest datapoint to the linear separate hyperplane. That was wrong.
+In some materials, for simplicity, someone added assumption without generality that the weight of separate hyperplane is a unit vector (\\ \|\theta\|^2 = 1 \\). So in this way \\( \gamma = d \\) and one could claim that the physical meaning of \\( \gamma \\) is the the distance of the closest datapoint to the linear separate hyperplane. However, sometimes people ignored this assumption and claim \\( \gamma \\) is the the distance of the closest datapoint to the linear separate hyperplane. That was wrong.
 
 The comprehensive correct proof could be found [here](/downloads/blog/2017-05-15-Perceptron-Convergence-Theorem/perceptron_convergence_theorem.pdf).
+qqq
