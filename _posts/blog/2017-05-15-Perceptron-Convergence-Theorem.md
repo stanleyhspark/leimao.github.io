@@ -30,26 +30,3 @@ It should be noted that mathematically \\(\frac{\gamma}{\|\|\theta^{*}\|\|^2}\\)
 In some materials, for simplicity, someone added assumption without generality that the weight of separate hyperplane is a unit vector (\\(\|\|\theta\|\|^2 = 1\\)). So in this way \\(\gamma = d\\) and one could claim that the physical meaning of \\(\gamma\\) is the the distance of the closest datapoint to the linear separate hyperplane. However, sometimes people ignored this assumption and claim \\(\gamma\\) is the the distance of the closest datapoint to the linear separate hyperplane. That was wrong.
 
 The comprehensive correct proof could be found [here](/downloads/blog/2017-05-15-Perceptron-Convergence-Theorem/perceptron_convergence_theorem.pdf).
-2333
-
-lei has \\(\bf{x}\\)
-
-lei has \\(\bf{x} = x\\)
-
-lei has \\(\mathbf{x} = x\\)
-
-lei has \\(\bm{x} = x\\)
-
-2333
-
-\\(\gamma = {(\theta^{*})}^T\mathbf{x}_{\text{closest}}\\) where \\(\mathbf{x}_{\text{closest}}\\) is the data point that is the closest to the linear separate hyperplane. 
-
-
-asdfasd \\(\gamma = \theta^{*T}\mathbf{x}_{\text{closest}}\\) fdsa
-f
-fasdf \\(\gamma = {\theta^{*T}}{\mathbf{x}_{\text{closest}}}\\) dfasdf
-
-
-asdfasd \\(\gamma = {(\theta^{*})}^T\mathbf{x}_{\text{closest}}\\) fdsa
-
-qq \\(\mathbf{x}_{\text{closest}}\\)
