@@ -23,7 +23,7 @@ In case you forget the perceptron learning algorithm, you may find it [here](/do
 
 The perceptron convergence theorem basically states that the perceptron learning algorithm converges in finite number of steps, given a linearly separable dataset. More precisely, if for each data point x, \\(\\|\mathbf{x}\\| < R\\) where \\(R\\) is certain constant number,  \\(\gamma = {(\theta^{*})}^T\mathbf{x}_{\text{closest}}\\) where \\(\mathbf{x}_{\text{closest}}\\) is the data point that is the closest to the linear separate hyperplane. 
 
-It should be noted that mathematically \\(\frac{\gamma}{\\|\theta^{*}\\|^2}\\) is the distance \\(d\\) of the closest datapoint to the linear separate hyperplane (it could be negative). The number of steps is bounded by \\(\frac{R^{2}{\theta^{*}}^{2}}{\gamma^2}\\) or \\(\frac{R^{2}}{d^2}\\).
+It should be noted that mathematically \\(\frac{\gamma}{{\\|\theta^{*}\\|}^{2}}}\\) is the distance \\(d\\) of the closest datapoint to the linear separate hyperplane (it could be negative). The number of steps is bounded by \\(\frac{R^{2}{\theta^{*}}^{2}}{\gamma^2}\\) or \\(\frac{R^{2}}{d^2}\\).
 
 It should be noted that mathematically \\(\frac{\gamma}{\\|\theta^{*}\\|^2}\\) is the distance \\(d\\) of the closest datapoint to the linear separate hyperplane (it could be negative). The number of steps is bounded by \\(\frac{R^{2}\theta^{2}}{\gamma^2}\\) or \\(\frac{R^{2}}{d^2}\\).
 
@@ -36,3 +36,6 @@ ddd \\(\frac{\gamma}{\|\theta^{*}\|^2}\\)
 
 ddd \\(\frac{\gamma}{\\|\theta^{*}\\|^2}\\)
 bbbb
+
+
+\frac{\gamma}{{\\|\theta^{*}\\|}^{2}}
