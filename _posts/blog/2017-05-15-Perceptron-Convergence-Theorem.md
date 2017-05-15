@@ -27,7 +27,7 @@ The perceptron convergence theorem basically states that the perceptron learning
 
 \\(\gamma = \theta^T\\)
 
-\\(\gamma = ({\theta}^{*})^{T}x_{closest}\\) where \\(x_{closest}\\) is the data point that is the closest to the linear separate hyperplane, and \\({\theta}^{*}\\) is the weights of the hyperplane.
+\\(\gamma = \({\theta}^{*}\)^{T}x_{closest}\\) where \\(x_{closest}\\) is the data point that is the closest to the linear separate hyperplane, and \\({\theta}^{*}\\) is the weights of the hyperplane.
 
 
 
