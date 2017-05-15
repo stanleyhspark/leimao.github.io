@@ -25,3 +25,6 @@ The perceptron convergence theorem basically states that the perceptron learning
 
 aaa \\( \gamma = {(\theta^{*})}^T\mathbf{x}_{\text{closest}} \\) where \\( \mathbf{x}_{\text{closest}} \\) is the data point that is the closest to the linear separate hyperplane. 
 
+$\gamma = {(\theta^{*})}^T\mathbf{x}_{\text{closest}}$
+
+$$\gamma = {(\theta^{*})}^T\mathbf{x}_{\text{closest}}$$
