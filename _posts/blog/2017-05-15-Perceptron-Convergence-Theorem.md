@@ -64,36 +64,3 @@ Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) i
 
 
 
-
-
-Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering: 
-\\[ \frac{1}{n^{2}} \\]
-
-
-sdfsdf\\(\||x\||\\)
-sdfsdf\\(\|\|x\|\|\\)
-sdfsdf\\(\|\|{sdfsadf}\|\|\\)
-
-
-Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering: \\[ \frac{1}{n^{2}} \\]
-
-Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering: \\( \frac{1}{n^{2}} \\)
-
-sdfsaf
-
-
-Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing.\\({\left|\left|\{x}\right|\right| < R}\\)
-
-Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing.\\(\left|\left|\{x}\right|\right| = R\\)
-
-
-fsadfadf, \\(\log\left|x\right|\left|y\right|b\\)
-
-
-
-The perceptron convergence theorem basically states that the perceptron learning algorithm converges in finite number of steps, given a linearly separable dataset. More precisely, if for each data point x, \\(\left|\left|\{x}\right|\right| < R\\),
-
-
-
-Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing.
-\\(\left|\left|\{x}\right|\right| < R\\)
