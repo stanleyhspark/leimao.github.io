@@ -33,4 +33,6 @@ aaa $\gamma = {(\theta^{*})}^T\mathbf{x}_{\text{closest}}$ where \\( \mathbf{x}_
 
 $\gamma = {(\theta^{*})}^T\mathbf{x}_{\text{closest}}$
 
+\\( \gamma = {(\theta^{*})}^T\mathbf{x}_{\text{closest}} \\)
+
 fdadsf $$\gamma = {(\theta^{*})}^T\mathbf{x}_{\text{closest}}$$
