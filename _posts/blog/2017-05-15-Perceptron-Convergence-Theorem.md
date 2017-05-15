@@ -19,9 +19,29 @@ I was reading the perceptron convergence theorem, which is a proof for the conve
 
 In case you forget the perceptron learning algorithm, you may find it [here](/downloads/blog/2017-05-15-Perceptron-Convergence-Theorem/perceptron_learning_algorithm.pdf).
 
-sdfsdf\\(\||x\||\\)
-sdfsdf\\(\|\|x\|\|\\)
-sdfsdf\\(\|\|{sdfsadf}\|\|\\)
+The perceptron convergence theorem basically states that the perceptron learning algorithm converges in finite number of steps, given a linearly separable dataset. More precisely, if for each data point x, \\(\|\|{\bf{x}}\|\| < R\\) where \\(R\\) is certain constant number,
+
+
+
+and \\(\gamma = {{\theta}^{*}}^{T}x_{closest}\\) where \\(x_{closest}\\) is the data point that is the closest to the linear separate hyperplane, and \\({\theta}^{*}\\) is the weights of the hyperplane. 
+
+
+
+
+
+
+
+
+Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing. \\(\|\|{\bf{x}}\|\| < R\\)
+
+
+
+
+
+
+
+
+
 
 
 Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing. \\(\|\|{x}\|\| < R\\)
