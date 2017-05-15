@@ -23,7 +23,7 @@ The perceptron convergence theorem basically states that the perceptron learning
 
 
 
-aaa
+aaa\\(\gamma = {\theta}^{*T}x_{closest}\\)
 
 \\(\gamma = {\theta}^{T}\\)
 
