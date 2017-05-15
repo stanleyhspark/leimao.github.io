@@ -40,3 +40,5 @@ pppg \\(\frac{\gamma}{\\|\theta^{\ast}\\|^2}\\)
 
 
 ssa (\\ \\|\gamma^{\ast}\\|^2 = 1 \\)
+
+ppg\\( \\|\theta^{\ast}\\|^{2} \\)
