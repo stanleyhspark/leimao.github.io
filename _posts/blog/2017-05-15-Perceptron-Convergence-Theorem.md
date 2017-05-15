@@ -30,6 +30,8 @@ Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block
 
 Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering: \\( \frac{1}{n^{2}} \\)
 
+sdfsaf
+
 
 Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing.\\({\left|\left|\{x}\right|\right| < R}\\)
 
