@@ -29,6 +29,9 @@ The perceptron convergence theorem basically states that the perceptron learning
 
 \\(\frac{1}{(1+x)^2}\\)
 
+\\(\frac{1}{{\theta}^2}\\)
+
+
 aaa\\(\gamma = {\theta}^{*T}x_{closest}\\)
 
 \\(\gamma = {\theta}^{T}\\)
