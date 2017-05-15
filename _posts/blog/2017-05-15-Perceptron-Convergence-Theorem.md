@@ -26,6 +26,8 @@ sdfsdf\\(\|\|{sdfsadf}\|\|\\)
 
 Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing. \\(\|\|{x}\|\| < R\\)
 
+Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing. \\(\|\|\bf{x}\|\| < R\\)
+
 Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing. \\(\|\|\bold{x}\|\| < R\\)
 
 Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing. \\(\|\|\bs{x}\|\| < R\\)
