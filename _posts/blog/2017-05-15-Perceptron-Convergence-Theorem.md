@@ -41,3 +41,8 @@ lei has \\(\mathbf{x} = x\\)
 lei has \\(\bm{x} = x\\)
 
 2333
+
+
+\\(\gamma = \theta^{*T}\mathbf{x}_{\text{closest}}\\)
+
+\\(\gamma = {\theta^{*T}}{\mathbf{x}_{\text{closest}}}\\)
