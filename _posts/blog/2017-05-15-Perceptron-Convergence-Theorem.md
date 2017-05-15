@@ -35,3 +35,7 @@ The comprehensive correct proof could be found [here](/downloads/blog/2017-05-15
 lei has \\(\bf{x}\\)
 
 lei has \\(\bf{x} = x\\)
+
+lei has \\(\mathbf{x} = x\\)
+
+lei has \\(\bm{x} = x\\)
