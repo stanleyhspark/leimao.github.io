@@ -43,6 +43,9 @@ lei has \\(\bm{x} = x\\)
 2333
 
 
-\\(\gamma = \theta^{*T}\mathbf{x}_{\text{closest}}\\)
+asdfasd \\(\gamma = \theta^{*T}\mathbf{x}_{\text{closest}}\\) fdsa
+f
+fasdf \\(\gamma = {\theta^{*T}}{\mathbf{x}_{\text{closest}}}\\) dfasdf
 
-\\(\gamma = {\theta^{*T}}{\mathbf{x}_{\text{closest}}}\\)
+
+asdfasd \\(\gamma = {(\theta^{*})}^T\mathbf{x}_{\text{closest}}\\) fdsa
