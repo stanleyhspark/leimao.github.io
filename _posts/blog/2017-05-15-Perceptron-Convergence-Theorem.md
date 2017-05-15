@@ -28,4 +28,4 @@ The perceptron convergence theorem basically states that the perceptron learning
 
 
 
-and \\(\gamma = ({\theta}^{*})^{T}x_{closest}\\) where \\(x_{closest}\\) is the data point that is the closest to the linear separate hyperplane, and \\({\theta}^{*}\\) is the weights of the hyperplane. It should be noted that mathematically \\(\frac{\gamma}{\left\|left|{{\theta}^{*}}\right\|right|^2}\\) is the distance \\(d\\)of the closest datapoint to the linear separate hyperplane. The number of steps is bounded by
+and \\(\gamma = {\theta}^{*}^{T}x_{closest}\\) where \\(x_{closest}\\) is the data point that is the closest to the linear separate hyperplane, and \\({\theta}^{*}\\) is the weights of the hyperplane. It should be noted that mathematically \\(\frac{\gamma}{\left\|left|{{\theta}^{*}}\right\|right|^2}\\) is the distance \\(d\\)of the closest datapoint to the linear separate hyperplane. The number of steps is bounded by
