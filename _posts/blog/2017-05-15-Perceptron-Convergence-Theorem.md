@@ -24,6 +24,6 @@ Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) i
 \\(\gamma\\)
 
 
-The perceptron convergence theorem basically states that the perceptron learning algorithm converges in finite number of steps, given a linearly separable dataset. More precisely, if for each data point x, \\(|x| < R)\\, and \\(\gamma = (\theta^*)^Tx_{closest})\\ where \\(x_{closest}\\) is the data point that is the closest to the linear separate hyperplane, and \\(\theta^*\\) is the weights of the hyperplane. It should be noted that mathematically \\(\gamma\frac{|\theta^*|^2}\\) is the distance \\(d\\)of the closest datapoint to the linear separate hyperplane. The number of steps is bounded by \\(R^2{|\theta^*|^2}\frac{\gamma}^2\\) or \\(R^2\fracd^2\\).
+The perceptron convergence theorem basically states that the perceptron learning algorithm converges in finite number of steps, given a linearly separable dataset. More precisely, if for each data point x, \\(|x| < R\\), and \\(\gamma = (\theta^*)^Tx_{closest}\\) where \\(x_{closest}\\) is the data point that is the closest to the linear separate hyperplane, and \\(\theta^*\\) is the weights of the hyperplane. It should be noted that mathematically \\(\gamma\frac{|\theta^*|^2}\\) is the distance \\(d\\)of the closest datapoint to the linear separate hyperplane. The number of steps is bounded by \\(R^2{|\theta^*|^2}\frac{\gamma}^2\\) or \\(R^2\fracd^2\\).
 
 
