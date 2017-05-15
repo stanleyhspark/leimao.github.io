@@ -17,46 +17,12 @@ share: true
 
 I was reading the perceptron convergence theorem, which is a proof for the convergence of perceptron learning algorithm, in the book "Machine Learning - An Algorithmic Perspective" 2nd Ed. I found the authors made some error in the mathmatical derivation by introducing some unstated assumptions. Obviously, the author was looking at the materials from multiple different sources but did not generalize it very well to match his proceeding writings in the book. I then tried to look up the right derivation on the internet, and I found that most of the materials includes too many assumptions that did not generalize the theorem very well. I finally found one from the MIT opencourse and I think this is the best one I was looking for.
 
+### Mathematical Proof and Caveats
+
 In case you forget the perceptron learning algorithm, you may find it [here](/downloads/blog/2017-05-15-Perceptron-Convergence-Theorem/perceptron_learning_algorithm.pdf).
 
-The perceptron convergence theorem basically states that the perceptron learning algorithm converges in finite number of steps, given a linearly separable dataset. More precisely, if for each data point x, \\(\|\|{\bf{x}}\|\| < R\\) where \\(R\\) is certain constant number, \\(\gamma = {\theta}^{*T}x_{\text{closest}}\\) where \\(x_{\text{closest}}\\) is the data point that is the closest to the linear separate hyperplane.
+The perceptron convergence theorem basically states that the perceptron learning algorithm converges in finite number of steps, given a linearly separable dataset. More precisely, if for each data point x, \\(\|\|{\bf{x}}\|\| < R\\) where \\(R\\) is certain constant number, \\(\gamma = {\theta}^{*T}x_{\text{closest}}\\) where \\(x_{\text{closest}}\\) is the data point that is the closest to the linear separate hyperplane. It should be noted that mathematically \\(\frac{\gamma}{\|\|\theta^*\|\|^2}\\) is the distance \\(d\\) of the closest datapoint to the linear separate hyperplane (it could be negative). The number of steps is bounded by \\(\frac{R^{2}\theta^{2}}{\gamma^2}\\) or \\(\frac{R^{2}}{d^2}\\).
 
+In some materials, for simplicity, someone added assumption without generality that the weight of separate hyperplane is a unit vector (\\(\|\|\theta\|\|^2 = 1\\)). So in this way \\(\gamma = d\\) and one could claim that the physical meaning of \\(\gamma\\) is the the distance of the closest datapoint to the linear separate hyperplane. However, sometimes people ignored this assumption and claim \\(\gamma\\) is the the distance of the closest datapoint to the linear separate hyperplane. That was wrong.
 
-It should be noted that mathematically \\(\frac{\gamma}{\|\|\theta^*\|\|^2}\\) is the distance \\(d\\) of the closest datapoint to the linear separate hyperplane. The number of steps is bounded by \\(\frac{R^{2}\theta^{2}}{\gamma^2}\\) or \\(\frac{R^{2}}{d^2}\\).
-
-
-
-\\(\frac{1}{1+x}\\)
-
-\\(\frac{1}{1+x^2}\\)
-
-\\(\frac{1}{(1+x)^2}\\)
-
-\\(\frac{1}{\theta^2}\\)
-
-\\(\frac{1}{\|\|\theta\|\|^2}\\)
-
-
-aaa\\(\gamma = {\theta}^{*T}x_{closest}\\)
-
-\\(\gamma = {\theta}^{T}\\)
-
-\\(\gamma = {{\theta}}^{T}\\)
-
-\\(\gamma = \theta^T\\)
-
-\\(\gamma = {\theta}^{*}x_{closest}\\)
-
-\\(\gamma = {\theta}^{*T}x_{closest}\\)
-
-\\(\gamma = {\theta}^{*}x_{closest}\\)
-
-\\(\gamma = {\theta}^{*T}x_{closest}\\)
-
-\\(\gamma = {\theta}^{*}^{T}x_{closest}\\) where \\(x_{closest}\\) is the data point that is the closest to the linear separate hyperplane, and \\({\theta}^{*}\\) is the weights of the hyperplane.
-
-
-
-\\(\gamma = \{\theta}^{*}^{T}x_{closest}\\) where \\(x_{closest}\\) is the data point that is the closest to the linear separate hyperplane, and \\({\theta}^{*}\\) is the weights of the hyperplane.
-
-x_{\text{closest}}
+The comprehensive correct proof could be found [here](/downloads/blog/2017-05-15-Perceptron-Convergence-Theorem/perceptron_convergence_theorem.pdf).
