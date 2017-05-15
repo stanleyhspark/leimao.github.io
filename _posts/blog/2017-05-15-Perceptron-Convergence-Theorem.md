@@ -35,3 +35,5 @@ The comprehensive correct proof could be found [here](/downloads/blog/2017-05-15
 
 
 adsd (\\ \\|\theta\\|^2 \\)
+
+pppg \\(\frac{\gamma}{\\|\theta^{\ast}\\|^2}\\) 
