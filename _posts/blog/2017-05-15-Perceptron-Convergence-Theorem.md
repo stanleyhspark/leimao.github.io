@@ -27,39 +27,7 @@ The perceptron convergence theorem basically states that the perceptron learning
 
 \\(\gamma = \theta^T\\)
 
-\\(\gamma = {\theta}^{*T}x_{closest}\\)
-
-
-
-
-
-Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing. \\(\|\|{\bf{x}}\|\| < R\\)
-
-
-
-
-
-
-
-
-
-
-
-Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing. \\(\|\|{x}\|\| < R\\)
-
-Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing. \\(\|\|\bf{x}\|\| < R\\)
-
-Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing. \\(\|\|{\bf{x}}\|\| < R\\)
-
-Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing. \\(\|\|\bold{x}\|\| < R\\)
-
-Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing. \\(\|\|\bs{x}\|\| < R\\)
-
-Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing. \\(\|\|\vec{x}\|\| < R\\)
-
-
-
-
+\\(\gamma = ({\theta}^{*})^{T}x_{closest}\\) where \\(x_{closest}\\) is the data point that is the closest to the linear separate hyperplane, and \\({\theta}^{*}\\) is the weights of the hyperplane.
 
 
 
