@@ -20,4 +20,4 @@ I was reading the perceptron convergence theorem, which is a proof for the conve
 In case you forget the perceptron learning algorithm, you may find it [here](/downloads/blog/2017-05-15-Perceptron-Convergence-Theorem/perceptron_learning_algorithm.pdf).
 
 
-The perceptron convergence theorem basically states that the perceptron learning algorithm converges in finite number of steps, given a linearly separable dataset. More precisely, if for each data point x, \\(\left|\left|\{x}\right|\right| < R\\),
+The perceptron convergence theorem basically states that the perceptron learning algorithm converges in finite number of steps, given a linearly separable dataset. More precisely, if for each data point x, \\(\left|\left|{x}\right|\right| < R\\),
