@@ -21,7 +21,7 @@ In case you forget the perceptron learning algorithm, you may find it [here](/do
 
 The perceptron convergence theorem basically states that the perceptron learning algorithm converges in finite number of steps, given a linearly separable dataset. More precisely, if for each data point x, \\(\|\|{\bf{x}}\|\| < R\\) where \\(R\\) is certain constant number, \\(\gamma = {\theta}^{*T}x_{\text{closest}}\\) where \\(x_{\text{closest}}\\) is the data point that is the closest to the linear separate hyperplane.
 
-It should be noted that mathematically \\(\frac{\gamma}{{\|\|{\theta}^{*}\|\|}^{2}}\\) is the distance \\(d\\)of the closest datapoint to the linear separate hyperplane. The number of steps is bounded by
+It should be noted that mathematically \\(\frac{\gamma}{{\|\|{{\theta}^{*}}\|\|}^{2}}\\) is the distance \\(d\\)of the closest datapoint to the linear separate hyperplane. The number of steps is bounded by
 
 \\(\frac{1}{1+x}\\)
 
