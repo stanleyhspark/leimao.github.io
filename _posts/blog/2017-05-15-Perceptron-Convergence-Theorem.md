@@ -33,7 +33,7 @@ qqtttq
 The perceptron convergence theorem basically states that the perceptron learning algorithm converges in finite number of steps, given a linearly separable dataset. More precisely, if for each data point x, \\( \|\mathbf{x}\| < R \\) where \\( R \\) is certain constant number, \\( \gamma = (\theta^{*})^T{\mathbf{x}_{\text{closest}}} \\) where \\( {\mathbf{x}_{\text{closest}}} \\) is the data point that is the closest to the linear separate hyperplane. 
 
 
-The perceptron convergence theorem basically states that the perceptron learning algorithm converges in finite number of steps, given a linearly separable dataset. More precisely, if for each data point x, \\( \|\mathbf{x}\| < R \\) where \\( R \\) is certain constant number, \\( \gamma = (\theta^{*})^T x_c \\) where \\( {\mathbf{x}_{\text{closest}}} \\) is the data point that is the closest to the linear separate hyperplane. 
+The perceptron convergence theorem basically states that the perceptron learning algorithm converges in finite number of steps, given a linearly separable dataset. More precisely, if for each data point x, \\( \|\mathbf{x}\| < R \\) where \\( R \\) is certain constant number, \\( \gamma = (\theta^{*})^T \mathbf{x_c} \\) where \\( {\mathbf{x}_{\text{closest}}} \\) is the data point that is the closest to the linear separate hyperplane. 
 
 123
 
