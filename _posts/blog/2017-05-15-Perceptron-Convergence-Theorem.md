@@ -27,4 +27,4 @@ aaa \\( \gamma = {(\theta^{*})}^T\mathbf{x}_{\text{closest}} \\) where \\( \math
 
 $\gamma = {(\theta^{*})}^T\mathbf{x}_{\text{closest}}$
 
-$$\gamma = {(\theta^{*})}^T\mathbf{x}_{\text{closest}}$$
+fdadsf $$\gamma = {(\theta^{*})}^T\mathbf{x}_{\text{closest}}$$
