@@ -21,10 +21,13 @@ In case you forget the perceptron learning algorithm, you may find it [here](/do
 
 
 Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing.
-\\(\gamma\\)\\(left|frac12right|\\)
+\\(\gamma\\)\\(\left|\frac{1}{2}\right|\\)
 
-The perceptron convergence theorem basically states that the perceptron learning algorithm converges in finite number of steps, given a linearly separable dataset. More precisely, if for each data point x, \\(left|left|xright|right| < R\\), 
+The perceptron convergence theorem basically states that the perceptron learning algorithm converges in finite number of steps, given a linearly separable dataset. More precisely, if for each data point x, 
+
+
+sdfsafdasdf\\(left|left|xright|right| < R\\), 
 
 
 
-and \\(\gamma = ({\theta}^*)^Tx_{closest}\\) where \\(x_{closest}\\) is the data point that is the closest to the linear separate hyperplane, and \\({\theta}^*\\) is the weights of the hyperplane. It should be noted that mathematically \\(frac{\gamma}{left|left|{\theta}^*right|right|^2}\\) is the distance \\(d\\)of the closest datapoint to the linear separate hyperplane. The number of steps is bounded by
+and \\(\gamma = ({\theta}^*)^Tx_{closest}\\) where \\(x_{closest}\\) is the data point that is the closest to the linear separate hyperplane, and \\({\theta}^*\\) is the weights of the hyperplane. It should be noted that mathematically \\(\frac{\gamma}{left|left|{\theta}^*right|right|^2}\\) is the distance \\(d\\)of the closest datapoint to the linear separate hyperplane. The number of steps is bounded by
