@@ -19,6 +19,8 @@ I was reading the perceptron convergence theorem, which is a proof for the conve
 
 In case you forget the perceptron learning algorithm, you may find it [here](/downloads/blog/2017-05-15-Perceptron-Convergence-Theorem/perceptron_learning_algorithm.pdf).
 
+Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing. \\(\||\bold{x}\|| < R\\)
+
 Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing. \\(\||\bs{x}\|| < R\\)
 
 Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing. \\(\||\vec{x}\|| < R\\)
