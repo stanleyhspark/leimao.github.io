@@ -26,7 +26,7 @@ Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block
 \\[ \frac{1}{n^{2}} \\]
 
 
-sdfsdf\\(\left|x\right|\\)
+sdfsdf$\left|x\right|$
 
 
 Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering: \\[ \frac{1}{n^{2}} \\]
@@ -43,7 +43,7 @@ Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) i
 
 fsadfadf, \\(\log\left|x\right|\left|y\right|b\\)
 
-asdfadsf\\(\left|\left|\{x}\right|\right| < R\\)
+
 
 The perceptron convergence theorem basically states that the perceptron learning algorithm converges in finite number of steps, given a linearly separable dataset. More precisely, if for each data point x, \\(\left|\left|\{x}\right|\right| < R\\),
 
