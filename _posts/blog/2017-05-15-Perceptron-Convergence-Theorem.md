@@ -41,7 +41,7 @@ Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) i
 Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing.\\(\left|\left|\{x}\right|\right| = R\\)
 
 
-fsadfadf, \\(\left|\left|\{x}\right|\right| < R\\)
+fsadfadf, \\(\log\left|x\right|\left|y\right|b\\)
 
 asdfadsf\\(\left|\left|\{x}\right|\right| < R\\)
 
