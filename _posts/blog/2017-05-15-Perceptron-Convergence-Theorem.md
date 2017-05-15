@@ -32,4 +32,6 @@ In some materials, for simplicity, someone added assumption without generality t
 The comprehensive correct proof could be found [here](/downloads/blog/2017-05-15-Perceptron-Convergence-Theorem/perceptron_convergence_theorem.pdf).
 2333
 
-lei has \\(\vec(x)\\)
+lei has \\(\bf{x}\\)
+
+lei has \\(\bf{x} = x\\)
