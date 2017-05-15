@@ -20,14 +20,15 @@ I was reading the perceptron convergence theorem, which is a proof for the conve
 In case you forget the perceptron learning algorithm, you may find it [here](/downloads/blog/2017-05-15-Perceptron-Convergence-Theorem/perceptron_learning_algorithm.pdf).
 
 
-Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing.
-\\(\left|\left|\{x}\right|\right| < R\\)
+Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing.\\(\left|\left|\{x}\right|\right| < R\\)
 
 Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering: 
 \\[ \frac{1}{n^{2}} \\]
 
 
 Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering: \\[ \frac{1}{n^{2}} \\]
+
+Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering: \\( \frac{1}{n^{2}} \\)
 
 
 Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing.\\({\left|\left|\{x}\right|\right| < R}\\)
