@@ -21,11 +21,11 @@ In case you forget the perceptron learning algorithm, you may find it [here](/do
 
 The perceptron convergence theorem basically states that the perceptron learning algorithm converges in finite number of steps, given a linearly separable dataset. More precisely, if for each data point x, \\(\|\|{\bf{x}}\|\| < R\\) where \\(R\\) is certain constant number,
 
+\\(\gamma = {\theta}^{T}\\)
+
 \\(\gamma = {{\theta}}^{T}\\)
 
-
-
-
+\\(\gamma = \theta^T\\)
 
 
 
