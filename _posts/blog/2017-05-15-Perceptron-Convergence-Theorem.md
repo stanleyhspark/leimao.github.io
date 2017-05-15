@@ -27,6 +27,15 @@ It should be noted that mathematically \\(\frac{\gamma}{\\|\theta^{*}\\|^2}\\) i
 
 It should be noted that mathematically \\(\frac{\gamma}{\\|\theta^{*}\\|^2}\\) is the distance \\(d\\) of the closest datapoint to the linear separate hyperplane (it could be negative). The number of steps is bounded by \\(\frac{R^{2}\\|\theta^{aaa}\\|^{2}}{\gamma^2}\\) or \\(\frac{R^{2}}{d^2}\\).
 
+
+
+
+
+
+
+
+
+
 It should be noted that mathematically \\( \frac{\gamma}{\\|\theta^*\\|^2} \\) is the distance \\(d\\) of the closest datapoint to the linear separate hyperplane (it could be negative). The number of steps is bounded by \\(\frac{R^{2}\theta^{2}}{\gamma^2}\\) or \\(\frac{R^{2}}{d^2}\\).
 
 It should be noted that mathematically \\( \frac{\gamma}{\\|\theta^*\\|^2} \\) is the distance \\( d \\) of the closest datapoint to the linear separate hyperplane (it could be negative). The number of steps is bounded by \\( \frac{R^{2}\theta^*^2}{\gamma^2} \\) or \\( \frac{R^2}{d^2} \\).
