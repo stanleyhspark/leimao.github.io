@@ -36,3 +36,4 @@ The comprehensive correct proof could be found [here](/downloads/blog/2017-05-15
 a
 
 ddd \\(\frac{\gamma}{\|\theta^{*}\|^2}\\)
+ddd \\(\frac{\gamma}{\||\theta^{*}\||^2}\\)
