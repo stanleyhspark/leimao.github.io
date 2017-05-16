@@ -28,5 +28,4 @@ In some materials, for simplicity, someone added assumption without generality t
 The comprehensive correct proof could be found [here](/downloads/blog/2017-05-15-Perceptron-Convergence-Theorem/perceptron_convergence_theorem.pdf).
 
 PS: "MathJax is against humanity." and "Happy Mother's Day."
-
 ![](/images/blog/2017-05-15-Perceptron-Convergence-Theorem/mothers-day.gif)
