@@ -4,7 +4,7 @@ title: Normal Equation and Matrix Calculus
 excerpt: "Overcome the fear of doing matrix calculus."
 modified: 2017-05-16T14:17:25-04:00
 categories: blog
-tags: [Machine Learning]
+tags: [Math, Machine Learning]
 image:
   feature: site_logos/Logo Umbrella_Corporation.png
   credit: 
