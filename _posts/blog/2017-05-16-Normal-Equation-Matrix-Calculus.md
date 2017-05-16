@@ -13,7 +13,7 @@ comments: true
 share: true
 ---
 
-I thinking I am remedying some of the missing points on my way studying machine learning in these days.
+I think I am remedying some of the past missing points on my way of studying machine learning in these days.
 
 I clearly remember that when I was taking the MOOC linear regression courses, the professors did not mention too much about how to work on the derivatives of the loss function. One might simply take scalar values, instead of matrix, as an illustration of that the derivative is correct, without providing sufficient information on how to do the derivatives by hand. I have been using deep learning tools which could calculate the derivatives automatically, such as TensorFlow, for a while. I kind got used to living without doing "hard math". But somehow, I came across with the normal equation for the linear regression least-squared sum loss function, today. I have to honestly tell you that I had no idea how to calculate the derivatives for it, though my college Calculus and Linear Algebra were quite good.
 
