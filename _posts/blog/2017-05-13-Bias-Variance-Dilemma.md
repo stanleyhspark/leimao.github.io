@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Understand Bias-Variance Dilemma with Intuition and Math
-excerpt: "Mathematical derivation of bias-variance relationship"
+excerpt: "Mathematical derivation of bias-variance relationship."
 modified: 2017-05-13T14:17:25-04:00
 categories: blog
 tags: [Machine Learning, Regression]

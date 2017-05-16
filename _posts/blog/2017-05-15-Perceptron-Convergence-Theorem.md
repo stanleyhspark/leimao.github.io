@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Comprehensive Proof of Perceptron Convergence Theorem
-excerpt: "Mathematical derivation of bias-variance relationship"
+excerpt: "Perceptron learning algorithm always converges."
 modified: 2017-05-15T14:17:25-04:00
 categories: blog
 tags: [Machine Learning]
