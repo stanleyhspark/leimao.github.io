@@ -2,7 +2,7 @@
 layout: post
 title: Comprehensive Proof of Perceptron Convergence Theorem
 excerpt: "Mathematical derivation of bias-variance relationship"
-modified: 2017-05-13T14:17:25-04:00
+modified: 2017-05-15T14:17:25-04:00
 categories: blog
 tags: [Machine Learning]
 image:
@@ -27,4 +27,6 @@ In some materials, for simplicity, someone added assumption without generality t
 
 The comprehensive correct proof could be found [here](/downloads/blog/2017-05-15-Perceptron-Convergence-Theorem/perceptron_convergence_theorem.pdf).
 
-PS: "MathJax is against humanity."
+PS: "MathJax is against humanity." and "Happy Mother's Day."
+
+![](/images/blog/2017-05-15-Perceptron-Convergence-Theorem/mothers-day.gif)
