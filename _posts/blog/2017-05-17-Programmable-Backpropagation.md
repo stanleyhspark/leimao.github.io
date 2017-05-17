@@ -13,14 +13,13 @@ comments: true
 share: true
 ---
 
-Backpropagation is always one of my knowledge weaknesses in machine learning. I have understood it many times. However, I always forgot how it really works but simply remember it is basically about chain rules. I clearly remember that Andrew Ng once joked he sometimes cannot remember how backpropagation works so he often had to understand backpropagation again before he gave lectures in machine learning courses. Even if I refresh my mind by reading some related materials ([here](http://colah.github.io/posts/2015-08-Backprop/) is a very simple and good illustration about the backpropagation). 
+Backpropagation is always one of my knowledge weaknesses in machine learning. I have understood it many times. However, I always forgot how it really works but simply remember it is basically about chain rules. I clearly remember that Andrew Ng once joked he sometimes cannot remember how backpropagation works so he often had to understand backpropagation again before he gave lectures in machine learning courses. Even if I refresh my mind by reading some related materials, I never understood why such tedious and complicated calculus could be programmable in our machine learning tools when we are working on neural networks. 
 
 If you know how to calculate \\(\frac{\partial{e}}{\partial{b}}\\) for the following figure, you basically know how to do backpropagation.
 
 ![](/images/blog/2017-05-17-Programmable-Backpropagation/tree-eval-derivs.png)
 
-
-However, these materials are often over-simplified. The network they provided are not even the ordinary neural network we are using nowadays. Not even mention including the activation functions. So I never understood why such tedious and complicated calculus could be programmable in our machine learning tools when we are working on neural networks.
+[here](http://colah.github.io/posts/2015-08-Backprop/) is a very simple and good illustration about the backpropagation. However, these materials are often over-simplified. The network they provided are not even the ordinary neural network we are using nowadays. Not even mention including the activation functions. 
 
 Here, I presented the workflow of backpropagation in a neat way so that people could easily figure out the programmable logic inside the derivations. It is extremely tedious to type equations in MathJax. So I finally chose to use Word and transform the file to pdf for you guys to download. 
 
