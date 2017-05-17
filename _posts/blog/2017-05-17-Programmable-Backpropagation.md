@@ -15,7 +15,7 @@ share: true
 
 ### Backpropagation Derivation
 
-Backpropagation is always one of my knowledge weaknesses in machine learning. I have understood it many times. However, I always forgot how it really works but simply remember it is basically about chain rules. I clearly remember that Andrew Ng once joked he sometimes cannot remember how backpropagation works so he often had to understand backpropagation again before he gave lectures in machine learning courses. Even if I refresh my mind by reading some related materials, I never understood why such tedious and complicated calculus could be programmable in our machine learning tools when we are working on neural networks. 
+Backpropagation is always one of my knowledge weaknesses in machine learning. I have understood it many times. However, I always forgot how it really works but simply remember it is basically about [multivariable chain rules](https://proofwiki.org/wiki/Chain_Rule_for_Real-Valued_Functions). I clearly remember that Andrew Ng once joked he sometimes cannot remember how backpropagation works so he often had to understand backpropagation again before he gave lectures in machine learning courses. Even if I refresh my mind by reading some related materials, I never understood why such tedious and complicated calculus could be programmable in our machine learning tools when we are working on neural networks. 
 
 If you know how to calculate \\(\frac{\partial{e}}{\partial{b}}\\) in the following figure, you basically know how to do backpropagation.
 
