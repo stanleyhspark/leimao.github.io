@@ -23,7 +23,7 @@ If you know how to calculate \\(\frac{\partial{e}}{\partial{b}}\\) in the follow
 
 [Here](http://colah.github.io/posts/2015-08-Backprop/) is a very simple and good illustration about the backpropagation. However, these materials are often over-simplified. The network they provided are not even the ordinary neural network we are using nowadays. Not even mention including the activation functions. 
 
-Here, I presented the workflow of backpropagation in a neat way so that people could easily figure out the programmable logic inside the derivations. It is extremely tedious to type equations in MathJax. So I finally chose to use Word and transform the file to pdf for you guys to download. 
+Here, I presented the workflow of backpropagation in a neat way so that people could easily figure out the programmable logic inside the derivations. It is extremely tedious to type equations in MathJax. So I finally chose to use Word and transformed the file to pdf for you guys to download. 
 
 You can download my simple illustration of programmable backpropagation [<font color="red">here</font>](/downloads/blog/2017-05-17-Programmable-Backpropagation/backpropagation.pdf). 
 
@@ -31,11 +31,11 @@ Backpropagation was always like a black box when I was working on machine learni
 
 ### Backpropagation Implementation
 
-[Here](https://github.com/mnielsen/neural-networks-and-deep-learning/blob/master/src/network.py) is a code example of the neural network backpropagation. In case the author made changes or remove the contents, you may also [download](/downloads/blog/2017-05-17-Programmable-Backpropagation/neural-networks-and-deep-learning-master.zip) it from my site. The author also wrote blogs ([page 1](http://neuralnetworksanddeeplearning.com/chap2.html), [page 2](http://neuralnetworksanddeeplearning.com/chap1.html#implementing_our_network_to_classify_digits)) on the implementation of this backpropagation to solve classification problems.
+[Here](https://github.com/mnielsen/neural-networks-and-deep-learning/blob/master/src/network.py) is a code example of the neural network backpropagation. In case the author makes changes or removes the contents, you may also [download](/downloads/blog/2017-05-17-Programmable-Backpropagation/neural-networks-and-deep-learning-master.zip) it from my site. The author also wrote blogs ([page 1](http://neuralnetworksanddeeplearning.com/chap2.html), [page 2](http://neuralnetworksanddeeplearning.com/chap1.html#implementing_our_network_to_classify_digits)) on the implementation of this backpropagation to solve classification problems.
 
-Although it might twist your brain. The author's implementation has exactly the same logic to mine (He specifically used sigmoid function as activation function). The implementation was very neat, which only used Numpy. I think it would take me very long time to write this if I am going to write it myself.
+Although it might twist your brain, the author's implementation has exactly the same logic to mine (He specifically used sigmoid function as activation function and least sum-of-squares function as loss function). The implementation was very neat, which only used Numpy. I think it would take me very long time if I am going to write it myself.
 
-The key code of backpropagation are as follows:
+The key codes of backpropagation are as follows:
 
 ```python
     def update_mini_batch(self, mini_batch, eta):
@@ -100,7 +100,7 @@ def sigmoid_prime(z):
 
 ```
 
-His weights and biases were organized in this way by the way.
+His weights and biases matrices were organized in this way by the way.
 
 ```python
 class Network(object):
@@ -123,6 +123,8 @@ class Network(object):
                         for x, y in zip(sizes[:-1], sizes[1:])]
 ```
 
-I remember that when I was taking GRE test years agao. There is a topic like "human beings becomes stupid as the technology develops". I might agree with it to some extent. Using too much tools when we are coding or doing numerical analysis makes us stupid. 
+I remember that when I was taking GRE test years agao, there is a topic of "human beings becomes stupid as the technology develops". I might agree with it to some extent, because using too much tools when we are coding or doing numerical analysis makes us stupid. 
 
-I have seen many deep learning codes which only uses Numpy. I admire them very much. Although modern tools, such as Tensorflow, has its advantages other than doing the autograds, we actually over-used some of the functions. Finally the learning algorithm we developed becomes a black box, which is pretty bad. We have to keep in mind that mathematics always comes first even if we are computer scientists.
+I have seen many deep learning codes which only uses Numpy, and I really admire them very much. We are actually over-using the autograds functions in modern tools, such as Tensorflow. Finally the learning algorithm we developed becomes a black box, which is pretty bad. There are other reasons, in addition to autograds, why we are using such modern tools.
+
+We have to keep in mind that mathematics always comes first even if we are computer scientists.
