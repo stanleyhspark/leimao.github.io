@@ -27,6 +27,8 @@ Here, I presented the workflow of backpropagation in a neat way so that people c
 
 You can download my simple illustration of programmable backpropagation <font color="red">[here]</font>(/downloads/blog/2017-05-17-Programmable-Backpropagation/backpropagation.pdf). 
 
+[<font color="red">here</font>](/downloads/blog/2017-05-17-Programmable-Backpropagation/backpropagation.pdf)
+
 Backpropagation was always like a black box when I was working on machine learning tasks. I hope this materials could always remind me the mechanism of backpropagation and the importance of mathematics in computer science.
 
 ### Backpropagation Implementation
