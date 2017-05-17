@@ -23,9 +23,6 @@ If you know how to calculate \\(\frac{\partial{e}}{\partial{b}}\\) in the follow
 
 Here, I presented the workflow of backpropagation in a neat way so that people could easily figure out the programmable logic inside the derivations. It is extremely tedious to type equations in MathJax. So I finally chose to use Word and transform the file to pdf for you guys to download. 
 
-test
-[](/downloads/blog/2017-05-17-Programmable-Backpropagation/backpropagation.pdf)
-
 You can download my simple illustration of programmable backpropagation [here](/downloads/blog/2017-05-17-Programmable-Backpropagation/backpropagation.pdf). 
 
 Backpropagation was always like a black box when I was working on machine learning tasks. I hope this materials could always remind me the mechanism of backpropagation and the importance of mathematics in computer science.
