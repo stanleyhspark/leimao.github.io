@@ -15,7 +15,7 @@ share: true
 
 ### Motivation
 
-When I was working on machine learning tasks, I used to initialize the weights in my model by the default settings of the machine learning too, because I "trust" the "intelligent tool" could alway provide the best solution to this. This often worked very well, and I did not spend too much time to understand what the tool did and why it did so.
+When I was working on machine learning tasks, I used to initialize the weights in my model by the default settings of the machine learning too, because I "trust" the "intelligent tool" could always provide the best solution to this. This often worked very well, and I did not spend too much time to understand what the tool did and why it did so.
 
 ### Why the weights initialization is important?
 
