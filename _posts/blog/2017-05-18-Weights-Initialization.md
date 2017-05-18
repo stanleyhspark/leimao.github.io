@@ -41,5 +41,5 @@ For uncorrelated two ramdonly variables, \\(Var(X+Y) = Var(X) + Var(Y)\\), and \
 
 How about initialize all the weights to zero?
 
-Unfortunately, according to the backpropagation derivative update functions, there would be no update for any of the weights in the hidden layer but not the final output layer (You may check my [blog](https://leimao.github.io/blog/Programmable-Backpropagation/), [Multi-layer Perceptron on Wikipedia](https://en.wikipedia.org/wiki/Multilayer_perceptron) or any machine learning text books). You would only end up with a "single-layer" linear model that performs very bad.
+Unfortunately, according to the backpropagation derivative update functions, there would be no update for any of the weights in the hidden layers but not the final output layer (You may check my [blog](https://leimao.github.io/blog/Programmable-Backpropagation/), [Multi-layer Perceptron on Wikipedia](https://en.wikipedia.org/wiki/Multilayer_perceptron) or any machine learning text books). You would only end up with a "single-layer" linear model that performs very bad.
 
