@@ -31,13 +31,13 @@ Therefore, setting up the right weights is very important.
 
 I often saw a "gold solution" of the weights initialization on the internet, which states that "a good idea to choose initial weights of a neural network ramdonly from the range \\([-\frac{1}{\sqrt{n}}, \frac{1}{\sqrt{n}}]\\)", where n is the number of hidden nodes in the input layer. 
 
-Under the assumption "the inputs are normalized to have mean of 0 and variance (standard deviation^2) of 1", the sum of the linear addition of all the outputs from the same layer before activation would have mean of 0 and variance of \\(\frac{1}{3}\\). At this range, the derivative of activation function is in a reasonably good rance. So our learning efficiency would be good.
+Under the assumption "the inputs are normalized to have mean of 0 and variance (standard deviation^2) of 1", the sum of the linear addition of all the outputs from the same layer before activation would have mean of 0 and variance of \\(\frac{1}{3}\\). At this range, the value the derivative of activation function would be reasonable. So our learning efficiency would be good.
 
 But how did we get this? 
 
 For uncorrelated two ramdonly variables, \\(Var(X+Y) = Var(X) + Var(Y)\\), and \\(Var(XY) = Var(X)Var(Y)\\). This is always true if we have more variables (see [Variance Property on Wikipedia](https://en.wikipedia.org/wiki/Variance)). The variance of uniform distribution \\([-\frac{1}{\sqrt{n}}, \frac{1}{\sqrt{n}}]\\) is \\(\frac{1}{3n}\\) (see [Uniform Distribution Property on Wikipedia](https://en.wikipedia.org/wiki/Uniform_distribution_(continuous))). So the sum of the variances of all n nodes in the input layer would have a variance of \\(\frac{1}{3n}\times{n}=\frac{1}{3}\\). This sum also has mean of 0 (I think I do not have to explain this).
 
-### Additional Idea?
+### Additional idea?
 
 How about initialize all the weights to zero?
 
