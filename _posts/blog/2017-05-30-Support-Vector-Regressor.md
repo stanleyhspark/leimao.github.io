@@ -19,7 +19,11 @@ Support Vector Machine (SVM) is one of the most popular algorithm in machine lea
 
 ### Support Vector Machine
 
-Support vector regression has some subtle difference to support vector machine regarding their physical meanings despite the fact that their formula are quite similar. Let us take a glance at support vector machine first. Basically, for a linearly separable classification task, support vector machine finds a line or hyperplane \\( w^Tx+b = 0 \\) that maximize the "margin" from the classifier to the closest data. To express the whole idea using formula, we have an optimization problem:
+Support vector regression has some subtle difference to support vector machine regarding their physical meanings despite the fact that their formula are quite similar. Let us take a glance at support vector machine first. Basically, for a linearly separable classification task, support vector machine finds a line or hyperplane \\( w^Tx+b = 0 \\) that maximize the "margin" from the classifier to the closest data. Every thing seems to be "right". Neigher too big, nor too small. It is "the Goldilocks principle" from the fairy tale "the Goldilocks and the three bears". 
+
+![](/images/blog/2017-05-30-Support-Vector-Regressor/Goldilocks.jpg)
+
+To express the whole idea using formula, we have an optimization problem:
 
 \\( \min \frac{1}{2} \\|w\\|^2 \\) subject to \\( y^{(i)}(w^Tx^{(i)}+b)\ge1 \\) for all \\(i = 1,2, ..., n \\)
 
