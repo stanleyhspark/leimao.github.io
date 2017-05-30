@@ -19,7 +19,7 @@ Support Vector Machine (SVM) is one of the most popular algorithm in machine lea
 
 ### Support Vector Machine
 
-To understand support vector regression, you would have to first understand support vector machine. Basically, support vector machine finds a line or hyperplane that maximize the "margin" from the classifier to the closest data. To express the whole idea using formula, we have an optimization problem:
+To understand support vector regression, you would have to first understand support vector machine. Basically, for a linearly separable classification task, support vector machine finds a line or hyperplane that maximize the "margin" from the classifier to the closest data. To express the whole idea using formula, we have an optimization problem:
 
 \\( \min \frac{1}{2} \\|w\\|^2 \\) subject to \\( y^{(i)}(w^Tx^{(i)}+b)\ge1 \\) for all \\(i = 1,2, ..., n \\)
 
@@ -28,6 +28,10 @@ Here, the "margin" from the classifier to the data is \\( \frac{1}{\\|w\\|^2} \\
 ![](/images/blog/2017-05-30-Support-Vector-Regressor/svm.svg)
 The red line H3 is the support vector machine classifier that maximize the "margin". It should be noted that the contrain garantees that the classifier classify the data points correctly with the miximized "margin".
 
-For more details of support vector machine, and how to solve the above formulated optimization problem, you may read the support vector machine [course material](/downloads/blog/2017-05-30-Support-Vector-Regressor/cs229-notes3.pdf) from Andrew Ng's Stanford CS229 Machine Learning course.
+For more details of support vector machine, how to solve the above formulated optimization problem, non-linearly separable classification problem, and the kernel trick, you may read the support vector machine [course material](/downloads/blog/2017-05-30-Support-Vector-Regressor/cs229-notes3.pdf) from Andrew Ng's Stanford CS229 Machine Learning course.
 
 ### Support Vector Regression
+
+[The simplest version of support vector regression](https://en.wikipedia.org/wiki/Support_vector_machine#Regression) is an similar optimization problem formulated below:
+
+\\( \min \frac{1}{2} \\|w\\|^2 \\) subject to \\( \|y^{(i)} - (w^Tx^{(i)}+b)\| \le \epsilon \\) for all \\(i = 1,2, ..., n \\)
