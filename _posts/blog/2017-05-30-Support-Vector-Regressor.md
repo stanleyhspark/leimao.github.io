@@ -52,4 +52,4 @@ There are more parameters in the model. Sometimes, the parameters are very criti
 I only changed C value in the model in the default linear support vector regressor. However, the performance is still far from satisfying compared to the ordinary simple linear regression model. One have to further optimize the \\( \epsilon \\) value in order to achieve good performance. The code for the above support vector regressor model is [here](/downloads/blog/2017-05-30-Support-Vector-Regressor/SVR.ipynb).
 
 
-A good idea might be doing validation using validation dataset during the model optimization.
+A good idea to determine the right parameters to use might be doing validation using validation dataset during the model optimization.
