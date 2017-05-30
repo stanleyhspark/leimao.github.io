@@ -43,4 +43,13 @@ For more details of support vector machine, how to solve the above formulated op
 
 So, how do we understand this?
 
-There is no "maximization of margin", and the margin \\( \frac{1}{\\|w\\|^2} \\) in support vector classification <font color="red">does not</font> have any physical meaning in support vector regression. The purpose of the minimization of \\( \frac{1}{2} \\|w\\|^2 \\) is only to have small weights preventing overfitting. By choosing different \\( \epsilon \\), you may or may not get a regressor. To allow some deviation, one may expand this optimization formula further. Here are some handouts ([material 1](https://www.mathworks.com/help/stats/understanding-support-vector-machine-regression.html?requestedDomain=www.mathworks.com), [material 2](/downloads/blog/2017-05-30-Support-Vector-Regressor/support-vector-regressor.pdf)) regarding support vector regression.
+There is no "maximization of margin", and the margin \\( \frac{1}{\\|w\\|^2} \\) in support vector classification <font color="red">does not</font> have any physical meaning in support vector regression. The purpose of the minimization of \\( \frac{1}{2} \\|w\\|^2 \\) is only to have small weights preventing overfitting. By choosing different \\( \epsilon \\), you may or may not get a regressor. Because of this instability, there are no implementation of this form of the algorithm in the scikit. To allow some deviation, one may expand this optimization formula further. Here are some handouts ([material 1](https://www.mathworks.com/help/stats/understanding-support-vector-machine-regression.html?requestedDomain=www.mathworks.com), [material 2](/downloads/blog/2017-05-30-Support-Vector-Regressor/support-vector-regressor.pdf)) regarding support vector regression, which I am not going to further discuss here. Because the purpose of this blog article is only to compare the intuition difference between support vector machine and support vector regression. My personal understanding is that their name is similar just because they happen to have a similar optimization fomular. However, there is no too much internal logic connection between them. 
+
+There are more parameters in the model. Sometimes, the parameters are very critical for fitting the data to the model, compared to some simple models. 
+
+![](/images/blog/2017-05-30-Support-Vector-Regressor/svr_demo.png)
+
+I only changed C value in the model in the default linear support vector regressor. However, the performance is still far from satisfying compared to the ordinary simple linear regression model. One have to further optimize the \\( \epsilon \\) value in order to achieve good performance. The code for the above support vector regressor model is [here](/downloads/blog/2017-05-30-Support-Vector-Regressor/SVR.ipynb).
+
+
+A good idea might be doing validation using validation dataset during the model optimization.
