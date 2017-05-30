@@ -17,14 +17,14 @@ share: true
 
 Support Vector Machine (SVM) is one of the most popular algorithm in machine learning classification tasks whose training data size is reasonable. However, when I was working on machine learning regression tasks using some python libraries, such as scikit, I often saw there is a regressor called [Support Vector Regressor (SVR)](http://scikit-learn.org/stable/auto_examples/svm/plot_svm_regression.html#sphx-glr-auto-examples-svm-plot-svm-regression-py). What hell is this algorithm? Isn't support vector machine a classification algorithm? How does it work for regression problems? 
 
-To understand support vector regression, you would have to first understand support vector machine. Basically, support vector machine finds a line or hyperplane that maximize the "margin" to the data. To express the whole idea using formula, we have an optimization problem:
+To understand support vector regression, you would have to first understand support vector machine. Basically, support vector machine finds a line or hyperplane that maximize the "margin" from the classifier to the closest data. To express the whole idea using formula, we have an optimization problem:
 
 \\( \min \frac{1}{2} \\|w\\|^2 \\) subject to \\( y^{(i)}(w^Tx^{(i)}+b)\ge1 \\) for all \\(i = 1,2, ..., n \\)
 
+Here, the "margin" from the classifier to the data is \\( \frac{1}{\\|w\\|^2} \\) where the closest data point \\(x^{(c)}\\) has \\( y^{(c)}(w^Tx^{(c)}+b)\eq1 \\). Minimizing \\( \min \frac{1}{2} \\|w\\|^2 \\) is actually maximizing the "margin".
 
-
-
-aa
+![](/images/blog/2017-05-30-Support-Vector-Regressor/svm.svg)
+The red line H3 is the support vector machine classifier that maximize the "margin". It should be noted that the contrain garantees that the classifier classify the data points correctly with the miximized "margin".
 
 
 
@@ -38,7 +38,7 @@ When I was working on machine learning tasks, I used to initialize the weights i
 
 Think of logistic regression. Let us have an extreme case, if weights are badly chosen so that the linear additive output to activation function is extremely large or small. From the curve of logistic regression, we immediately know that the derivatives of logistic regression when x is very large or small is extremely small.
 
-![](/images/blog/2017-05-18-Weights-Initialization/Logistic-curve.svg)
+![](/images/blog/2017-05-30-Support-Vector-Regressor/svm.svg)
 
 When we are updating the weights in our final output layer or middle hidden layers using backpropagation, the derivative of the weights always contain the an item of the derivative of activation funtion at certain hidden nodes (You may check my [blog](https://leimao.github.io/blog/Programmable-Backpropagation/), [Multi-layer Perceptron on Wikipedia](https://en.wikipedia.org/wiki/Multilayer_perceptron) or any machine learning text books). If this derivative is very small, the learning of the weights would be extremely slow. It should be noted that this might not be totally overcomed by making learning rate bigger, because the big learning rate might be disasturous when some of the weights whose hidden nodes in the right range could be normally updated. Some logistic regression equation have \\(\beta\\) term (\\(g(x) = \frac{1}{1+\exp(-{\beta}x)}\\)), this term is the same to learning rate (You may see it after calculating the derivative of logistic regression by yourself).
 
