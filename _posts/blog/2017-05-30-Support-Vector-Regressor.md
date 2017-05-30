@@ -31,7 +31,7 @@ Here, the "margin" from the classifier \\( w^Tx+b = 0 \\) to the closest data po
 
 ![](/images/blog/2017-05-30-Support-Vector-Regressor/svm.svg)
 
-The red line H3 is the support vector machine classifier that maximize the "margin". It should be noted that the contrain garantees that the classifier classify the data points correctly with the miximized "margin".
+The red line H3 is the support vector machine classifier that maximize the "margin". It should be noted that the constrain garantees that the classifier classify the data points correctly with the miximized "margin".
 
 For more details of support vector machine, how to solve the above formulated optimization problem, non-linearly separable classification problem, and the kernel trick, you may read the support vector machine [course material](/downloads/blog/2017-05-30-Support-Vector-Regressor/support-vector-machine.pdf) from Andrew Ng's Stanford CS229 Machine Learning course.
 
