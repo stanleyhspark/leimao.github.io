@@ -49,7 +49,7 @@ There are more parameters in the model. Sometimes, the parameters are very criti
 
 ![](/images/blog/2017-05-30-Support-Vector-Regressor/svr_demo.png)
 
-I only changed the C value in the model in the default linear [support vector regressor](http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html#sklearn.svm.SVR)(It does not allow to have C=0!). However, the performance is still far from satisfying compared to the ordinary simple linear regression model. One have to further optimize the \\( \epsilon \\) value in order to achieve good performance (data not shown). The code for the above support vector regressor model is [here](https://github.com/leimao/leimao.github.io/blob/master/downloads/blog/2017-05-30-Support-Vector-Regressor/SVR.ipynb).
+I only changed the C value in the model in the default linear [support vector regressor](http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html#sklearn.svm.SVR) (It does not allow to have C=0!). However, the performance is still far from satisfying compared to the ordinary simple linear regression model. One have to further optimize the \\( \epsilon \\) value in order to achieve good performance (data not shown). The code for the above support vector regressor model is [here](https://github.com/leimao/leimao.github.io/blob/master/downloads/blog/2017-05-30-Support-Vector-Regressor/SVR.ipynb).
 
 
 A good idea to determine the right parameters to use might be doing validation using validation dataset during the model optimization.
