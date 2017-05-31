@@ -26,7 +26,7 @@ It is also called "Second Order" optimization methods. It uses Taylor Expansion 
 
 This method converges much faster than gradient descent because unlike ordinary gradient descent it can better foresee the local maximum or minimum when we are computing the gradients. However, the sacrifice is that the computation cost for the gradients, especially when the dimension of the data (number of features in the data) becomes larger, becomes much higher. Therefore, I actually hardly see this optimization method in solving machine learning tasks.
 
-The mathmatical details of the Newton method for 1 variable and multiple variables could be found to this [article](/downloads/blog/2017-05-31-Optimization-Methods/newtonfull.pdf).
+The mathmatical details of the Newton method for 1 variable and multiple variables could be found to this [article](/downloads/blog/2017-05-31-Optimization-Methods/newtonfull.pdf). You may also check the Wikipedia about the [Newton method](https://en.wikipedia.org/wiki/Newton%27s_method_in_optimization).
 
 ![](/images/blog/2017-05-31-Optimization-Methods/Newton_optimization_vs_grad_descent.svg)
-Newton Method vs Gradient Descent
+Newton Method (red) vs Gradient Descent (green)
