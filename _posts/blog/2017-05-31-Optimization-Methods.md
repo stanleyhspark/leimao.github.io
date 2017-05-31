@@ -28,5 +28,6 @@ This method converges much faster than gradient descent because unlike ordinary 
 
 The mathmatical details of the Newton method for 1 variable and multiple variables could be found to this [article](/downloads/blog/2017-05-31-Optimization-Methods/newtonfull.pdf). You may also check the Wikipedia about the [Newton method](https://en.wikipedia.org/wiki/Newton%27s_method_in_optimization).
 
-![](/images/blog/2017-05-31-Optimization-Methods/128px-Newton_optimization_vs_grad_descent.svg.png)
+![](/images/blog/2017-05-31-Optimization-Methods/Newton_optimization_vs_grad_descent.svg.png)
+
 Newton Method (red) vs Gradient Descent (green)
