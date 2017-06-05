@@ -25,10 +25,10 @@ I finally found a figure from the Wikipedia that totally explain all of my quest
 
 In an ordinary introduction material of self-organizing map, you will often see such kind of figure illustrating the SOM neural network. I personally think this is not helpful for readers to understand the algorithm, although it is correct.
 ![](/images/blog/2017-06-05-Self-Organizing-Map/som_representation.jpg)
-<figure align=center><img width="300" height="300" src="/images/blog/2017-06-05-Self-Organizing-Map/som_representation.jpg"/></figure>
+<img width="300" height="300" src="/images/blog/2017-06-05-Self-Organizing-Map/som_representation.jpg"/>{: .center-image }
 
 
 The great figure from the Wikipedia looks like this:
 ![](/images/blog/2017-06-05-Self-Organizing-Map/Somtraining.svg)
-<figure align=center>![](/images/blog/2017-06-05-Self-Organizing-Map/Somtraining.svg)</figure>
+![](/images/blog/2017-06-05-Self-Organizing-Map/Somtraining.svg){: .center-image }
 I could add more comments to this figure. If you put the whole initialized neural network in the higer-dimensional weight space, it could be "look" like "folded", "wrapped", meaning that any two node in neural network in the weight space could be very close to each other depending on the weight initialization. Your job, or what learning is going to do, is to "unfold" the initialized neural network and use it to cover the whole data point set. So the answer to question 1 is automatically answered. The answer to question 2 is also very obvious. Although the two nodes initially sit very close to each other in the weight space, they might be separated apart because the whole neural network has to cover the whole data point set.
