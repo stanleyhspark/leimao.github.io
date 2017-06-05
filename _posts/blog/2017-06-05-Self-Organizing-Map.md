@@ -2,7 +2,7 @@
 layout: post
 title: Intuition of Self-Organizing Map
 excerpt: "Understand self-organizing map in an intuitive way."
-modified: 2017-05-31T14:17:25-04:00
+modified: 2017-06-05T14:17:25-04:00
 categories: blog
 tags: [Math, Machine Learning]
 image:
