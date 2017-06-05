@@ -2,7 +2,7 @@
 layout: post
 title: Simple Illustration of Programmable Backpropagation
 excerpt: "We understand backpropagation. But why it is programmable?"
-modified: 2017-05-16T14:17:25-04:00
+modified: 2017-05-17T14:17:25-04:00
 categories: blog
 tags: [Math, Machine Learning]
 image:

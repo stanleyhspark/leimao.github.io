@@ -2,7 +2,7 @@
 layout: post
 title: Introduction to Ordinary Optimization Methods - To be Continued
 excerpt: "Understand different optimization methods and become rational when we have to choose one of them."
-modified: 2017-05-16T14:17:25-04:00
+modified: 2017-05-31T14:17:25-04:00
 categories: blog
 tags: [Math, Machine Learning]
 image:

@@ -2,7 +2,7 @@
 layout: post
 title: Mathematical Logics Behind The Weights Initialization
 excerpt: "Understand why we initialize the weights in this way."
-modified: 2017-05-16T14:17:25-04:00
+modified: 2017-05-18T14:17:25-04:00
 categories: blog
 tags: [Math, Machine Learning]
 image:

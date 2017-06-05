@@ -2,7 +2,7 @@
 layout: post
 title: Reminder of Understanding Support Vector Regressor
 excerpt: "Turn a classification algorithm to a regression algorithm? I don't think so."
-modified: 2017-05-16T14:17:25-04:00
+modified: 2017-05-30T14:17:25-04:00
 categories: blog
 tags: [Math, Machine Learning]
 image:
