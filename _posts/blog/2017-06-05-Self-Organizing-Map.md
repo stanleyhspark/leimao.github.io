@@ -15,7 +15,7 @@ share: true
 
 ### Confusion
 
-[Self-Organizing Map (SOM)](https://en.wikipedia.org/wiki/Self-organizing_map) is a unsupervised neural network that is used to cluster multi-dimensional data. When the number of nodes in the neural network is small, it behaves very similar to k-Means algorithm. When the number of nodes in the neural network is large, it rerranges the data and keeps the original data topology (I haven't totally understand what data topology is for now).
+[Self-Organizing Map (SOM)](https://en.wikipedia.org/wiki/Self-organizing_map) is an unsupervised neural network that is used to cluster multi-dimensional data. When the number of nodes in the neural network is small, it behaves very similar to k-Means algorithm. When the number of nodes in the neural network is large, it rerranges the data and keeps the original data topology (I haven't totally understand what data topology is for now).
 
 Regrading the SOM algorithm, I understood the node position (in the weight space) is trying to move closer to each of the data point during the training (update the node weights closer to the data point). However, I had difficulties in understanding why the algorithm will finally converge. Say, if the weights of two nodes happened to be initialized to almost the same with very slight difference, and they are very far apart in the 2D neural network (Not weight space. In the weight space, their positions are extremely close.). 1) How does the model finally achieves that the node in the neural network and its neighbor nodes have similar weights? 2) If so, what happens to the two nodes with similar initialized weights I mentioned above during the learning iteration?
 
