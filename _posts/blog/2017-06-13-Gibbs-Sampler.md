@@ -165,13 +165,13 @@ I have an idea but I am not sure whether this is correct in principle, or whethe
 
 For a = 2, b = 0.2, the probability density function of gamma distribution is like this.
 
-<center><img width="1200" height="1200" src="/images/blog/2017-06-13-Gibbs-Sampler/gamma_pdf_figure_1.png"/></center>
+<center><img width="600" height="600" src="/images/blog/2017-06-13-Gibbs-Sampler/gamma_pdf_figure_1.png"/></center>
 
 After Gibbs sampling, we know that the priors for lambda1 and lambda2 (lambda1 = 2, lambda2 = 8) are very high.
 
 For a = 5, b = 10, the probability density function of gamma distribution is like this.
 
-<center><img width="1200" height="1200" src="/images/blog/2017-06-13-Gibbs-Sampler/gamma_pdf_figure_2.png"/></center>
+<center><img width="600" height="600" src="/images/blog/2017-06-13-Gibbs-Sampler/gamma_pdf_figure_2.png"/></center>
 
 After Gibbs sampling, we know that the priors for lambda1 and lambda2 (lambda1 = 1.5, lambda2 = 6) are extremely low.
 
