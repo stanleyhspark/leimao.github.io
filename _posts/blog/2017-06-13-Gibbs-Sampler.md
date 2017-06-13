@@ -151,13 +151,13 @@ plt.show()
 
 The output is as follows. The infered parameters matches the ones used for generating the data pretty well. The infered n equals exactly 23. The infered lambda1 and lambda2 were also centered at 2 and 8, respectively.
 
-<center><img width="600" height="600" src="/images/blog/2017-06-13-Gibbs-Sampler/gibbs_sampler_figure_1.png"/></center>
+<center><img width="1200" height="1200" src="/images/blog/2017-06-13-Gibbs-Sampler/gibbs_sampler_figure_1.png"/></center>
 
 It should be noted that if you changed the parameters in the model (here, a and b for the gamma distribution), or even changed the model (say, uniform distribution to normal distribution, gamma distribution to normal distribution). The good infered parameters might not match the "real ones" exactly, but they should be very close.
 
 Here, if I change a from 2 to 5, change b from 0.2 to 10. The infered n equals around 23. However, the infered lambda1 and lambda2 were centered at 1.5 and 6, respectively. This is very bad, because for lambda2, the true value, which is 8, was not even sampled once. 
 
-<center><img width="600" height="600" src="/images/blog/2017-06-13-Gibbs-Sampler/gibbs_sampler_figure_2.png"/></center>
+<center><img width="1200" height="1200" src="/images/blog/2017-06-13-Gibbs-Sampler/gibbs_sampler_figure_2.png"/></center>
 
 So, how can we find there is a problem here, given we do not know the true parameters in real problems.
 
