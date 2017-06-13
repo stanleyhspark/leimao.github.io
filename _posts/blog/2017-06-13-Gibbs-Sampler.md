@@ -32,11 +32,14 @@ The second application is to do Bayesian Inference of the parameters behind a ce
 
 [Here](/downloads/blog/2017-06-13-Gibbs-Sampler/GibbsSampling.pdf) is a very good problem example of Gibbs Sampler Bayesian Inference. The author also provided the implementation [code](http://www2.bcs.rochester.edu/sites/jacobslab/cheat_sheets.html) for solving the problem using Gibbs Sampler, which you could also download it [here](/downloads/blog/2017-06-13-Gibbs-Sampler/GibbsSampling.code.py).
 
+The original code is a little bit confusing, although it is correct. I rewrote and annotated it so that one can understand it more easily.
 
 ```python
 # Gibbs sampler for the change-point model described in a Cognition cheat sheet titled "Gibbs sampling."
 # This is a Python implementation of the procedure at http://www.cmpe.boun.edu.tr/courses/cmpe58n/fall2009/
 # Written by Ilker Yildirim, September 2012.
+# Revised and Annotated by Lei Mao, June 2017.
+# dukeleimao@gmail.com
 
 from scipy.stats import uniform, gamma, poisson
 import matplotlib.pyplot as plt
@@ -45,44 +48,67 @@ from numpy import log,exp
 from numpy.random import multinomial
 
 # fix the random seed for replicability.
-numpy.random.seed(123456789)
+numpy.random.seed(0)
 
 # Generate data
 
 # Hyperparameters
+# Number of total data points
 N=50
-a=2
-b=1
 
 # Change-point: where the intensity parameter changes.
-n=int(round(uniform.rvs()*N))
+# The threhold point of two sets of data points
+# n <= N
+# Here we set n = 23
+n=23
 print str(n)
 
 # Intensity values
-lambda1=gamma.rvs(a,scale=1./b) # We use 1/b instead of b because of the way Gamma distribution is parametrized in the package random.
-lambda2=gamma.rvs(a,scale=1./b)
+# lambda1 for generating the first set of data from Poisson distribution
+# Here we set lambda1 = 2
+lambda1=2
+# lambda2 for generating the second set of data from Poisson distribution
+# Here we set lambda1 = 8
+lambda2=8
 
+# Generating observations x, consisting x_1 ... x_N
 lambdas=[lambda1]*n
 lambdas[n:N-1]=[lambda2]*(N-n)
 
-# Observations, x_1 ... x_N
 x=poisson.rvs(lambdas)
 
-# make one big subplots and put everything in it.
+# Make one big subplots and put everything in it.
 f, (ax1,ax2,ax3,ax4,ax5)=plt.subplots(5,1)
 # Plot the data
 ax1.stem(range(N),x,linefmt='b-', markerfmt='bo')
 ax1.plot(range(N),lambdas,'r--')
 ax1.set_ylabel('Counts')
 
+# Given the dataset, our mission is to model this dataset
+# Our hypothesis is that the dataset consists two set of data, each set of the data satisfies Poisson distribution (You can also model the data using other distributions, say, Normal distribution, to see whether it works).
+# We need to infer three parameters in the model using the dataset we have. 
+# 1. The threhold point of two sets of data points n
+# 2. lambda1 for the first Poisson distribution dataset
+# 3. lambda2 for the second Poisson distribution dataset
+
 # Gibbs sampler
+# Number of parameter sets we are going to sample
 E=5200
+# Number of parameter sets at the beginning of sampling we need to remove
+# This is called "BURN-IN"
 BURN_IN=200
 
 # Initialize the chain
+# Model n to be uniformly distributed from 0 to N
 n=int(round(uniform.rvs()*N))
+# Model lambda to satisfy gamma distribution
+# We mannually set the gamma distribution parameter
+a=2
+b=0.2
 lambda1=gamma.rvs(a,scale=1./b)
 lambda2=gamma.rvs(a,scale=1./b)
+
+# My understanding is that the model of these three variables should at least sample the true values of the variables with probablities larger than 0 (here the uniform distribution could sample variables from 0 to N, gamma distribution could sample variables greater or equal to 0), and the posterior conditionals of these three could be calculated easily using Bayesian Equations.
 
 # Store the samples
 chain_n=numpy.array([0.]*(E-BURN_IN))
@@ -121,12 +147,35 @@ ax5.hist(chain_n,50)
 ax5.set_xlabel('n')
 ax5.set_xlim([1,50])
 plt.show()
-
 ```
 
+The output is as follows. The infered parameters matches the ones used for generating the data pretty well. The infered n equals exactly 23. The infered lambda1 and lambda2 were also centered at 2 and 8, respectively.
+
+<center><img width="600" height="600" src="/images/blog/2017-06-13-Gibbs-Sampler/gibbs_sampler_figure_1.png.png"/></center>
+
+It should be noted that if you changed the parameters in the model (here, a and b for the gamma distribution), or even changed the model (say, uniform distribution to normal distribution, gamma distribution to normal distribution). The good infered parameters might not match the "real ones" exactly, but they should be very close.
+
+Here, if I change a from 2 to 5, change b from 0.2 to 10. The infered n equals around 23. However, the infered lambda1 and lambda2 were centered at 1.5 and 6, respectively. This is very bad, because for lambda2, the true value, which is 8, was not even sampled once. 
+
+<center><img width="600" height="600" src="/images/blog/2017-06-13-Gibbs-Sampler/gibbs_sampler_figure_2.png.png"/></center>
+
+So, how can we find there is a problem here, given we do not know the true parameters in real problems.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+gibbs_sampler_result_1.png
 
 
 
