@@ -16,7 +16,7 @@ share: true
 ### Introduction
 
 The basic algorithm for Gibbs Sampler is as follows.
-<center><img width="300" height="300" src="/images/blog/2017-06-13-Gibbs-Sampler/gibbs_sampler_algorithm.png"/></center>
+<center><img width="600" height="600" src="/images/blog/2017-06-13-Gibbs-Sampler/gibbs_sampler_algorithm.png"/></center>
 
 From my understanding, there are two applications of Gibbs sampler as well as general Monte Carlo Markov Chain (MCMC) samplers.
 
