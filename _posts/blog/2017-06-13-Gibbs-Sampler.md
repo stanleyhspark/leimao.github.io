@@ -32,7 +32,7 @@ The second application is to do Bayesian Inference of the parameters behind a ce
 
 [Here](/downloads/blog/2017-06-13-Gibbs-Sampler/GibbsSampling.pdf) is a very good problem example of Gibbs Sampler Bayesian Inference. The author also provided the implementation [code](http://www2.bcs.rochester.edu/sites/jacobslab/cheat_sheets.html) for solving the problem using Gibbs Sampler, which you could also download it [here](/downloads/blog/2017-06-13-Gibbs-Sampler/GibbsSampling.code.py).
 
-The original code is a little bit confusing, although it is correct. I rewrote and annotated it so that one can understand it more easily.
+The original code is a little bit confusing, although it is correct. I rewrote and annotated it so that one can understand it more easily. You may download my code [here](/downloads/blog/2017-06-13-Gibbs-Sampler/GibbsSampling.code.lei.py).
 
 ```python
 # Gibbs sampler for the change-point model described in a Cognition cheat sheet titled "Gibbs sampling."
