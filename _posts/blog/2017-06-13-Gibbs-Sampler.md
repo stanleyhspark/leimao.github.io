@@ -115,7 +115,8 @@ lambda2=gamma.rvs(a,scale=1./b)
 # the uniform distribution could sample variables from 0 to N, gamma
 # distribution could sample variables greater or equal to 0), and the posterior
 # conditionals of these three could be calculated easily using Bayesian 
-# Equations. Finally, this posterior probability distribution should be easy to # use for sampling.
+# Equations. Finally, this posterior probability distribution should be easy to 
+# use for sampling.
 
 # Store the samples
 chain_n=numpy.array([0.]*(E-BURN_IN))
