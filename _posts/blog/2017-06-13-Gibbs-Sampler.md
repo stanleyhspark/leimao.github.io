@@ -15,14 +15,22 @@ share: true
 
 ### Introduction
 
-From my understanding, there are two applications of Gibbs sampler as well as general Monte Carlo Markov Chain (MCMC) samplers. 
+The basic algorithm for Gibbs Sampler is as follows.
+<center><img width="300" height="300" src="/images/blog/2017-06-13-Gibbs-Sampler/gibbs_sampler_algorithm.png"/></center>
+
+From my understanding, there are two applications of Gibbs sampler as well as general Monte Carlo Markov Chain (MCMC) samplers.
+
 The first application is to sample multivariable data point from a certain distributions, which is relatively easy. 
 <center><img width="300" height="300" src="/images/blog/2017-06-13-Gibbs-Sampler/gibbs_sampler.jpg"/></center>
+
 If you want to sample data from a bivariate normal distribtution, here is what you can do using Gibbs sampler.
 <center><img width="300" height="300" src="/images/blog/2017-06-13-Gibbs-Sampler/gibbs_sampler_bivariate_normal.jpg"/></center>
-The second application is to do bayesian inference of the parameters behind a certain dataset, which is relatively difficult to some extent, and requires more expertise in math. This is what I am going to emphasize on in this blog article.
 
+The second application is to do Bayesian Inference of the parameters behind a certain dataset, which is relatively difficult to some extent, and requires more expertise in math. This is what I am going to emphasize on in this blog article.
 
+### Gibbs Sampler Inference
+
+[Here](/downloads/blog/2017-06-13-Gibbs-Sampler/GibbsSampling.pdf) is a very good problem example of Gibbs Sampler Bayesian Inference. The author also provided the implementation code for solving the problem using Gibbs Sampler, which you also could download it [here](/downloads/blog/2017-06-13-Gibbs-Sampler/GibbsSampling.code.py).
 
 
 
