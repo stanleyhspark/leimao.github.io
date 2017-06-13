@@ -161,3 +161,18 @@ Here, if I change a from 2 to 5, change b from 0.2 to 10. The infered n equals a
 
 So, how can we find there is a problem here, given we do not know the true parameters in real problems.
 
+I have an idea but I am not sure whether this is correct in principle, or whether there is any theory to support this.
+
+For a = 2, b = 0.2, the probability density function of gamma distribution is like this.
+
+<center><img width="1200" height="1200" src="/images/blog/2017-06-13-Gibbs-Sampler/gamma_pdf_figure_1.png"/></center>
+
+After Gibbs sampling, we know that the priors for lambda1 and lambda2 (lambda1 = 2, lambda2 = 8) are very high.
+
+For a = 5, b = 10, the probability density function of gamma distribution is like this.
+
+<center><img width="1200" height="1200" src="/images/blog/2017-06-13-Gibbs-Sampler/gamma_pdf_figure_2.png"/></center>
+
+After Gibbs sampling, we know that the priors for lambda1 and lambda2 (lambda1 = 1.5, lambda2 = 6) are extremely low.
+
+Although I am not sure whether there is any correlation between the prior probabilities and the "correctness of inference", it should be noted that, even with the inference using a = 5 and b = 10, I can still reconstruct the dataset very well, which means that the choice of these model parameters might not have significant impact on our real studies.
