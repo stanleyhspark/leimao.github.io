@@ -21,7 +21,7 @@ The basic algorithm for Gibbs Sampler is as follows.
 From my understanding, there are two applications of Gibbs sampler as well as general Monte Carlo Markov Chain (MCMC) samplers.
 
 The first application is to sample multivariable data point from a certain distributions, which is relatively easy. 
-<center><img width="600" height="600" src="/images/blog/2017-06-13-Gibbs-Sampler/gibbs_sampler.jpg"/></center>
+<center><img width="600" height="600" src="/images/blog/2017-06-13-Gibbs-Sampler/gibbs_sampling.jpg"/></center>
 
 If you want to sample data from a bivariate normal distribtution, here is what you can do using Gibbs sampler.
 <center><img width="600" height="600" src="/images/blog/2017-06-13-Gibbs-Sampler/gibbs_sampler_bivariate_normal.jpg"/></center>
