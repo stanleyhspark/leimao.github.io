@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Implementation of the Gibbs Sampler
+title: Implementation of Gibbs Sampler
 excerpt: "Understand Gibbs Sampling."
 modified: 2017-06-13T14:17:25-04:00
 categories: blog
