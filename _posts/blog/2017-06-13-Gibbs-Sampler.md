@@ -85,7 +85,9 @@ ax1.plot(range(N),lambdas,'r--')
 ax1.set_ylabel('Counts')
 
 # Given the dataset, our mission is to model this dataset
-# Our hypothesis is that the dataset consists two set of data, each set of the data satisfies Poisson distribution (You can also model the data using other distributions, say, Normal distribution, to see whether it works).
+# Our hypothesis is that the dataset consists two set of data, each set of the
+# data satisfies Poisson distribution (You can also model the data using other 
+# distributions, say, Normal distribution, to see whether it works).
 # We need to infer three parameters in the model using the dataset we have. 
 # 1. The threhold point of two sets of data points n
 # 2. lambda1 for the first Poisson distribution dataset
@@ -108,7 +110,12 @@ b=0.2
 lambda1=gamma.rvs(a,scale=1./b)
 lambda2=gamma.rvs(a,scale=1./b)
 
-# My understanding is that the model of these three variables should at least sample the true values of the variables with probablities larger than 0 (here the uniform distribution could sample variables from 0 to N, gamma distribution could sample variables greater or equal to 0), and the posterior conditionals of these three could be calculated easily using Bayesian Equations.
+# My understanding is that the model of these three variables should at least 
+# sample the true values of the variables with probablities larger than 0 (here
+# the uniform distribution could sample variables from 0 to N, gamma
+# distribution could sample variables greater or equal to 0), and the posterior
+# conditionals of these three could be calculated easily using Bayesian 
+# Equations. Finally, this posterior probability distribution should be easy to # use for sampling.
 
 # Store the samples
 chain_n=numpy.array([0.]*(E-BURN_IN))
