@@ -29,3 +29,9 @@ The comprehensive correct proof could be found [here](/downloads/blog/2017-05-15
 
 PS: "MathJax is against humanity." and "Happy Mother's Day."
 ![](/images/blog/2017-05-15-Perceptron-Convergence-Theorem/mothers-day.gif)
+
+### Updates
+
+6/16/2017
+
+I happened to find an interesting non-mathematical informal proof in Hinton's "Neural Networks for Machine Learning" course. Unlike the previous mathematical proofs I provided, this proof discussed the problems in the weight space. The whole informal proof is very simple and easy to understand. The informal proof could be downloaded [here](/downloads/blog/2017-05-15-Perceptron-Convergence-Theorem/Hinton_lec2.pdf).
