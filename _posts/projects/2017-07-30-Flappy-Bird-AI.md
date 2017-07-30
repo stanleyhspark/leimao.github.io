@@ -41,7 +41,11 @@ To run the game and AI, the following dependences are required.
 
 ### Run AI to Play Flappy Bird
 
-The AI needs to be trained before the game. To train the AI, run the command "python FlappyBird_AI.py -m train". The AI has already been trained and stored as AI_model.h5 file if you do not want to do the training.
+The AI needs to be trained before the game. To train the AI, run the command "python FlappyBird_AI.py -m train". 
+```python
+python FlappyBird_AI.py -m train
+```
+The AI has already been trained and stored as AI_model.h5 file if you do not want to do the training.
 
 In case of a break during the training, one can resume the training by running the command "python FlappyBird_AI.py -m resume".
 
