@@ -64,5 +64,5 @@ To allow more changes to the micromouse, the scripts can be modified accordingly
 
 Watch the micromouse exploring and solving the maze on [YouTube](https://www.youtube.com/playlist?list=PLVLJFoX8B37F6t81x2bK_Pe86TU2txIFn).
 
-Here is one of the demos showing the virtual micromouse explores and solves the maze.
+Here is one of the demos showing the virtual micromouse explores and solves the virtual maze.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8DZaQ8hyT10?list=PLVLJFoX8B37F6t81x2bK_Pe86TU2txIFn" frameborder="0" allowfullscreen></iframe>
