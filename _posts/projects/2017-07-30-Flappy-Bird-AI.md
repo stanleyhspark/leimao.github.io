@@ -20,7 +20,7 @@ share: true
 The AI takes the real-time game image output as input. It was able to play Flappy Bird extremely well. It could play the game endlessly without failure, which might be considered "perfect".
 
 Here is a demo showing the AI playing the Flappy Bird game.
-<center><img width="480" height="480" src="/images/projects/2017-07-30-Flappy-Bird-AI/Flappy_Bird_gameplay.png"/></center>
+<center><img width="240" height="240" src="/images/projects/2017-07-30-Flappy-Bird-AI/Flappy_Bird_gameplay.png"/></center>
 
 ### AI Features
 
@@ -60,4 +60,4 @@ python FlappyBird_AI.py -m test
 ### AI Demo
 
 Here is a demo showing the AI playing the Flappy Bird game.
-<center><img width="480" height="480" src="/images/projects/2017-07-30-Flappy-Bird-AI/flappy_bird_AI.gif"/></center>
+<center><img width="240" height="240" src="/images/projects/2017-07-30-Flappy-Bird-AI/flappy_bird_AI.gif"/></center>
