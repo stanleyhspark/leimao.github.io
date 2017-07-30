@@ -20,27 +20,26 @@ share: true
 The AI takes the real-time game image output as input. It was able to play Flappy Bird extremely well. It could play the game endlessly without failure, which might be considered "perfect".
 
 Here is a demo showing the AI playing the Flappy Bird game.
-![](https://github.com/leimao/Flappy_Bird_AI/blob/master/flappy_bird_AI.gif)
+<center><img width="480" height="480" src="/images/projects/2017-07-30-Flappy-Bird-AI/Flappy_Bird_gameplay.png"/></center>
 
-## Installation Dependence
+### AI Features
 
+The Flappy Bird AI was developed using Deep Convolutional Q-Learning Neural Network. It was written in Python using Keras, which makes the code for neural network neat and easy to understand. It was also wrapped as class, which makes it universal for all different kind of easy video game APIs.
+
+Some tricks, which accelerates the training efficiency and performance, were used in AI training. These tricks were not observed in other Flappy Bird AIs developed using Deep Convolutional Q-Learning Neural Network.
+
+### Installation and Dependence
+
+All the Python source codes could be downloaded from my [GitHub](https://github.com/leimao/Flappy_Bird_AI).
+
+To run the game and AI, the following dependences are required.
 * Python 2.7
 * Tensorflow 1.0
 * Keras 2.0.3
 * Pygame 1.9.3
 * OpenCV 2.4.13
 
-## AI Features
-
-The Flappy Bird AI was developed using Deep Convolutional Q-Learning Neural Network. 
-
-The AI program was written in Python using Keras, which makes the code for neural network neat and easy to understand.
-
-The AI was wrapped as class, which makes it universal for all different kind of easy video game APIs.
-
-Some tricks, which accelerates the training efficiency and performance, were used in AI training. These tricks were not observed in other Flappy Bird AIs developed using Deep Convolutional Q-Learning Neural Network.
-
-## Run AI in Flappy Bird
+### Run AI to Play Flappy Bird
 
 The AI needs to be trained before the game. To train the AI, run the command "python FlappyBird_AI.py -m train". The AI has already been trained and stored as AI_model.h5 file if you do not want to do the training.
 
@@ -48,18 +47,7 @@ In case of a break during the training, one can resume the training by running t
 
 To allow the trained AI to play the game, run the command "python FlappyBird_AI.py -m test".
 
-## Optimization Notes
+### AI Demo
 
-The training took roughly 600,000 game frames in 36 hours on a desktop with Intel i7-6700 CPU under the parameters I specified. 
-
-Using latest GPU could accelerate the training, but I just could not afford one.
-
-<https://leimao.github.io/journal/Flappy-Bird-AI.html>
-
-## Disclaimer
-
-This work was developed based on the previous works published on GitHub:
-
-<https://github.com/yanpanlau/Keras-FlappyBird>
-
-<https://github.com/songrotek/DRL-FlappyBird>
+Here is a demo showing the AI playing the Flappy Bird game.
+<center><img width="480" height="480" src="/images/projects/2017-07-30-Flappy-Bird-AI/flappy_bird_AI.gif"/></center>
