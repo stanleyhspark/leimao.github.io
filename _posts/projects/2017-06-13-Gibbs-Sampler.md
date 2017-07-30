@@ -2,7 +2,7 @@
 layout: post
 title: Chomp Game AI
 excerpt: "Extremely Potent Chomp Game AI"
-modified: 2017-06-13T14:17:25-04:00
+modified: 2017-07-30T14:17:25-04:00
 categories: project
 tags: [Artificial Intelligence]
 image:
