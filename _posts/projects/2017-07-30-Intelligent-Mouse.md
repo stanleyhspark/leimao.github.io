@@ -21,7 +21,7 @@ The project goal is to design a micromouse that could explore and find destinati
 Here is a demo of a real micromouse contest.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CLwICJKV4dw" frameborder="0" allowfullscreen></iframe>
 
-A maze solver algorithm and a maze explorer algorithm were developed for micromouse using real-time dynamic programming. Equipped with such algorithms, the micromouse shows extremely potent ability in maze exploration optimal route planning¡£
+A maze solver algorithm and a maze explorer algorithm were developed for micromouse using real-time dynamic programming. Equipped with such algorithms, the micromouse shows extremely potent ability in maze exploration optimal route planningã€‚
 
 ### Source Codes
 
