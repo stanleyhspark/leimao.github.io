@@ -47,6 +47,7 @@ The codes for the project includes the following files:
   To run showmouse.py, run the following command in the shell:
   ```shell
   python showmouse.py test_maze_01.txt complete
+
   python showmouse.py test_maze_01.txt incomplete
   ```
   where "complete" and "incomplete" designate the strategy of micromouse.
