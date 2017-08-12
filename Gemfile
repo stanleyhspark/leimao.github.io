@@ -1,4 +1,6 @@
 source "https://rubygems.org"
-gem 'rouge'
-gem 'jekyll'
-gem 'jekyll-paginate'
+
+gem "jekyll"
+gem "jekyll-sitemap"
+gem "jekyll-gist"
+gem "jekyll-feed"
