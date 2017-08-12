@@ -19,7 +19,6 @@ share: true
 
 I named the two programs after "midas". Because I like the "feel" that you touch something and something becomes useful.
 
-[midas image]
 
 ### Learning Experience
 
@@ -43,6 +42,8 @@ This libray allows user to use regular expression to do matching operations to e
 
 * pyquery (https://pythonhosted.org/pyquery/)
 This library is a very power tool find certain nodes containing information of interests in the html file.
+
+
 
 * requests (http://docs.python-requests.org/en/master/)
 This is a libray which is used to communicate with website APIs in the Python program.
@@ -69,3 +70,5 @@ The MediaWiki provides API to retrieve webpage content using its internal parser
 I think my answer might be the latter one, parsing the content by ourselves. For websites using MediaWiki API, the optional parser tools might not be installed. Even if it is installed, from my preliminary test of the tool, I found it not flexible enough to achieve my relatively more sophisticated purposes, such as getting image urls, getting data from tables, etc.
 
 Parsing by ourselves, although might be labor entensive, could be flexible to extract almost any data of interest using a combination of tools.
+
+### Demo
