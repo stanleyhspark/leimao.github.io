@@ -1,26 +1,20 @@
 ---
 layout: page
-title: About the Jekyll Theme
-excerpt: "So Simple is a responsive Jekyll theme for your words and images."
-modified: 2014-08-08T19:44:38.564948-04:00
+title: About the Website and the Author
+excerpt: ""
+modified: 2017-05-06T17:55:38.564948-04:00
 image:
-  feature: so-simple-sample-image-4.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  feature:
+  credit: 
+  creditlink: 
 ---
 
-Looking for a simple, responsive, theme for your Jekyll powered blog? Well look no further. Here be **So Simple Theme**, the follow up to [**Minimal Mistakes**](http://mmistakes.github.io/minimal-mistakes) --- by designer slash illustrator [Michael Rose](http://mademistakes.com).
+![](/images/author_images/Lei.jpg)
 
-## So Simple Theme is all about:
+My name is Lei Mao. I am an incoming computer science graduate student at The University of Chicago. My research interests are mainly in the areas of artificial intelligence and machine learning, and partly in the area of data science. This blog was named after the state-of-the-art artificial intelligence "[Red Queen](http://residentevil.wikia.com/wiki/Red_Queen_(Anderson))" from the film "Resident Evil", because I want to develop artificial intelligence that is highly intelligent, disciplined, and kind like human beings.
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 9+ and all modern browsers.
-* Minimal embellishments and subtle animations.
-* Optional large feature images for posts and pages.
-* [Custom 404 page]({{ site.url }}/404.html) to get you started.
-* [Simple site search](https://github.com/christian-fei/Simple-Jekyll-Search)
-* Support for Disqus Comments
+I used to be a biochemistry PhD candidate at Duke University. I terminated my biochemistry PhD career in my fourth-year in 2016 and started my new career in artificial intelligence and machine learning. I was very good at mathematics and programming before I joined the department of biochemistry at Duke University, though my undergraduate major was biotechnology. I was the only non-math major student winning regional Olympiad advanced mathematics medal when I was sophomore. I was also arwarded the "Challenge Cup", one of the top undergraduate scientific research prizes in China, for my research on wild-life prey and predator relationships through mathematical modeling. In addition, I had also won regional, domestic and international mathematical modeling contest awards all by myself. 
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install So Simple Theme</a>
+With these abilities and experiences, I was able to quickly catch up with the help from MOOCs after my termination. I had only learned machine learning and artificial intelligence for one year, but I had already started to dream a world full of artificial intelligence. I would really like to become one of the most productive and constructive researchers contributing to the Big AI Dream. 
 
-[^1]: Example: *domain.com/category-name/post-title*
+I am currently seeking artificial intelligence and machine learning research opportunities not only in University of Chicago but also in the other areas in the United States.

@@ -1,11 +1,11 @@
 # Site wide configuration
 
-title: Site Title
+title: Red Queen
 locale: en_US
-description: Describe your website here.
-logo: site-logo.png
+description: A Website from an Artificial Intelligence Maverick
+logo: site_logos/Red-Queen-Logo.jpg
 search: true
-url: http://localhost:4000
+url: https://leimao.github.io
 
 # Jekyll configuration
 
@@ -19,6 +19,7 @@ gems:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jekyll-seo-tag
 
 kramdown:
   input: GFM
@@ -36,15 +37,15 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Site owner
 owner:
-  name: Your Name
-  avatar: bio-photo.jpg
-  email: you@email.com
-  disqus-shortname:
+  name: Lei Mao
+  avatar: author_images/Lei-Bio-Large.jpg
+  email: dukeleimao@gmail.com
+  disqus-shortname: leimao-github-io
   twitter: #username
-  facebook: #username
-  github: #username
+  facebook: dukeleimao
+  github: leimao
   stackexchange: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
+  linkedin: lei-mao
   instagram: #username
   flickr: #username
   tumblr: #username
