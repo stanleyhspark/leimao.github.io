@@ -15,7 +15,12 @@ share: true
 
 ### Introduction
 
-[WikiMidas](https://github.com/leimao/WikiMidas) is a Python spidering API wrapper program specifically designed for data crawling from MediaWiki APIs (https://www.mediawiki.org/). It could be used to retrieve information from Wikipedia (https://en.wikipedia.org/wiki/Main_Page) and MoeGirl (https://zh.moegirl.org/Mainpage) which uses MediaWiki as their APIs. MoeGirl is more focused on the articles in the finctional characters' in anime. [MoeGirlMidas], developed based on WikiMidas, are designed specifically to retrieve characters' data from MoeGirl.
+### Introduction
 
-I named the two programs after "midas". Because I like the "feel" that you touch something and something becomes useful.
+[Micromouse](https://en.wikipedia.org/wiki/Micromouse) is a contest where small robot mice (micromouse) solve a maze. It is very popular in US, UK and Japan among the young juniors who are interested in designing robots and programming artificial intelligence. In Micromouse contest, the players are going to test their micromouse to solve the maze. 
+The project goal is to design a micromouse that could explore and find destination efficiently in the virtual maze.
 
+Here is a demo of a real micromouse contest.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CLwICJKV4dw" frameborder="0" allowfullscreen></iframe>
+
+A maze solver algorithm and a maze explorer algorithm were developed for micromouse using real-time dynamic programming. Equipped with such algorithms, the micromouse shows extremely potent ability in maze exploration optimal route planning。
