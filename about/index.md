@@ -18,3 +18,4 @@ I used to be a biochemistry PhD candidate at Duke University. I terminated my bi
 With these abilities and experiences, I was able to quickly catch up with the help from MOOCs after my termination. I had only learned machine learning and artificial intelligence for one year, but I had already started to dream a world full of artificial intelligence. I would really like to become one of the most productive and constructive researchers contributing to the Big AI Dream. 
 
 I am currently seeking artificial intelligence and machine learning research opportunities not only in University of Chicago but also in the other areas in the United States.
+
