@@ -75,7 +75,6 @@ html('#firstHeading').text()
 * [requests](http://docs.python-requests.org/en/master/)<br />
 
 This is a libray which is used to communicate with website APIs in the Python program.
-<br />
 
 ```python
 # To work with website API
@@ -90,7 +89,7 @@ response_json = response.json()
 response = requests.get(url)
 response_content = response.content
 ```
-<br />
+
 ### Choices during Development
 
 * How to retrieve webpage content? API or Webpage Html?
