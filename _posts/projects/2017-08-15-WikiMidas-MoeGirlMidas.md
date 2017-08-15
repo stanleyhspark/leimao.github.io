@@ -73,8 +73,10 @@ html('#firstHeading').text()
 ```
 <br />
 * [requests](http://docs.python-requests.org/en/master/)<br />
+
 This is a libray which is used to communicate with website APIs in the Python program.
 <br />
+
 ```python
 # To work with website API
 # 'url' is the website API url and 'params' is the parameters for certain API function
