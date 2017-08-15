@@ -39,20 +39,20 @@ However, I have little prior knowledge about html language, except the basic con
 
 * wiki-api (https://github.com/richardasaurus/wiki-api)
 This is a very good data crawler learning material for me. It had a small problem in getting the summary from Wikipedia articles, which was fixed in my own program.
-
+<br />v
 * re (https://docs.python.org/2/library/re.html)
 This libray allows user to use regular expression to do matching operations to extract useful information from texts. The usage of this library might be easy. But the key is to understand regular expression and use the correct regular expression to match the thing you are looking for.
-
+<br />
 ```python
 # To compile a message to regular expression
 empty_regex = re.compile(message)
 # To remove a string that matches certain regular expression
 text = re.sub(regex, '', text, flags)
 ```
-
+<br />
 * pyquery (https://pythonhosted.org/pyquery/)
 This library is a very power tool find certain nodes containing information of interests in the html file.
-
+<br />
 ```python
 # Make PyQuery object from a html file
 # 'response_content' is a html file
@@ -71,9 +71,10 @@ html('body').find('.image').find('img').attr('src')
 # Get text
 html('#firstHeading').text()
 ```
+<br />
 * requests (http://docs.python-requests.org/en/master/)
 This is a libray which is used to communicate with website APIs in the Python program.
-
+<br />
 ```python
 # To work with website API
 # 'url' is the website API url and 'params' is the parameters for certain API function
@@ -87,7 +88,7 @@ response_json = response.json()
 response = requests.get(url)
 response_content = response.content
 ```
-
+<br />
 ### Choices during Development
 
 * How to retrieve webpage content? API or Webpage Html?
