@@ -6,7 +6,7 @@ modified: 2017-08-15T14:17:25-04:00
 categories: project
 tags: [Data Crawling]
 image:
-  teaser: /images/projects/2017-08-15-WikiMidas-MoeGirlMidas/wikipedia-logo.jpg
+  teaser: /images/projects/640px-Zh-moegirl-summer-2017.png
 comments: true
 share: true
 ---
