@@ -32,7 +32,7 @@ To achieve the goal of data crawler, there are several aspects that one need to 
 * website API usage
 * regular expression
 * some third-party data crawler helper libraries
-<br />
+
 However, I have little prior knowledge about html language, except the basic concept that the html language wraps information in brackets, and have little experience in communicating with the website APIs. I also learned that I would need to use regular expression, a important practical concept in which I only have little knowlege without too much practice, to extract useful informations. The whole process is a little bit painful. But I think I have at least gained some practical experience in data crawling.
 
 ### Useful Materials and Tools
