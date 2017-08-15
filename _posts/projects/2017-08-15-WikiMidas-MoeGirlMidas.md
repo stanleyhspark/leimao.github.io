@@ -37,20 +37,20 @@ However, I have little prior knowledge about html language, except the basic con
 
 ### Useful Materials and Tools
 
-* [wiki-api](https://github.com/richardasaurus/wiki-api)<br />
+#### [wiki-api](https://github.com/richardasaurus/wiki-api)
 This is a very good data crawler learning material for me. It had a small problem in getting the summary from Wikipedia articles, which was fixed in my own program.
-<br />
-* [re](https://docs.python.org/2/library/re.html)<br />
+
+#### [re](https://docs.python.org/2/library/re.html)
 This libray allows user to use regular expression to do matching operations to extract useful information from texts. The usage of this library might be easy. But the key is to understand regular expression and use the correct regular expression to match the thing you are looking for.
-<br />
+
 ```python
 # To compile a message to regular expression
 empty_regex = re.compile(message)
 # To remove a string that matches certain regular expression
 text = re.sub(regex, '', text, flags)
 ```
-<br />
-* [pyquery](https://pythonhosted.org/pyquery/)<br />
+
+#### [pyquery](https://pythonhosted.org/pyquery/)
 This library is a very power tool find certain nodes containing information of interests in the html file.
 
 ```python
@@ -72,7 +72,7 @@ html('body').find('.image').find('img').attr('src')
 html('#firstHeading').text()
 ```
 
-* [requests](http://docs.python-requests.org/en/master/)
+#### [requests](http://docs.python-requests.org/en/master/)
 
 This is a libray which is used to communicate with website APIs in the Python program.
 
