@@ -53,6 +53,24 @@ text = re.sub(regex, '', text, flags)
 * pyquery (https://pythonhosted.org/pyquery/)
 This library is a very power tool find certain nodes containing information of interests in the html file.
 
+```python
+# Make PyQuery object from a html file
+# 'response_content' is a html file
+html = pq(response_content)
+# Query certain node
+html('body')
+# Query certain class
+html('.mw-content-ltr')
+# Query certain id
+html('#firstHeading')
+# Find all the subnodes
+html('body').find('h2')
+html('body').find('h2, p')
+# Get attributs
+html('body').find('.image').find('img').attr('src')
+# Get text
+html('#firstHeading').text()
+```
 * requests (http://docs.python-requests.org/en/master/)
 This is a libray which is used to communicate with website APIs in the Python program.
 
