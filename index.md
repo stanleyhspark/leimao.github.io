@@ -20,7 +20,7 @@ image:
 
 ### Who am I
 
-My name is Lei Mao. I am a master student in the Department of Computer Science at the University of Chicago. My research interests are mainly in the areas of artificial intelligence and machine learning, and partly in the area of data science. 
+My name is Lei Mao. I am a master student in the Department of Computer Science at the University of Chicago. My research interests are mainly in the areas of machine learning and artificial intelligence, and partly in the area of data science. 
 
 <br />
 
@@ -28,11 +28,11 @@ Before I went to the University of Chicago, I was a PhD candidate in the Departm
 
 <br />
 
-I am an perfectionist. I want to solve problems in my hands in a perfect way, which is however not achievable in many situations.
+I am a perfectionist. I want to solve the problems in my hands in perfect ways, which is, however, not achievable in many situations.
 
 ### Career Change
 
-I was not happy at Duke University. I am deeply convinced that Bio-related majors would still be disastrous for decades, filled with lie, boast and illutions. I should thank that I have learned math and programming well in college, and I met **machine learning** when I was at the lowest point of my life. 
+I was not happy at Duke University. I am deeply convinced that Bio-related majors would still be disastrous for decades, filled with lies, boasts, illutions and moral issues. I should thank that I have learned math and programming well in college, and I met **machine learning** when I was at the lowest point of my life. 
 
 <br />
 
