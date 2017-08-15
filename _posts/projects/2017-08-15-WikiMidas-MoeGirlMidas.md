@@ -27,6 +27,8 @@ I named the two programs after "midas". Because I like the "feel" that you touch
 
 I have little experience in writing a program to retrieve data from internet by myself. So, In addition to some practice program experience in MOOC courses ([Using Python to Access Web Data](https://www.coursera.org/learn/python-network-data)), this is the first time I formally write a data crawler by myself, and I did suffer a lot of problems in order to make it work.
 
+<br />
+
 To achieve the goal of data crawler, there are several aspects that one need to be at least familiar with:
 * html language
 * website API usage
