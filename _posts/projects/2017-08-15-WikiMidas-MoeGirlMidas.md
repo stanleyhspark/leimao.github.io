@@ -39,7 +39,7 @@ However, I have little prior knowledge about html language, except the basic con
 
 * [wiki-api](https://github.com/richardasaurus/wiki-api)<br />
 This is a very good data crawler learning material for me. It had a small problem in getting the summary from Wikipedia articles, which was fixed in my own program.
-<br />v
+<br />
 * [re](https://docs.python.org/2/library/re.html)<br />
 This libray allows user to use regular expression to do matching operations to extract useful information from texts. The usage of this library might be easy. But the key is to understand regular expression and use the correct regular expression to match the thing you are looking for.
 <br />
