@@ -32,11 +32,11 @@ I am a perfectionist. I want to solve the problems in my hands in perfect ways, 
 
 ### Career Change
 
-I was not happy at Duke University. I am deeply convinced that Bio-related majors would still be disastrous for decades, filled with lies, boasts, illutions and moral issues. I should thank that I have learned math and programming well in college, and I met **machine learning** when I was at the lowest point of my life. 
+I believe I am a true scientist. However, I was not convinced that biology could be called "science" at the current level of human civilization when I was at Duke University. That is part of the motivations which causes me to leave this field. I should thank that I have learned math and programming well in college, and I met **machine learning** when I was at the lowest point of my life. 
 
 <br />
 
-With the help from MOOCs, I was able to quickly catch up. I have done a good number of elementary machine learning, deep learning, artificial intelligence and data science projects indepedently. So I would like to challenge myself more by doing some state-of-art machine learning and artificial intelligence researches. I am currently seeking machine learning and artificial intelligence research opportunities not only in the University of Chicago but also in the other areas in the United States.
+With the help from MOOC, I was able to quickly catch up. I have done a good number of elementary machine learning, deep learning, artificial intelligence and data science projects indepedently. So I would like to challenge myself more by doing some state-of-art machine learning and artificial intelligence researches. I am currently seeking machine learning and artificial intelligence research opportunities not only in the University of Chicago but also in the other areas in the United States.
 
 ### About This Site
 
