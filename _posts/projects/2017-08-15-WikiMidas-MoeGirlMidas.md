@@ -94,7 +94,7 @@ response_content = response.content
 
 ### Choices during Development
 
-* How to retrieve webpage content? API or Webpage Html?
+How to retrieve webpage content? API or Webpage Html?
 The MediaWiki provides API to retrieve webpage content using its internal parser tools, such as [MediaWiki TextExtracts](https://www.mediawiki.org/wiki/Extension:TextExtracts). So this raises a question. Should we use the API internal tools or parse the content by ourselves?
 
 <br />
