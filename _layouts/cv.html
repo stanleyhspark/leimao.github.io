@@ -1,0 +1,94 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+<style>
+  .bottom-three {
+     margin-bottom: 1.5cm;
+   }
+  .bottom-small {
+     margin-bottom: 1cm;
+   }
+</style>
+</head>
+
+<body class="page">
+
+{% include _browser-upgrade.html %}
+
+{% include _navigation.html %}
+
+{% if page.image.feature %}
+  <div class="image-wrap">
+  <img src=
+    {% if page.image.feature contains 'http://' %}
+      "{{ page.image.feature }}"
+    {% elsif page.image.feature contains 'https://' %}
+      "{{ page.image.feature }}"
+    {% else %}
+      "{{ site.url }}/images/{{ page.image.feature }}"
+    {% endif %}
+  alt="{{ page.title }} feature image">
+  {% if page.image.credit %}
+    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+  {% endif %}
+  </div><!-- /.image-wrap -->
+{% endif %}
+<div id="main" role="main">
+  <div class="article-author-side">
+    {% include _author-bio.html %}
+  </div>
+  <article>
+    <h1>{{ page.title }}</h1>
+    <div class="article-wrap">
+	<br/>
+    <p align="center" class=bottom-small><img src="{{ site.url }}/images/CV/004-briefcase.png" alt="Work Experience" width="70" height="70"></p>
+	<p align="justify">&#8226 I worked as the <strong>Chief Strategy Officer (CSO)</strong> and <strong>research scientist</strong> in Driving-Force Therapeutics, a pharmaceutical start-up in Dalian, China, from 2016 to 2017, focusing on experiment strategic plan and biostatistical data analysis.</p>
+
+	<br/>
+    <p align="center" class=bottom-small><img src="{{ site.url }}/images/CV/009-mortarboard.png" alt="Education" width="70" height="70"></p>
+	<p align="justify">&#8226 I am currently a <strong>master</strong> student in the Department of Computer Science at the <strong>University of Chicago</strong>.</p>
+	<p align="justify">&#8226 I got a <strong>M.Sc.</strong> degree in <strong>Biochemistry</strong> with a certificate of <strong>Structural Biology and Biophysics</strong> froom <strong>Duke University</strong> in 2016, and a <strong>B.Sc.</strong> degree in<strong> Biotechnology</strong> with a certificate of <strong>Mathematical Modeling</strong> from <strong>Dalian University of Technology</strong> in 2012.</p>
+	<p align="justify">&#8226 I was a <strong>PhD candidate</strong> at the Department of Biochemistry at Duke University, working on DNA repair mechanisms. I did not get my luck, and was extremely unhappy there. So I decided to leave Duke to do the right thing in my life in 2016.</p>
+
+	<br/>
+	<p align="center" class=bottom-small><img src="{{ site.url }}/images/CV/001-medal.png" alt="Honors and Awards" width="70" height="70"></p>
+	<p align="justify">&#8226 I had independently won numerous awards in domestic and international methematical modeling contests (which are team contests), including <a href="http://en.mcm.edu.cn/" target="_blank"><strong>CUMCM</strong></a> (Contemporary Undergraduate Mathematical Contest in Modeling) and <a href="http://www.comap.com/undergraduate/contests/" target="_blank"><strong>MCM/ICM</strong></a> (Mathematical Contest in Modeling/The Interdisciplinary Contest in Modeling), when I was an undergraduate student majored in Biotechnology in China.</p>
+	<p align="justify">&#8226 I had been taking different levels of <strong>Mathematical Olympiad</strong> for decades since my childhood. But I have only won a second prize once in a regional college-level domestic regional competition. Purhaps I am not that talented in Math.</p>
+	<p align="justify">&#8226 I had been awarded almost all the top honors and scholarships, including <strong>President's List</strong> and <strong>National Scholarship</strong> three years in a row, when I was in college. But I only won an <strong>Outstanding Research Poster Award</strong> in the Biochemistry Deparment Retreat despite my four-year effort at Duke University, right before my termination from Duke in 2016.</p>
+
+ 	<br/>   
+    <p align="center" class=bottom-small><img src="{{ site.url }}/images/CV/008-monitor.png" alt="Computer Skills" width="70" height="70"></p>
+    <p align="justify">&#8226 <strong>Logo</strong> (I called it <strong>Turtle</strong>) is the first programming language that I learned when I was a third-year primary-school student in 2000.</p>
+	<p align="justify">&#8226 I could program using <strong>Python</strong>, <strong>C++</strong>, <strong>MATLAB</strong> and <strong>R</strong>, which are listed in a decreasing order of proficiency.</p>
+	<p align="justify">&#8226 I learned Python in 2015 and I think it is the most beautiful programming language in the world. I use Python for most of my <strong>machine learning</strong>,  <strong>artificial intelligence</strong> and <strong>data science</strong> studies.</p>
+	<p align="justify">&#8226 I know little about HTML/CSS language. I made my websites based on others' templates, and revised them using my programming common sense and Google.</p>
+
+	<br/>
+    <p align="center" class=bottom-small><img src="{{ site.url }}/images/CV/006-chat.png" alt="Languages" width="70" height="70"></p>
+    <p align="justify">&#8226 <strong>Chinese</strong> is my mother tongue.</p>
+    <p align="justify">&#8226 My <strong>English</strong> is proficient.</p>
+    
+	<br/>
+
+    {{ content }}
+    </div><!-- /.article-wrap -->
+    {% if site.disqus_shortname and page.comments %}
+      <section id="disqus_thread"></section><!-- /#disqus_thread -->
+    {% endif %}
+  </article>
+</div><!-- /#index -->
+
+<div class="footer-wrap">
+  <footer>
+    {% include _footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include _scripts.html %}          
+
+</body>
+</html>

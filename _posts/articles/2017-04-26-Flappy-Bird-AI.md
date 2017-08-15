@@ -5,13 +5,10 @@ excerpt: "Implementation of Deep Q-Learning algorithm to Play Flappy Bird."
 modified: 2017-04-26T14:17:25-04:00
 categories: article
 tags: [artificial intelligence, deep learning, reinforcement learning, computer vision]
-image:
-  feature: site_logos/Logo Umbrella_Corporation.png
-  teaser: 
-  credit: 
-  creditlink: 
 comments: true
 share: true
+image:
+  teaser: /images/articles/2017-04-26-Flappy-Bird-AI/flappybird_teaser.png
 ---
 
 ### Preface
@@ -22,7 +19,7 @@ Although I am a beginner to Deep Reinforcement Learning, I have a strong feeling
 
 Deep Q-Learning has been widely used to play video games. I firstly noticed this application in some blogs, including [Ben Lau's blog](https://yanpanlau.github.io/2016/07/10/FlappyBird-Keras.html) and [songrotek's blog](http://blog.csdn.net/songrotek/article/details/50580904). Although these two people were not the very first authors implementing Deep Q-Learning to the Flappy Bird game, they improved the implementation to some extent. Ben Lau employed Keras library to implement neural network, which makes code easy to understand. Songrotek, though did not use Keras library, wrapped the learning algorithm to class object, which makes it convenience to study other general Deep Q-Learning problems. After reading their blogs and codes, I became very interested in this application and wanted to implement Deep Q-Learning on this game by myself after learning sufficient theories from the Udacity Machine Learning Nanodegree courses. (Strictly speaking, my very first Deep Q-Learning project was the smartcab project from the Udacity Machine Learning Nanodegree courses. It might be a good project for beginners, however, it is a little bit problematic regarding the concept of Q-Learning, and of hardly any realistic usages.) The overall implementation of Deep Q-Learning on the Flappy Bird game was following the two blogers' implementations I mentioned above. However, I combined both of their advantages and wrote a Deep Q-Learning algorithm that uses Keras library and was wrapped in class object. In addition to this, I also used some tricks in my own implementation to accelerate the training. 
 
-![](/images/articles/2017-04-26-Flappy-Bird-AI/fb.jpg)
+![]({{ site.url }}/images/articles/2017-04-26-Flappy-Bird-AI/fb.jpg)
 
 ### Setting Up Deep Q-Learning Algorithm
 
@@ -30,7 +27,7 @@ Deep Q-Learning has been widely used to play video games. I firstly noticed this
 
 The [NIPS 2013 Deep Q-Learning algorithm](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf) was implemented.
 
-![](/images/articles/2017-04-26-Flappy-Bird-AI/NIPS_2013.png)
+![]({{ site.url }}/images/articles/2017-04-26-Flappy-Bird-AI/NIPS_2013.png)
 
 #### Input Image
 
@@ -54,7 +51,7 @@ One of the key aspect of implementing Q-Learning is that the learning algorithm 
 
 ### Algorithm Performance
 
-![](/images/articles/2017-04-26-Flappy-Bird-AI/flappy_bird_AI.gif)
+![]({{ site.url }}/images/articles/2017-04-26-Flappy-Bird-AI/flappy_bird_AI.gif)
 
 The whole training took roughly 600,000 game frames in 36 hours, and the trained bird would never hit the barriers. It should also be noted that after training with 300,000 game frames, the bird started to fly reasonably, passing 0 to 100 barries in one single trial. 
 

@@ -6,9 +6,7 @@ modified: 2017-07-30T14:17:25-04:00
 categories: project
 tags: [Artificial Intelligence]
 image:
-  feature: site_logos/Logo Umbrella_Corporation.png
-  credit: 
-  creditlink: 
+  teaser: /images/projects/2017-07-30-Intelligent-Mouse/micromouse_teaser.jpg
 comments: true
 share: true
 ---

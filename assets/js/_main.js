@@ -1,33 +1,46 @@
-/*! Plugin options and other jQuery stuff */
+/*! Responsive Menu */
+// http://tympanus.net/codrops/2013/05/08/responsive-retina-ready-menu/
+//  The function to change the class
+var changeClass = function (r,className1,className2) {
+  var regex = new RegExp("(?:^|\\s+)" + className1 + "(?:\\s+|$)");
+  if( regex.test(r.className) ) {
+    r.className = r.className.replace(regex,' '+className2+' ');
+    }
+    else{
+    r.className = r.className.replace(new RegExp("(?:^|\\s+)" + className2 + "(?:\\s+|$)"),' '+className1+' ');
+    }
+    return r.className;
+};  
+//  Creating our button in JS for smaller screens
+var menuElements = document.getElementById('site-nav');
+menuElements.insertAdjacentHTML('afterBegin','<button type="button" role="button" id="menutoggle" class="navtoogle navicon-lines-button x" aria-hidden="true"><span class="navicon-lines"></span>menu</button>');
 
-// Responsive Nav
-var navigation = responsiveNav("#site-nav", { // Selector: The ID of the wrapper
-  animate: true, // Boolean: Use CSS3 transitions, true or false
-  transition: 200, // Integer: Speed of the transition, in milliseconds
-  label: "<i class='fa fa-bars'></i> Menu", // String: Label for the navigation toggle
-  insert: "before", // String: Insert the toggle before or after the navigation
-  customToggle: "", // Selector: Specify the ID of a custom toggle
-  openPos: "relative", // String: Position of the opened nav, relative or static
-  jsClass: "js", // String: 'JS enabled' class which is added to <html> el
-  init: function(){}, // Function: Init callback
-  open: function(){}, // Function: Open callback
-  close: function(){} // Function: Close callback
-});
+//  Toggle the class on click to show / hide the menu
+document.getElementById('menutoggle').onclick = function() {
+  changeClass(this, 'navtoogle active', 'navtoogle');
+};
+// http://tympanus.net/codrops/2013/05/08/responsive-retina-ready-menu/comment-page-2/#comment-438918
+document.onclick = function(e) {
+  var mobileButton = document.getElementById('menutoggle'),
+    buttonStyle =  mobileButton.currentStyle ? mobileButton.currentStyle.display : getComputedStyle(mobileButton, null).display;
 
-$('html').click(function() {
-  //Hide the menus if visible
-  if ($(navigation.wrapper).hasClass('opened')) {
-  	navigation.toggle();
+  if(buttonStyle === 'block' && e.target !== mobileButton && new RegExp(' ' + 'active' + ' ').test(' ' + mobileButton.className + ' ')) {
+    changeClass(mobileButton, 'navtoogle active', 'navtoogle');
   }
-});
+};
 
-$('#site-nav').click(function(event){
-    event.stopPropagation();
-});
+/*! Plugin options and other jQuery stuff */
 
 // FitVids options
 $(function() {
 	$("article").fitVids();
+});
+
+// Table of Contents toggle
+$(function() {
+  $(".toc h3").click(function () {
+    $("#drawer").toggleClass("hidden");
+  });
 });
 
 // Add lightbox class to all image links

@@ -5,12 +5,10 @@ excerpt: "Implementation of Deep Monte Carlo Policy Gradient learning algorithm 
 modified: 2017-05-04T14:17:25-04:00
 categories: article
 tags: [artificial intelligence, deep learning, reinforcement learning]
-image:
-  feature: site_logos/Logo Umbrella_Corporation.png
-  credit: 
-  creditlink: 
 comments: true
 share: true
+image:
+  teaser: /images/articles/2017-05-04-REINFORCE-Policy-Gradient/lunarlander.png
 ---
 
 ### Introduction
@@ -19,17 +17,17 @@ share: true
 
 Here I am going to tackle this LunarLander problem using a new alogirthm called "REINFORCE" or "Monte Carlo Policy Gradient".
 
-![](/images/articles/2017-05-04-REINFORCE-Policy-Gradient/lunarlander.png)
+![]({{ site.url }}/images/articles/2017-05-04-REINFORCE-Policy-Gradient/lunarlander.png)
 
 ### Touch the Algorithm
 
 Algorithm from [Sutton Book draft](http://incompleteideas.net/sutton/book/the-book-2nd.html)
 
-![](/images/articles/2017-05-04-REINFORCE-Policy-Gradient/Sutton_REINFORCE.png)
+![]({{ site.url }}/images/articles/2017-05-04-REINFORCE-Policy-Gradient/Sutton_REINFORCE.png)
 
 Algorithm from [Silver Courseware](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html)
 
-![](/images/articles/2017-05-04-REINFORCE-Policy-Gradient/Silver_REINFORCE.png)
+![]({{ site.url }}/images/articles/2017-05-04-REINFORCE-Policy-Gradient/Silver_REINFORCE.png)
 
 Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing.
 
@@ -62,11 +60,11 @@ RAND_SEED = 0 # random seed
 
 Before Training:
 
-![](/images/articles/2017-05-04-REINFORCE-Policy-Gradient/episode_0.gif)
+![]({{ site.url }}/images/articles/2017-05-04-REINFORCE-Policy-Gradient/episode_0.gif)
 
 After Training:
 
-![](/images/articles/2017-05-04-REINFORCE-Policy-Gradient/episode_3000.gif)
+![]({{ site.url }}/images/articles/2017-05-04-REINFORCE-Policy-Gradient/episode_3000.gif)
 
 OpenAI Gym Evaluation
 
@@ -76,7 +74,7 @@ Solved after 1476 episodes. Best 100-episode average reward was 203.29 ± 4.98.
 
 This algorithm did solve the problem as OpenAI Gym requested. However, it suffered from high vairance problem. I tried to tune the hyperparameters and change the size of neural network. But this did not help significantly.
 
-![](/images/articles/2017-05-04-REINFORCE-Policy-Gradient/training_record_lunarlander.jpeg)
+![]({{ site.url }}/images/articles/2017-05-04-REINFORCE-Policy-Gradient/training_record_lunarlander.jpeg)
 
 ### Links to Github
 

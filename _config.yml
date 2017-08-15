@@ -1,60 +1,73 @@
-# Site wide configuration
+title:            Lei Mao's Website
+description:      Welcome to my site.
+# Your site's domain goes here. Leave localhost server or blank when working locally.
+url:              https://leimao.github.io/
+#http://localhost:5000
 
-title: Red Queen
-locale: en_US
-description: A Website from an Artificial Intelligence Maverick
-logo: site_logos/Red-Queen-Logo.jpg
-search: true
-url: https://leimao.github.io
+disqus_shortname: leimao-github-io
 
-# Jekyll configuration
+# Owner/author information
+owner:
+  name:           Lei Mao
+  avatar:         /author_images/Lei-Bio-Medium.jpg
+  bio:            Machine Learning, Artificial Intelligence, Data Science
+  email:          dukeleimao@gmail.com
+  # Social networking links are used in author-bio sidebar. Update and remove as you like.
+  twitter: 
+  linkedin: lei-mao
+  google_scholar: 
+  google_plus: 
+  github: leimao
+  facebook: dukeleimao
+# Analytics and webmaster tools stuff goes here
+google_analytics: # UA-52736040-1
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
 
-permalink:   /:categories/:title/
-markdown:    kramdown
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: Curriculum
+    url: /cv/
+  - title: Blog
+    url: /blog/
+  - title: Articles
+    url: /articles/
+  - title: Projects
+    url: /projects/
+  - title: Publications
+    url: /publications/
+
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/Chicago
+future:      true
+#pygments:    true
 highlighter: rouge
-sass:
-  sass_dir: _sass
-  style: compressed
-gems:
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-seo-tag
+markdown:    kramdown
+kramdown:
+  extensions: ["strikethrough"]
+  
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
 
 kramdown:
-  input: GFM
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
-  toc_levels: 1..2
+  toc_levels: 1..6
   enable_coderay: false
 
-mathjax: true
+  coderay:
+    coderay_line_numbers:
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
 
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 
-
-# Site owner
-owner:
-  name: Lei Mao
-  avatar: author_images/Lei-Bio-Large.jpg
-  email: dukeleimao@gmail.com
-  disqus-shortname: leimao-github-io
-  twitter: #username
-  facebook: dukeleimao
-  github: leimao
-  stackexchange: #http://stackoverflow.com/users/123456/username
-  linkedin: lei-mao
-  instagram: #username
-  flickr: #username
-  tumblr: #username
-  pinterest: #username
-  weibo: #userid
-  google:
-    plus: #username
-    analytics:
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
+# MathJax
+mathjax: true
