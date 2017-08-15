@@ -6,7 +6,7 @@ modified: 2017-08-15T14:17:25-04:00
 categories: project
 tags: [Data Crawling]
 image:
-  teaser: /images/projects/moegirl_teaser.png
+  teaser: /images/projects/midas.gif
 comments: true
 share: true
 ---
