@@ -4,7 +4,7 @@ title: Lei Mao
 description: "Lei Mao's Website"
 tags: [Jekyll, theme, responsive, blog, template]
 image:
-  feature: /images/website_images/website_teaser.jpg
+  feature: /images/website_images/Optimized-website_teaser.jpg
 ---
 
 <head>
@@ -14,7 +14,7 @@ image:
 </head>
 
 <figure>
-  <img src="{{ site.url }}/images/author_images/Lei-Smoky_Mountain.JPG"/>
+  <img src="{{ site.url }}/images/author_images/Optimized-Lei-Smoky_Mountain.JPG"/>
   <figcaption>Lei Mao at Smoky Mountain in 2015</figcaption>
 </figure>
 
