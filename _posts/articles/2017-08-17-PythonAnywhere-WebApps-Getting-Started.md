@@ -44,10 +44,6 @@ I wondered what hell the "Flask" is. [Wikipedia]((https://en.wikipedia.org/wiki/
 
 In the firt part of the tutorial, it taught you how to manage your source code files on PythonAnywhere. I was surprised that they even have a source code control system, just like GitHub, in their system. You will have to do all these "git" things in their console (I got too used to do "git" things in "clickable" GitHub Destop). For editing or submitting your source code, you can edit the file in the text editor in the broswer or just submit from your own local machine. Everything is easy and straightforward. Here is the first web-hosted application I made. It should be noted that the application might be expired because of the limit of the free account.
 
-<br />
-
-This is the source code.
-
 ```python
 # A very simple Flask Hello World app for you to get started with...
 
@@ -70,3 +66,60 @@ Go to [http://leimao.pythonanywhere.com/foo](http://leimao.pythonanywhere.com/fo
 <br />
 
 Those two are simple webpages. However, what's different to ordinary HTML webpages is that there are no HTML files. The text messages are the returns from certain Python functions when you go to the urls specified.
+
+
+
+```python
+# A very simple Flask Hello World app for you to get started with...
+
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+# To help debug the code
+app.config["DEBUG"] = True
+
+@app.route("/")
+def index():
+    return render_template("main_page.html")
+```
+
+```html
+<html>
+    <head>
+        <title>My scratchboard page</title>
+    </head>
+
+    <body>
+
+        <div>
+            This is the first dummy comment.
+        </div>
+
+        <div>
+            This is the the second dummy comment.  It's no more interesting
+            than the first.
+        </div>
+
+        <div>
+            This is the third dummy comment.  It's actually quite exciting!
+        </div>
+
+        <div>
+            <form action="." method="POST">
+                <textarea name="contents" placeholder="Enter a comment"></textarea>
+                <input type="submit" value="Post comment">
+            </form>
+        </div>
+
+    </body>
+</html>
+```
+
+
+
+Go to [http://leimao.pythonanywhere.com/](http://leimao.pythonanywhere.com/). The main_page.html will be presented. 
+
+<figure>
+    <img src = "{{ site.url }}/images/articles/2017-08-17-PythonAnywhere-WebApps-Getting-Started/post_comment.png">
+</figure>
