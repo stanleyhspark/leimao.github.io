@@ -86,38 +86,7 @@ def index():
     return render_template("main_page.html")
 ```
 
-The "main_page.html" looks like this:
-```html
-<html>
-    <head>
-        <title>My scratchboard page</title>
-    </head>
 
-    <body>
-
-        <div>
-            This is the first dummy comment.
-        </div>
-
-        <div>
-            This is the the second dummy comment.  It's no more interesting
-            than the first.
-        </div>
-
-        <div>
-            This is the third dummy comment.  It's actually quite exciting!
-        </div>
-
-        <div>
-            <form action="." method="POST">
-                <textarea name="contents" placeholder="Enter a comment"></textarea>
-                <input type="submit" value="Post comment">
-            </form>
-        </div>
-
-    </body>
-</html>
-```
 Go to [http://leimao.pythonanywhere.com/](http://leimao.pythonanywhere.com/). The main_page.html will be presented. 
 
 <figure>
