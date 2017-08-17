@@ -74,7 +74,7 @@ Those two are simple webpages. However, what's different to ordinary HTML webpag
 
 In the second part of the tutorial, it taught us how to make a database backended comment application.
 
-```python
+{% highlight python %}
 # A very simple Flask Hello World app for you to get started with...
 from flask import Flask, render_template
 
@@ -86,9 +86,9 @@ app.config["DEBUG"] = True
 @app.route("/")
 def index():
     return render_template("main_page.html")
-```
+{% endhighlight %}
 
-```html
+{% highlight html %}
 <html>
     <head>
         <title>My scratchboard page</title>
@@ -118,9 +118,7 @@ def index():
 
     </body>
 </html>
-```
-
-
+{% endhighlight %}
 
 Go to [http://leimao.pythonanywhere.com/](http://leimao.pythonanywhere.com/). The main_page.html will be presented. 
 
