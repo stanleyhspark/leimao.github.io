@@ -279,7 +279,7 @@ app.config["DEBUG"] = True
 # Connection configurations to database
 SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://{username}:{password}@{hostname}/{databasename}".format(
     username="leimao",
-    password="dlut116024",
+    password="********", # database passowrd hidden
     hostname="leimao.mysql.pythonanywhere-services.com",
     databasename="leimao$comments",
 )
@@ -311,6 +311,8 @@ The final web application looks like this:
 <figure>
     <img src = "{{ site.url }}/images/articles/2017-08-17-PythonAnywhere-WebApps-Getting-Started/post_comment_4.png">
 </figure>
+
+One can visit this web application at [http://leimao.pythonanywhere.com/](http://leimao.pythonanywhere.com/). The "user name" is "leimao", and the password is "123456".
 
 ### Conclusion
 
