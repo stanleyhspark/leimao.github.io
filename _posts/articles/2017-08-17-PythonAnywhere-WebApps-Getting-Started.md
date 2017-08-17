@@ -259,4 +259,6 @@ def index():
 </html>
 {% endhighlight %}
 
-
+<figure>
+    <img src = "{{ site.url }}/images/articles/2017-08-17-PythonAnywhere-WebApps-Getting-Started/post_comment_3.png">
+</figure>
