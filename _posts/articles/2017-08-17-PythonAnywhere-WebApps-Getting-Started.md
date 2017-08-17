@@ -302,3 +302,6 @@ The final web application looks like this:
     <img src = "{{ site.url }}/images/articles/2017-08-17-PythonAnywhere-WebApps-Getting-Started/post_comment_4.png">
 </figure>
 
+### Conclusion
+
+We have implemented a simple web application on PythonAnywhere. To host a more complicated web application in the future, I need to become more efficient in database coding (I have not used database for a very long time)and get familiar with the usage of Flask or Django.
