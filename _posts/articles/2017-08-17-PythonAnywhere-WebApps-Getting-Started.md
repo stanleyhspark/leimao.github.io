@@ -37,5 +37,7 @@ I wondered what hell the "Flask" is. [Wikipedia]((https://en.wikipedia.org/wiki/
 
 <figure class="half">
     <img src = "{{ site.url }}/images/articles/2017-08-17-PythonAnywhere-WebApps-Getting-Started/Flask_logo.svg">
+    <figcaption>Flask</figcaption>
     <img src = "{{ site.url }}/images/articles/2017-08-17-PythonAnywhere-WebApps-Getting-Started/Django_logo.svg">
+    <figcaption>Django</figcaption>
 </figure>
