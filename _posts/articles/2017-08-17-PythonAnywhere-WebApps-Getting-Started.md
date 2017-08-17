@@ -188,3 +188,5 @@ The interface now looks like this:
 <figure>
     <img src = "{{ site.url }}/images/articles/2017-08-17-PythonAnywhere-WebApps-Getting-Started/post_comment_2.png">
 </figure>
+
+So far, we have finished making the web application interface. However, the application is not functional because it is not able to receive message from the user. What we are going to do next is to add this feature.
