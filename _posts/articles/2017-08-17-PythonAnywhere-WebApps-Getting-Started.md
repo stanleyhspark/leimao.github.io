@@ -182,3 +182,9 @@ Let us add some elements to make the site fancier.
 </html>
 
 {% endhighlight %}
+
+The interface now looks like this:
+
+<figure>
+    <img src = "{{ site.url }}/images/articles/2017-08-17-PythonAnywhere-WebApps-Getting-Started/post_comment_2.png">
+</figure>
