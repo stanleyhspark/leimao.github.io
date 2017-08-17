@@ -46,8 +46,8 @@ In the firt part of the tutorial, it taught you how to manage your source code f
 
 <br />
 
-Go to http://leimao.pythonanywhere.com/, it will show a "hello world" message.
-Go to http://leimao.pythonanywhere.com/foo, it will show another "hello world" message.
+Go to [http://leimao.pythonanywhere.com/](http://leimao.pythonanywhere.com/), it will show a "hello world" message.
+Go to [http://leimao.pythonanywhere.com/foo](http://leimao.pythonanywhere.com/foo), it will show another "hello world" message.
 
 <br />
 
