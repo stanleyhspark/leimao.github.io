@@ -45,17 +45,17 @@ This is a very good data crawler learning material for me. It had a small proble
 #### [re](https://docs.python.org/2/library/re.html)
 This libray allows user to use regular expression to do matching operations to extract useful information from texts. The usage of this library might be easy. But the key is to understand regular expression and use the correct regular expression to match the thing you are looking for.
 
-```python
+{% highlight python %}
 # To compile a message to regular expression
 empty_regex = re.compile(message)
 # To remove a string that matches certain regular expression
 text = re.sub(regex, '', text, flags)
-```
+{% endhighlight %}
 
 #### [pyquery](https://pythonhosted.org/pyquery/)
 This library is a very power tool find certain nodes containing information of interests in the html file.
 
-```python
+{% highlight python %}
 # Make PyQuery object from a html file
 # 'response_content' is a html file
 html = pq(response_content)
@@ -72,13 +72,13 @@ html('body').find('h2, p')
 html('body').find('.image').find('img').attr('src')
 # Get text
 html('#firstHeading').text()
-```
+{% endhighlight %}
 
 #### [requests](http://docs.python-requests.org/en/master/)
 
 This is a libray which is used to communicate with website APIs in the Python program.
 
-```python
+{% highlight python %}
 # To work with website API
 # 'url' is the website API url and 'params' is the parameters for certain API function
 response = requests.get(url, params)
@@ -90,7 +90,7 @@ response_json = response.json()
 # 'url' is the webpage url
 response = requests.get(url)
 response_content = response.content
-```
+{% endhighlight %}
 
 ### Choices during Development
 
@@ -110,7 +110,7 @@ Parsing by ourselves, although might be labor entensive, could be flexible to ex
 
 MoeGirlMidas was wrapped into a class object called "MoeGirlAPI". To use MoeGirlMidas in your Python program:
 
-```python
+{% highlight python %}
 from moegirlmidas import MoeGirlAPI
 moegirl = MoeGirlAPI()
 # To search for certain query in MoeGirl
@@ -119,41 +119,41 @@ moegirl = MoeGirlAPI()
 search_result = moegirl.search(term = '神裂火织', limit = 50)
 for item in search_result:
     print(item)
-```
-```
+{% endhighlight %}
+{% highlight python %}
 >>>
 神裂火织
-```
-```python
+{% endhighlight %}
+{% highlight python %}
 # To retrieve article from MoeGirl
 # title is the title of the article you want to retrieve from MoeGirl
 # the return is article-class object containing 'heading', 'summary', 'content', 'properties', 'image', 'references' and 'url'
 article = moegirl.retrieve(title = '神裂火织')
 # To view the article content
 print article.heading
-```
-```
+{% endhighlight %}
+{% highlight python %}
 >>>
 神裂火织
-```
-```python
+{% endhighlight %}
+{% highlight python %}
 print article.image
-```
-```
+{% endhighlight %}
+{% highlight python %}
 >>> 
 https://img.moegirl.org/common/thumb/f/fd/Kanzaki_Kaori.jpg/250px-Kanzaki_Kaori.jpg
-```
-```python
+{% endhighlight %}
+{% highlight python %}
 print article.summary
-```
-```
+{% endhighlight %}
+{% highlight python %}
 >>>
 神裂火织是轻小说《魔法禁书目录》及其衍生的漫画、动画、游戏等作品的登场角色。
-```
-```python
+{% endhighlight %}
+{% highlight python %}
 print article.content
-```
-```
+{% endhighlight %}
+{% highlight python %}
 >>>
 神裂火织
 
@@ -201,12 +201,12 @@ print article.content
 
 导航菜单
 
-```
-```python
+{% endhighlight %}
+{% highlight python %}
 for key in article.properties.keys():
     print key, ':', article.properties[key], '\n'
-```
-```
+{% endhighlight %}
+{% highlight python %}
 >>>
 发色 : 黑发 
 
@@ -231,18 +231,18 @@ relatives : 上条当麻 ， 茵蒂克丝 ， 萝拉·斯图亚特 ， 史提尔
 身高 : 175cm以上 
 
 萌点 : 单马尾 、 御姐 、 巨乳 、圣人、女武者、 大和抚子 、单裤腿 
-```
+{% endhighlight %}
 
 The Python script could also be run directly in the shell (the shell might have conflicts with Chinese characters):
 
 To search article
-```shell
+{% highlight shell %}
 python moegirlmidas.py -s "神裂火织"
-```
+{% endhighlight %}
 
 To retrieve article
-```shell
+{% highlight shell %}
 python moegirlmidas.py -r "神裂火织"
-```
+{% endhighlight %}
 The sample codes above could also be run in a Jupyter Notebook. See the run results [here](https://github.com/leimao/MoeGirlMidas/blob/master/sample_code.ipynb).
 
