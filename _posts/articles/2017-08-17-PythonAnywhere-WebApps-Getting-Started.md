@@ -70,27 +70,3 @@ Go to [http://leimao.pythonanywhere.com/foo](http://leimao.pythonanywhere.com/fo
 <br />
 
 Those two are simple webpages. However, what's different to ordinary HTML webpages is that there are no HTML files. The text messages are the returns from certain Python functions when you go to the urls specified.
-
-```python
-# A very simple Flask Hello World app for you to get started with...
-
-from flask import Flask, render_template
-
-app = Flask(__name__)
-
-# To help debug the code
-app.config["DEBUG"] = True
-
-@app.route("/")
-def index():
-    return render_template("main_page.html")
-```
-
-
-Go to [http://leimao.pythonanywhere.com/](http://leimao.pythonanywhere.com/). The main_page.html will be presented. 
-
-<figure>
-    <img src = "{{ site.url }}/images/articles/2017-08-17-PythonAnywhere-WebApps-Getting-Started/post_comment.png">
-</figure>
-
-Test
