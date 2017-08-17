@@ -37,9 +37,7 @@ The codes for the project includes the following files:
 - showmaze.py
   This script can be used to create a visual demonstration of what a maze looks like.
   To run showmaze.py, run the following command in the shell:
-  {% highlight shell %}
-  python showmaze.py test_maze_01.txt
-  {% endhighlight %}
+  {% highlight shell %}python showmaze.py test_maze_01.txt{% endhighlight %}
 - showmouse.py
   This script can be used to create a visual demonstration of how micromouse is exploring and solving the maze.
   To run showmouse.py, run the following command in the shell:
