@@ -88,14 +88,14 @@ def index():
     return render_template("main_page.html")
 {% endhighlight %}
 
-{% highlight HTML %}
+{% highlight html %}
+<--!main_page.html-->
 <html>
     <head>
         <title>My scratchboard page</title>
     </head>
 
     <body>
-
         <div>
             This is the first dummy comment.
         </div>
@@ -114,7 +114,6 @@ def index():
                 <input type="submit" value="Post comment">
             </form>
         </div>
-
     </body>
 </html>
 {% endhighlight %}
