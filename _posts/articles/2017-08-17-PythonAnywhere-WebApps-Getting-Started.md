@@ -35,7 +35,7 @@ There is a beginner's tutorial titled ["A beginner's guide to building a simple 
 
 I wondered what hell the "Flask" is. [Wikipedia]((https://en.wikipedia.org/wiki/Flask_(web_framework))) told me that [Flask](http://flask.pocoo.org/) is basically a web framework that helps you to build web applications. There are similar tools, such as [Django](https://www.djangoproject.com/). Whatever, let us keep on moving.
 
-<figure>
+<figure class="half">
     <img src = "{{ site.url }}/images/articles/2017-08-17-PythonAnywhere-WebApps-Getting-Started/Flask_logo.svg">
-    <img src = "{{ site.url }}/images/articles/2017-08-17-PythonAnywhere-WebApps-Getting-Started/Django_logo.svg"></img>
+    <img src = "{{ site.url }}/images/articles/2017-08-17-PythonAnywhere-WebApps-Getting-Started/Django_logo.svg">
 </figure>
