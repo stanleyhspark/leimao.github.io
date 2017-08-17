@@ -262,3 +262,43 @@ def index():
 <figure>
     <img src = "{{ site.url }}/images/articles/2017-08-17-PythonAnywhere-WebApps-Getting-Started/post_comment_3.png">
 </figure>
+
+#### Add Back-Ended Database to "Comment" Web App
+
+As is mentioned in the PythonAnywhere documentation, "SQLite is pretty slow on PythonAnywhere, and doesn't scale well for larger sites anyway. Postgres is a paid feature on PythonAnywhere because of its larger server power requirements, and we don't have built-in support for MongoDB. So we're going to use MySQL, which you can use from a free PythonAnywhere account." So probably the best choice is to go with MySQL.
+
+{% highlight python %}
+from flask import Flask, redirect, render_template, request, url_for
+from flask_sqlalchemy import SQLAlchemy
+
+app = Flask(__name__)
+
+# To help debug the code
+app.config["DEBUG"] = True
+
+# Connection configurations to database
+SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://{username}:{password}@{hostname}/{databasename}".format(
+    username="leimao",
+    password="dlut116024",
+    hostname="leimao.mysql.pythonanywhere-services.com",
+    databasename="leimao$comments",
+)
+app.config["SQLALCHEMY_DATABASE_URI"] = SQLALCHEMY_DATABASE_URI
+app.config["SQLALCHEMY_POOL_RECYCLE"] = 299 # connection timeouts
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False # no warning disruptions
+
+db = SQLAlchemy(app)
+
+class Comment(db.Model):
+
+    __tablename__ = "comments"
+
+    id = db.Column(db.Integer, primary_key=True)
+    content = db.Column(db.String(4096))
+{% endhighlight %}
+
+The final web application looks like this:
+<figure>
+    <img src = "{{ site.url }}/images/articles/2017-08-17-PythonAnywhere-WebApps-Getting-Started/post_comment_4.png">
+</figure>
+
