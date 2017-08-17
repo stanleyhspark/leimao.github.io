@@ -39,3 +39,16 @@ I wondered what hell the "Flask" is. [Wikipedia]((https://en.wikipedia.org/wiki/
     <img src = "{{ site.url }}/images/articles/2017-08-17-PythonAnywhere-WebApps-Getting-Started/Flask_logo.svg">
     <img src = "{{ site.url }}/images/articles/2017-08-17-PythonAnywhere-WebApps-Getting-Started/Django_logo.svg">
 </figure>
+
+<br />
+
+In the firt part of the tutorial, it taught you how to manage your source code files on PythonAnywhere. I was surprised that they even have a source code control system, just like GitHub, in their system. You will have to do all these "git" things in their console (I got too used to do "git" things in "clickable" GitHub Destop). For editing or submitting your source code, you can edit the file in the text editor in the broswer or just submit from your own local machine. Everything is easy and straightforward. Here is the first web-hosted application I made. It should be noted that the application might be expired because of the limit of the free account.
+
+<br />
+
+Go to http://leimao.pythonanywhere.com/, it will show a "hello world" message.
+Go to http://leimao.pythonanywhere.com/foo, it will show another "hello world" message.
+
+<br />
+
+Those two are simple webpages. However, what's different to ordinary HTML webpages is that there are no HTML files. The text messages are the returns from certain Python functions when you go to the urls specified.
