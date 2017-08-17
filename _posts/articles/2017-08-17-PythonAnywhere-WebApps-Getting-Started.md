@@ -88,7 +88,7 @@ def index():
     return render_template("main_page.html")
 {% endhighlight %}
 
-{% highlight css %}
+{% highlight HTML %}
 <html>
     <head>
         <title>My scratchboard page</title>
@@ -101,8 +101,7 @@ def index():
         </div>
 
         <div>
-            This is the the second dummy comment.  It's no more interesting
-            than the first.
+            This is the the second dummy comment.  It's no more interesting than the first.
         </div>
 
         <div>
