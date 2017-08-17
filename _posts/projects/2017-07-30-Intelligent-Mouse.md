@@ -41,26 +41,18 @@ The codes for the project includes the following files:
 - showmouse.py
   This script can be used to create a visual demonstration of how micromouse is exploring and solving the maze.
   To run showmouse.py, run the following command in the shell:
-  {% highlight shell %}
-python showmouse.py test_maze_01.txt complete
-  {% endhighlight %}
-  {% highlight shell %}
-  python showmouse.py test_maze_01.txt incomplete
-  {% endhighlight %}
+  {% highlight shell %}python showmouse.py test_maze_01.txt complete{% endhighlight %}
+  {% highlight shell %}python showmouse.py test_maze_01.txt incomplete{% endhighlight %}
   where "complete" and "incomplete" designate the strategy of micromouse.
   Please also remember to hit "Enter" once in the shell to start the micromouse
 - showplanner.py
   This script can be used to create a visual demonstration of the optimal actions of micromouse in the maze.
   To run showplanner.py, run the following command in the shell:
-  {% highlight shell %}
-  python showplanner.py test_maze_01.txt
-  {% endhighlight %}
+  {% highlight shell %}python showplanner.py test_maze_01.txt{% endhighlight %}
 - test.py
   This script allows you to test your micromouse in different modes on different mazes.
   To run test.py, run the following command in the shell:
-  {% highlight shell %}
-  python test.py test_maze_01.txt
-  {% endhighlight %}
+  {% highlight shell %}python test.py test_maze_01.txt{% endhighlight %}
   
 The script uses the turtle module to visualize the maze; you can click on the window with the visualization after drawing is complete to close the window. 
 To allow more changes to the micromouse, the scripts can be modified accordingly.
