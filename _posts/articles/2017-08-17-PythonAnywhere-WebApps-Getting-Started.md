@@ -46,6 +46,24 @@ In the firt part of the tutorial, it taught you how to manage your source code f
 
 <br />
 
+This is the source code.
+
+```python
+# A very simple Flask Hello World app for you to get started with...
+
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello Hello from Flask!'
+
+@app.route('/foo')
+def hello_world_2():
+    return 'Welcome to the foo inside Flask!'
+```
+
 Go to [http://leimao.pythonanywhere.com/](http://leimao.pythonanywhere.com/), it will show a "hello world" message.
 Go to [http://leimao.pythonanywhere.com/foo](http://leimao.pythonanywhere.com/foo), it will show another "hello world" message.
 
