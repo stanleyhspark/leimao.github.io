@@ -314,6 +314,11 @@ The final web application looks like this:
 
 One can visit this web application at [http://leimao.pythonanywhere.com/](http://leimao.pythonanywhere.com/). The "user name" is "leimao", and the password is "123456".
 
-### Conclusion
+### Conclusions
 
 We have implemented a simple web application on PythonAnywhere. To host a more complicated web application in the future, I need to become more efficient in database coding (I have not used database for a very long time)and get familiar with the usage of Flask or Django.
+
+### Supplementations
+
+Concept of model inheritence:
+[https://docs.djangoproject.com/en/1.11/topics/db/models/](https://docs.djangoproject.com/en/1.11/topics/db/models/)
