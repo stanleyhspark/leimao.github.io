@@ -7,7 +7,7 @@ tags: [readings]
 comments: false
 ---
 
-{% for post in site.categories.readings %}
+{% for post in site.categories.reading %}
 
   {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
   {% if year != year_previous %}

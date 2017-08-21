@@ -3,7 +3,7 @@ layout: post
 title: Understand Explaining Away and Its Effect on Belief Networks
 excerpt: "Explaining Away Makes Belief Networks Hard to Train"
 modified: 2017-08-21T14:17:25-04:00
-categories: blog
+categories: reading
 tags: [Deep Learning]
 comments: true
 share: true
