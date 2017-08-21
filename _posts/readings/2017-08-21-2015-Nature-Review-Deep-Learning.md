@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Understand Explaining Away and Its Effect on Belief Networks
-excerpt: "Explaining Away Makes Belief Networks Hard to Train"
+title: 2015 Nature Review: Deep Learning
+excerpt: "Deep Learning Authority Review"
 modified: 2017-08-21T14:17:25-04:00
 categories: reading
 tags: [Deep Learning]
