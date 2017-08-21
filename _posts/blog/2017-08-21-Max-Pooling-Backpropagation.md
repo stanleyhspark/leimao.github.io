@@ -17,7 +17,7 @@ After checking on [StackExchange](https://datascience.stackexchange.com/question
 
 <br />
 
-I also maintained a copy of the mathematical derivation from StackExchange here:
+I also maintained a copy of the mathematical derivation from StackExchange below. It is well illustrated and simple to understand.
 
 <br />
 
