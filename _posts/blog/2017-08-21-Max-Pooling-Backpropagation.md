@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Back Propagation Through Max-Pooling Layer"
-excerpt: "Ever Think of Back Propagation Through Max-Pooling Layer?"
+title: "Backpropagation Through Max-Pooling Layer"
+excerpt: "Ever Think of Backpropagation Through Max-Pooling Layer?"
 modified: 2017-08-21T14:17:25-04:00
 categories: blog
 tags: [Math, Deep Learning]
