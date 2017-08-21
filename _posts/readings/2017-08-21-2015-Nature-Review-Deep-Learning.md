@@ -13,4 +13,4 @@ In 2015, Yann LeCun, Yoshua Bengio & Geoffrey Hinton, the three distinguished sc
 
 <br />
 
-The paper could be downloaded [here](https://github.com/leimao/Deep_Learning_Papers/blob/master/Reviews/Nature_Deep_Learning_Review_2015.pdf).
+The paper could be downloaded [here](https://github.com/leimao/Deep_Learning_Papers/raw/master/Reviews/Nature_Deep_Learning_Review_2015.pdf).
