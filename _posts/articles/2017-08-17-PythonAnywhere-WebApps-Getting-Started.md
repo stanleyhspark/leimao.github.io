@@ -89,6 +89,7 @@ def index():
 {% endhighlight %}
 
 {% highlight html %}
+<!doctype html>
 <--!main_page.html-->
 <html>
     <head>
