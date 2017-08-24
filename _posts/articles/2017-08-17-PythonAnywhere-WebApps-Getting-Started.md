@@ -89,7 +89,7 @@ def index():
 {% endhighlight %}
 
 {% highlight html %}
-<!doctype html>
+<!DOCTYPE html>
 <--!main_page.html-->
 <html>
     <head>
@@ -128,6 +128,7 @@ Go to [http://leimao.pythonanywhere.com/](http://leimao.pythonanywhere.com/). Th
 Let us add some elements to make the site fancier.
 
 {% highlight html %}
+<!DOCTYPE html>
 <--!main_page.html-->
 <html>
     <head>
@@ -212,6 +213,7 @@ def index():
 
 
 {% highlight html %}
+<!DOCTYPE html>
 <--!main_page.html-->
 <html>
     <head>
