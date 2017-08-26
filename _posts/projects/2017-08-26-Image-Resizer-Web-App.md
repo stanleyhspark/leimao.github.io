@@ -11,16 +11,6 @@ comments: true
 share: true
 ---
 
-<head>
-    <style type="text/css">
-        img {
-	    display: block;
-	    margin: 0 auto;
-	    }
-    </style>
-</head>
-
-
 ### Introduction
 
 Since I am hosting my own websites, I sometimes have to prepare some png-formatted images with the right size for my website. So I developed this [Image Resizer](http://imageresizer.pythonanywhere.com/) web application using Python in two days, and hosted it on PythonAnywhere. This is formally my first experience of developing web applications, and I think I have learned a lot.
