@@ -129,11 +129,11 @@ pip3.6 install --user opencv-python
 
 Thank Guotu Li, Jianhai Zhang and Di Wang for initial testings and feedbacks.
 
-* Ugly Interface
+* Ugly interface
 
 The interface was written in pure html. I have no knowledge about how to make a good web UI interface.
 
-* Image Sizer Larger After Shrinking
+* Image sizer became larger after shrinking
 
 For some original small-sized image, after shrinking, the size became a little bit bigger. I think it due to the resize function and image-save function in OpenCV. I tested some compression parameters of OpenCV image-save functions. But they do not make too much difference. I will study OpenCV in depth in the future if I get chance.
 
