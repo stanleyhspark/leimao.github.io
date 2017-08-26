@@ -13,9 +13,13 @@ share: true
 
 <head>
     <style type="text/css">
-        figure{text-align: center;}
+        img {
+	    display: block;
+	    margin: 0 auto;
+	    }
     </style>
 </head>
+
 
 ### Introduction
 
