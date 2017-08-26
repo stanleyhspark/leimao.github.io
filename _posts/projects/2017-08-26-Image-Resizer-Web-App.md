@@ -92,18 +92,11 @@ def add_header(r):
     r.headers['Cache-Control'] = 'public, max-age=0'
 {% endhighlight %}
 
-#### Some Features
-
-* Examine the format of image for submission.
-* Restrict the image size for submission to prevent blowing the server.
-* Clear the images stored on the server routinely to prevent hitting the server hard disk limit.
-* Show the size of images before and after resizing.
-
 #### Caveats on PythonAnywhere
 
 After preparing all the python application code and html files, the test of the application was successful on my local machine. However, when I tested the application on PythonAnywhere, some error poped up. 
 
-#### Absolute Path
+* Absolute Path
 PythonAnywhere does not support file operations using relative path. You will have to use absolute path instead. To do this, first find out the absolute path of current folder and concatenate the folder absolute path to your file/folder name.
 
 {% highlight python %}
@@ -115,7 +108,7 @@ app.config['UPLOAD_FOLDER'] = os.path.join(THIS_FOLDER, 'uploads/')
 app.config['DOWNLOAD_FOLDER'] = os.path.join(THIS_FOLDER, 'downloads/')
 {% endhighlight %}
 
-#### OpenCV3 Installation
+* OpenCV3 Installation
 There was OpenCV2 (for Python 2.7) pre-installed on the server. However, I need OpenCV3 (for Python 3.6) because I developed the application in Python 3.6 and Flask 0.12 was also for Python 3.6. Unlike usual pip install, to install new packages on PythonAnywhere server:
 
 {% highlight shell %}
@@ -124,6 +117,13 @@ pip install --user package
 # Pip install OpenCV3
 pip3.6 install --user opencv-python
 {% endhighlight %}
+
+#### Some Features
+
+* Examine the format of image for submission.
+* Restrict the image size for submission to prevent blowing the server.
+* Clear the images stored on the server routinely to prevent hitting the server hard disk limit.
+* Show the size of images before and after resizing.
 
 ### User Feedback
 
