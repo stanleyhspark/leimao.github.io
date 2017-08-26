@@ -121,7 +121,7 @@ app.config['UPLOAD_FOLDER'] = os.path.join(THIS_FOLDER, 'uploads/')
 app.config['DOWNLOAD_FOLDER'] = os.path.join(THIS_FOLDER, 'downloads/')
 {% endhighlight %}
 
-### OpenCV3 Installation
+#### OpenCV3 Installation
 There was OpenCV2 (for Python 2.7) pre-installed on the server. However, I need OpenCV3 (for Python 3.6) because I developed the application in Python 3.6 and Flask 0.12 was also for Python 3.6. Unlike usual pip install, to install new packages on PythonAnywhere server:
 
 {% highlight shell %}
@@ -131,7 +131,7 @@ pip install --user package
 pip3.6 install --user opencv-python
 {% endhighlight %}
 
-# User Feedback
+### User Feedback
 
 Thank Guotu Li, Jianhai Zhang and Di Wang for initial testings and feedbacks.
 
@@ -140,3 +140,7 @@ The interface was written in pure html. I have no knowledge about how to make a 
 
 * Image Sizer Larger After Shrinking
 For some original small-sized image, after shrinking, the size became a little bit bigger. I think it due to the resize function and image-save function in OpenCV. I tested some compression parameters of OpenCV image-save functions. But they do not make too much difference. I will study OpenCV in depth in the future if I get chance.
+
+### Source Code
+
+To view source code, please visit my [GitHub](https://github.com/leimao/Image_Resizer).
