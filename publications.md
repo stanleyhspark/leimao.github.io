@@ -34,19 +34,19 @@ Publication coming soon.
 
 #### Journal Articles
 
-* **Targeting the nuclear transport machinery by rational drug design** <br />
+* **Targeting the Nuclear Transport Machinery by Rational Drug Design** <br />
   **Lei Mao** and Yongliang Yang <br />
   *Curr Pharm Des, 2013. 19(12): p. 2318-25* <br />
   [[PubMed](https://www.ncbi.nlm.nih.gov/pubmed/23082981)] <br />
 
-* **CRM1 is a cellular target of curcumin: new insights for the myriad of biological effects of an ancient spice** <br />
+* **CRM1 is a Cellular Target of Curcumin: New Insights for the Myriad of Biological Effects of an Ancient Spice** <br />
   Mingshan Niu, Sijin Wu, **Lei Mao** and Yongliang Yang <br />
   *Traffic, 2013. 14(10): p. 1042-52* <br />
   [[PubMed](https://www.ncbi.nlm.nih.gov/pubmed/23829533)] <br />
 
 #### Patents
 
-* **Sunitinib used as the inhibitor of acetylcholinesterase** <br />
+* **Sunitinib Used as the Inhibitor of Acetylcholinesterase** <br />
   Mingshan Niu, **Lei Mao** and Yongliang Yang <br />
   *Patent Number: CN102648906 A* <br />
   [[Google](https://encrypted.google.com/patents/CN102648906A?cl=ru)] <br />
