@@ -11,9 +11,15 @@ share: true
 
 I purchased and read Stephen Marsland's machine learning textbook "Machine Learning: An Algorithmic Perspective, Second Edition" early this year. Today I am going to give a overall review and rate on it here. You can purchased the book from [Amazon](https://www.amazon.com/Machine-Learning-Algorithmic-Perspective-Recognition/dp/1466583282).
 
+<br />
+
 The reason of purchasing this book is that I need a comprehensive machine learning textbook, covering most of the machine learning topics, for reference. The mathematics behind these machine learning topics are preferred but not required. I am a computer scientist but not statistician. So this book titled "Machine Learning: An Algorithmic Perspective, Second Edition", plus its good-looking hard cover, quickly attracted my attention. This books covers the three areas of machine learning topics, namely supervised learning, unsupervised learning, and reinforcement learning, which is comprehensive enough to be a machine learning textbook. It contains some reasonable amount of math, makes it less daunting compared to books that look more sophiscated such as Jerome Friedman et al.'s "The Elements of Statistical Learning: Data Mining, Inference, and Prediction, Second Edition".
 
+<br />
+
 After reading the whole book, I would rate this book 3/5, which means that It is merely acceptable but not that great.
+
+<br />
 
 #### Strengths
 
