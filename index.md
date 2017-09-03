@@ -20,7 +20,7 @@ image:
 
 ### Who am I
 
-My name is Lei Mao. I am a master student in the Department of Computer Science at the University of Chicago. My research interests are mainly in the areas of machine learning and artificial intelligence, and partly in the area of data science. 
+My name is Lei Mao. I am a master student in the Department of **Computer Science** at the **University of Chicago**. My research interests are mainly in the areas of machine learning and artificial intelligence, and partly in the area of data science. 
 
 <br />
 
