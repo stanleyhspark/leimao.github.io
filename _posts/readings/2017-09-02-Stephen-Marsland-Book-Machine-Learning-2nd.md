@@ -19,8 +19,6 @@ The reason of purchasing this book is that I need a comprehensive machine learni
 
 After reading the whole book, I would rate this book 3/5, which means that It is merely acceptable but not that great.
 
-<br />
-
 #### Strengths
 
 The topics are comprehensive. Almost all of the machine learning techniques used in supervised learning, unsupervised learning, and reinforcement learning were touched to different extent in this book, make it at least a good machine learning bibliography. Some of the topics, which you might have not seen in MOOC courses, are important to machine learning studies.
