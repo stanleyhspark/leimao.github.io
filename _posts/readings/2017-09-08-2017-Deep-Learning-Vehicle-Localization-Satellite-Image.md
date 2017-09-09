@@ -25,6 +25,8 @@ Unlike the old algorithm published in the 2015 paper, the new algorithm publishe
 
 ### New Algorithm
 
+#### Overall
+
 The whole algorithm consists basically two parts:
 1. In the training stage, learning the embedded features of ground image and satellite images, respectively.
 2. In the testing stage, apply particle filtering, and calculate embedded features for both ground images and satellite images, to find out the most probable pose (location and orientation) of the vehicle.
