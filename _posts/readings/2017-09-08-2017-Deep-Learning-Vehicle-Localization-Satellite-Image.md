@@ -11,7 +11,7 @@ share: true
 
 ### Introduction
 
-Following the "Accurate Vision-based Vehicle Localization using Satellite Imagery" paper published in 2015 from Matthew Walter's group at Toyota Technological Institute at Chicago (TTIC), Matthew Walter's group published another paper titled "Satellite Image-based Localization via Learned Embeddings" on the same top using deep learning in 2017.
+Following the "Accurate Vision-based Vehicle Localization using Satellite Imagery" paper published in 2015 from Matthew Walter's group at Toyota Technological Institute at Chicago (TTIC), Matthew Walter's group published another paper titled "Satellite Image-based Localization via Learned Embeddings" on the same top using deep learning in 2017. The paper could be downloaded [here](https://github.com/leimao/Deep_Learning_Papers/raw/master/Computer_Vision/2017_Vehicle_Localization_on_Satellite_Images_via_Learning_Embeddings/2017_Vehicle_Localization_on_Satellite_Images_via_Learning_Embeddings.pdf), and my annotated paper could be downloaded [here](https://github.com/leimao/Deep_Learning_Papers/raw/master/Computer_Vision/2017_Vehicle_Localization_on_Satellite_Images_via_Learning_Embeddings/2017_Vehicle_Localization_on_Satellite_Images_via_Learning_Embeddings_annotated.pdf).
 
 <br />
 
