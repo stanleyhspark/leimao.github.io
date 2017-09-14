@@ -17,32 +17,15 @@ Here are some of the images that I generated using Ostagram.
 
 These are the two input images. The left one is the image you want to modify. The right one is the image filter you want to apply. Here I chose Chicage as the image that I want to modify, and Stormwind as the image filter. Basically I want the Chicago city looks like Stormwind.
 
-<figure class="half">
+<figure>
     <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago.jpg">
     <figcaption>Chicago in USA</figcaption>
+</figure>
+<figure>
     <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/stormwind.jpg">
     <figcaption>Stormwind in WOW</figcaption>
 </figure>
 
-<figure class="half">
-    <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago.jpg" />
-    <figcaption>Chicago in USA</figcaption>
-    <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/stormwind.jpg" />
-    <figcaption>Stormwind in WOW</figcaption>
-</figure>
-
-<figure class="half">
-    <a href="{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago.jpg"><img src="{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago.jpg"></a>
-    <a href="{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/stormwind.jpg"><img src="{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/stormwind.jpg"></a>
-    <figcaption>Caption describing these two images.</figcaption>
-</figure>
-
-<figure class="half">
-    <a href="{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago.jpg"><img src="{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago.jpg"></a>
-    <figcaption>Caption describing these two images.</figcaption>
-    <a href="{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/stormwind.jpg"><img src="{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/stormwind.jpg"></a>
-    <figcaption>Caption describing these two images.</figcaption>
-</figure>
 
 I was so fascinated with it, and I really wanted to implement the algorithm and do some personalized fun stuff using Google DeepDream on my own!
 
@@ -54,8 +37,3 @@ There are some online learning resources of using Google DeepDream to make your 
 [Google Official DeepDream Tutorial in TensorFlow](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/deepdream/deepdream.ipynb) 
 
 [Siraj Raval's Video Tutorial](https://www.youtube.com/watch?v=MrBzgvUNr4w)(I know this guy from Udacity by the way -_-)
-
-<figure class="half">
-    <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago.jpg">
-    <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/stormwind.jpg">
-</figure>
