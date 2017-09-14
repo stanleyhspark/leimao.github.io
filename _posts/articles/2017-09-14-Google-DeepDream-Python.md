@@ -11,12 +11,6 @@ image:
   teaser: /images/articles/2017-09-14-Google-DeepDream-Python/deepdream.jpg
 ---
 
-<head>
-    <style type="text/css">
-        figure{text-align: center;}
-    </style>
-</head>
-
 I had been learning painting for more than six years during my childhood. But later this hobby ceased due to the heavy coursework in middle school. Since last year, digital art, a new form of modern art, has drawn my attention. Among digital art, it is the digital painting that currently attracts me the most. Using machine learning, deep learning in particular, one is able to generate images of certain object, or change the style of the image. 
 
 <br />
