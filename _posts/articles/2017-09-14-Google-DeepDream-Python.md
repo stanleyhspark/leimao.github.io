@@ -27,7 +27,7 @@ These are the two input images. The left one is the image you want to modify. Th
     <figcaption>Stormwind in WOW</figcaption>
 </figure>
 
-After "merging", the Chicago city now looks like this:
+After "merging", the Chicago city now looks like the image below. Overall, the Chicago city now looks very Stormwind-styled. All the building are now made up of big rocks. The trees also look like the trees in Stormwind. The only big error is that the neural network treats the cloud in Chicago as the wall of buildings. So the cloud looks like big rock to some extent.
 
 <figure>
     <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago-stormwind.jpg">
