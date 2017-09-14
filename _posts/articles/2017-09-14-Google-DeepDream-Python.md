@@ -21,9 +21,17 @@ These are the two input images. The left one is the image you want to modify. Th
     <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago.jpg">
     <figcaption>Chicago in USA</figcaption>
 </figure>
+
 <figure>
     <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/stormwind.jpg">
     <figcaption>Stormwind in WOW</figcaption>
+</figure>
+
+After "merging", the Chicago city now looks like this:
+
+<figure>
+    <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago-stormwind.jpg">
+    <figcaption>Stormwind-styled Chicago</figcaption>
 </figure>
 
 
@@ -34,6 +42,6 @@ Google DeepDream is a pre-trained neural network that is avaible to extract feat
 
 There are some online learning resources of using Google DeepDream to make your own digital art.
 
-[Google Official DeepDream Tutorial in TensorFlow](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/deepdream/deepdream.ipynb) 
+* [Google Official DeepDream Tutorial in TensorFlow](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/deepdream/deepdream.ipynb) 
 
-[Siraj Raval's Video Tutorial](https://www.youtube.com/watch?v=MrBzgvUNr4w)(I know this guy from Udacity by the way -_-)
+* [Siraj Raval's Video Tutorial](https://www.youtube.com/watch?v=MrBzgvUNr4w) (I know this guy from Udacity by the way -_-)
