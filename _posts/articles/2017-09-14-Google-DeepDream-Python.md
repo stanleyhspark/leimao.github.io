@@ -15,10 +15,11 @@ I had been learning painting for more than six years during my childhood. But la
 
 Here are some of the images that I generated using Ostagram.
 
+These are the two input images. The left one is the image you want to modify. The right one is the image filter you want to apply.
 <figure class="half">
     <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago.jpg">
     <figcaption>Chicago in USA</figcaption>
-    <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/stromwind.jpg">
+    <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/stormwind.jpg">
     <figcaption>Stormwind in WOW</figcaption>
 </figure>
 
@@ -36,5 +37,5 @@ There are some online learning resources of using Google DeepDream to make your 
 
 <figure class="half">
     <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago.jpg">
-    <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/stromwind.jpg">
+    <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/stormwind.jpg">
 </figure>
