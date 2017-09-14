@@ -19,12 +19,12 @@ Here I will show an image that I generated using Ostagram. The two input images 
 
 <figure class = "titled-image">
     <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago.jpg">
-    <figcaption>Chicago in USA</figcaption>
+    <figcaption>Chicago in the United States of America</figcaption>
 </figure>
 
 <figure class = "titled-image">
     <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/stormwind.jpg">
-    <figcaption>Stormwind in WOW</figcaption>
+    <figcaption>Stormwind in World of Warcraft</figcaption>
 </figure>
 
 After "merging", the Chicago city now looks like the image below. Overall, the Chicago city now looks very Stormwind-styled. All the building are now made up of big rocks. The trees also look like the trees in Stormwind. The only big error is that the neural network treats the cloud in Chicago as the wall of buildings. So the cloud looks like big rock to some extent.
