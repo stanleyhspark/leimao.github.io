@@ -15,6 +15,13 @@ I had been learning painting for more than six years during my childhood. But la
 
 Here are some of the images that I generated using Ostagram.
 
+<figure class="half">
+    <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago.jpg">
+    <figcaption>Chicago in USA</figcaption>
+    <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/stromwind.jpg">
+    <figcaption>Stormwind in WOW</figcaption>
+</figure>
+
 
 I was so fascinated with it, and I really wanted to implement the algorithm and do some personalized fun stuff using Google DeepDream on my own!
 
@@ -27,3 +34,7 @@ There are some online learning resources of using Google DeepDream to make your 
 
 [Siraj Raval's Video Tutorial](https://www.youtube.com/watch?v=MrBzgvUNr4w)(I know this guy from Udacity by the way -_-)
 
+<figure class="half">
+    <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago.jpg">
+    <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/stromwind.jpg">
+</figure>
