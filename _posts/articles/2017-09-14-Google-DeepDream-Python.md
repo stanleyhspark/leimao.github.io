@@ -11,7 +11,7 @@ image:
   teaser: 
 ---
 
-I had been learning painting for more than six years during my childhood. But later this hobby vanished due to the heavy coursework in middle school. Since last year, digital art, a new form of modern art, has drawn my attention. Among digital art, it is the digital painting that currently attracts my attention most. Using machine learning, deep learning in particular, one is able to generate images of certain object from the model, or change the style of the image. I have seen many such images. Some of these images are just too unrealistic that ordinary people may have difficulties to understand them. For example, [DeepArt](https://deepart.io/) allows your to "Vanghogify" your image by applying different "Van Gogh style filters". But most of the images generated are not really my personal flavor (Maybe I just don't understand Van Gogh). But there is also chance that you can see digital images that are just brilliant and making sense! I got a chance to a [blog post](https://www.boredpanda.com/inceptionism-neural-network-deep-dream-art/). In this blog post, the author presented images that basically change the style of one image to another using [Ostagram](http://www.ostagram.ru/static_pages/lenta?last_days=30), an image tool developed based on Google DeepDream. This may seem similar to DeepArt, but it was not only restricted to Van Gogh style. 
+I had been learning painting for more than six years during my childhood. But later this hobby vanished due to the heavy coursework in middle school. Since last year, digital art, a new form of modern art, has drawn my attention. Among digital art, it is the digital painting that currently attracts my attention most. Using machine learning, deep learning in particular, one is able to generate images of certain object from the model, or change the style of the image. I have seen many such images. Some of these images are just too unrealistic that ordinary people may have difficulties to understand them. For example, [DeepArt](https://deepart.io/) allows your to "Vanghogify" your image by applying different "Van Gogh style filters". But most of the images generated are not really my personal flavor (Maybe I just don't understand Van Gogh). But there is also chance that you can see digital images that are just brilliant and making sense! I got a chance to see a [blog post](https://www.boredpanda.com/inceptionism-neural-network-deep-dream-art/). In this blog post, the author presented images that basically change the style of one image to another using [Ostagram](http://www.ostagram.ru/static_pages/lenta?last_days=30), an image tool developed based on Google DeepDream. This may seem similar to DeepArt, but it was not only restricted to Van Gogh style. 
 
 Here are some of the images that I generated using Ostagram.
 
@@ -24,6 +24,25 @@ These are the two input images. The left one is the image you want to modify. Th
     <figcaption>Stormwind in WOW</figcaption>
 </figure>
 
+<figure class="half">
+    <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago.jpg" />
+    <figcaption>Chicago in USA</figcaption>
+    <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/stormwind.jpg" />
+    <figcaption>Stormwind in WOW</figcaption>
+</figure>
+
+<figure class="half">
+    <a href="{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago.jpg"><img src="{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago.jpg"></a>
+    <a href="{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/stormwind.jpg"><img src="{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/stormwind.jpg"></a>
+    <figcaption>Caption describing these two images.</figcaption>
+</figure>
+
+<figure class="half">
+    <a href="{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago.jpg"><img src="{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago.jpg"></a>
+    <figcaption>Caption describing these two images.</figcaption>
+    <a href="{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/stormwind.jpg"><img src="{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/stormwind.jpg"></a>
+    <figcaption>Caption describing these two images.</figcaption>
+</figure>
 
 I was so fascinated with it, and I really wanted to implement the algorithm and do some personalized fun stuff using Google DeepDream on my own!
 
