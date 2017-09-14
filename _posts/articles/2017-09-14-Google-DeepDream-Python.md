@@ -21,23 +21,25 @@ I have seen many such images. Some of these images are just too unrealistic that
 
 Here I will show an image that I generated using Ostagram. The two input images are shown below. The left one is the image you want to modify. The right one is the image filter you want to apply. Here I chose Chicage as the image that I want to modify, and Stormwind as the image filter. Basically I want the Chicago city looks like Stormwind.
 
+<div class = "titled-image">
 <figure class = "titled-image">
     <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago.jpg">
     <figcaption>Chicago in the United States of America</figcaption>
 </figure>
-
+</div>
+<div class = "titled-image">
 <figure class = "titled-image">
     <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/stormwind.jpg">
     <figcaption>Stormwind in World of Warcraft</figcaption>
 </figure>
-
+</div>
 After "merging", the Chicago city now looks like the image below. Overall, the Chicago city now looks very Stormwind-styled. All the building are now made up of big rocks. The trees also look like the trees in Stormwind. The only big error is that the neural network treats the cloud in Chicago as the wall of buildings. So the cloud looks like big rock to some extent.
-
+<div class = "titled-image">
 <figure class = "titled-image">
     <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago-stormwind.jpg">
     <figcaption>Stormwind-styled Chicago</figcaption>
 </figure>
-
+</div>
 I was so fascinated with it, and I really wanted to implement the algorithm and do some personalized fun stuff using Google DeepDream on my own!
 
 <br />
