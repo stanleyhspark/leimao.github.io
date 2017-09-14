@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [In Draft] Google DeepDream in Python
+title: "[In Draft] Google DeepDream in Python"
 excerpt: "Digital Art is Soooooo Cool! Learning to Become an Amatuer Digital Artist."
 modified: 2017-09-14T14:17:25-04:00
 categories: article
