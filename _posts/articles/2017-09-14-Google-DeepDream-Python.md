@@ -15,7 +15,8 @@ I had been learning painting for more than six years during my childhood. But la
 
 Here are some of the images that I generated using Ostagram.
 
-These are the two input images. The left one is the image you want to modify. The right one is the image filter you want to apply.
+These are the two input images. The left one is the image you want to modify. The right one is the image filter you want to apply. Here I chose Chicage as the image that I want to modify, and Stormwind as the image filter. Basically I want the Chicago city looks like Stormwind.
+
 <figure class="half">
     <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago.jpg">
     <figcaption>Chicago in USA</figcaption>
