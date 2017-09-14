@@ -17,19 +17,19 @@ I had been learning painting for more than six years during my childhood. But la
 
 Here I will show an image that I generated using Ostagram. The two input images are shown below. The left one is the image you want to modify. The right one is the image filter you want to apply. Here I chose Chicage as the image that I want to modify, and Stormwind as the image filter. Basically I want the Chicago city looks like Stormwind.
 
-<figure>
+<figure class = "titled-image">
     <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago.jpg">
     <figcaption>Chicago in USA</figcaption>
 </figure>
 
-<figure>
+<figure class = "titled-image">
     <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/stormwind.jpg">
     <figcaption>Stormwind in WOW</figcaption>
 </figure>
 
 After "merging", the Chicago city now looks like the image below. Overall, the Chicago city now looks very Stormwind-styled. All the building are now made up of big rocks. The trees also look like the trees in Stormwind. The only big error is that the neural network treats the cloud in Chicago as the wall of buildings. So the cloud looks like big rock to some extent.
 
-<figure>
+<figure class = "titled-image">
     <img src = "{{ site.url }}/images/articles/2017-09-14-Google-DeepDream-Python/chicago-stormwind.jpg">
     <figcaption>Stormwind-styled Chicago</figcaption>
 </figure>
