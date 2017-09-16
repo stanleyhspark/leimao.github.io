@@ -11,13 +11,15 @@ image:
   teaser: /images/articles/2017-09-14-Google-DeepDream-Python/deepdream.jpg
 ---
 
+### Introduction
+
 I had been learning painting for more than six years during my childhood. But later this hobby ceased due to the heavy coursework in middle school. Since last year, digital art, a new form of modern art, has drawn my attention. Among digital art, it is the digital painting that currently attracts me the most. Using machine learning, deep learning in particular, one is able to generate images of certain object, or change the style of the image. 
 
 <br />
 
 I have seen many such images. Some of these images are just too unrealistic that ordinary people may have difficulties to understand them. For example, [DeepArt](https://deepart.io/) allows your to "Vanghogify" your image by applying different "Van Gogh style filters". But most of the images generated are not really my personal flavor (Maybe I just don't understand Van Gogh). But there is also chance that you can see digital images that are just brilliant and making sense! I got a chance to see a [blog post](https://www.boredpanda.com/inceptionism-neural-network-deep-dream-art/). In this blog post, the author presented images that basically change the style of one image to another using [Ostagram](http://www.ostagram.ru/static_pages/lenta?last_days=30), an image tool developed based on Google DeepDream. This may seem similar to DeepArt, but it was not only restricted to Van Gogh style. 
 
-<br />
+### Examples
 
 Here I will show an image that I generated using Ostagram. The two input images are shown below. The left one is the image you want to modify. The right one is the image filter you want to apply. Here I chose Chicage as the image that I want to modify, and Stormwind as the image filter. Basically I want the Chicago city looks like Stormwind.
 
@@ -42,7 +44,7 @@ After "merging", the Chicago city now looks like the image below. Overall, the C
 </div>
 I was so fascinated with it, and I really wanted to implement the algorithm and do some personalized fun stuff using Google DeepDream on my own!
 
-<br />
+### Learning Materials
 
 Google DeepDream is a pre-trained neural network that is avaible to extract features of the image at different levels. By using this pre-trained neural network, one could easily make digital art on local machines without relying on web applications. Because the neural network is pre-trained, the computation cost on local machines will be extremely low. I think an ordinary $500 computer even without a graphical card could easily do this.
 
@@ -50,6 +52,16 @@ Google DeepDream is a pre-trained neural network that is avaible to extract feat
 
 There are some online learning resources of using Google DeepDream to make your own digital art.
 
+* [Google Official DeepDream Tutorial in Caffe](https://github.com/google/deepdream/blob/master/dream.ipynb)
+
 * [Google Official DeepDream Tutorial in TensorFlow](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/deepdream/deepdream.ipynb) 
 
 * [Siraj Raval's Video Tutorial](https://www.youtube.com/watch?v=MrBzgvUNr4w) (I know this guy from Udacity by the way -_-)
+
+### Basic Principles
+
+Basically what these algorithms are doing to modify images is applying particular patterns that the neural network has learned to the image. Google DeepDream was trained to classify 1,000 objects and contains rich pattern information in each layer. To render these patterns, you can input a blank image with some noise to particular neural layer, and apply gradient ascent to maximize the sum of activations in the output. Similarly, to render certain patterns in your specified image, you have to firstly decide which neural layer, which matches certain pattern, you will use, then input the image of interest to the neural layer, and apply gradient ascent to maximize the sum of activations in the output. I think is what DeepArt is doing to "Vanghogify" images.
+
+<br />
+
+There some tricks to make the image output beautiful and save computation costs.
