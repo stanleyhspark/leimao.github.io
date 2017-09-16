@@ -56,12 +56,27 @@ There are some online learning resources of using Google DeepDream to make your 
 
 * [Google Official DeepDream Tutorial in TensorFlow](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/deepdream/deepdream.ipynb) 
 
+* [Google Research Blog](https://research.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html)
+
 * [Siraj Raval's Video Tutorial](https://www.youtube.com/watch?v=MrBzgvUNr4w) (I know this guy from Udacity by the way -_-)
+
+* [Siraj Raval's Code](https://github.com/llSourcell/deep_dream_challenge/blob/master/deep_dream.py)
 
 ### Basic Principles
 
-Basically what these algorithms are doing to modify images is applying particular patterns that the neural network has learned to the image. Google DeepDream was trained to classify 1,000 objects and contains rich pattern information in each layer. To render these patterns, you can input a blank image with some noise to particular neural layer, and apply gradient ascent to maximize the sum of activations in the output. Similarly, to render certain patterns in your specified image, you have to firstly decide which neural layer, which matches certain pattern, you will use, then input the image of interest to the neural layer, and apply gradient ascent to maximize the sum of activations in the output. I think is what DeepArt is doing to "Vanghogify" images.
+Basically what these algorithms are doing to modify images is applying particular patterns that the neural network has learned to the image. Google DeepDream was trained to classify 1,000 objects and contains rich pattern information in each layer. To render these patterns, you can input a blank image with some noise to particular neural layer, and apply gradient ascent to maximize the sum of activations in the output (for several iterations, since too many iteration will like make the image irrelavant). Similarly, to render certain neural network learned patterns in your specified image, you have to firstly decide which neural layer, which matches certain pattern, you will use, then input the image of interest to the neural layer, and apply gradient ascent to maximize the sum of activations in the output. I think is what DeepArt is doing to "Vanghogify" images.
+
+Further, to render user-defined patterns in your specified image, we have to change the optimization objective.
+
+We firstly apply the pattern-containing image you specified to the neural network, we can extract features of this image in different layers.
+
+
+from maximizing the sum of activation in the output to 
 
 <br />
 
 There some tricks to make the image output beautiful and save computation costs.
+
+The concept of "octave" was briefly introduced in Siraj's video.
+
+Grad by tile
