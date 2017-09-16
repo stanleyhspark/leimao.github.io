@@ -53,13 +53,13 @@ Google DeepDream is a pre-trained neural network that is avaible to extract feat
 There are some online learning resources of using Google DeepDream to make your own digital art.
 
 * [Google Official DeepDream Tutorial in Caffe](https://github.com/google/deepdream/blob/master/dream.ipynb)
-[Download]({{ site.url }}/downloads/articles/2017-09-14-Google-DeepDream-Python/dream.ipynb)
+([Download]({{ site.url }}/downloads/articles/2017-09-14-Google-DeepDream-Python/dream.ipynb))
 * [Google Official DeepDream Tutorial in TensorFlow](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/deepdream/deepdream.ipynb)
-[Download]({{ site.url }}/downloads/articles/2017-09-14-Google-DeepDream-Python/deepdream.ipynb)
+([Download]({{ site.url }}/downloads/articles/2017-09-14-Google-DeepDream-Python/deepdream.ipynb))
 * [Google Research Blog](https://research.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html)
 * [Siraj Raval's Video Tutorial](https://www.youtube.com/watch?v=MrBzgvUNr4w) (I know this guy from Udacity by the way -_-)
 * [Siraj Raval's Code](https://github.com/llSourcell/deep_dream_challenge/blob/master/deep_dream.py)
-[Download]({{ site.url }}/downloads/articles/2017-09-14-Google-DeepDream-Python/deep_dream.py)
+([Download]({{ site.url }}/downloads/articles/2017-09-14-Google-DeepDream-Python/deep_dream.py))
 
 ### Basic Principles
 
