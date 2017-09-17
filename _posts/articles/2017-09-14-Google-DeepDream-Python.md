@@ -75,4 +75,4 @@ When the image you want to modify is high-resolution, meaning that the number of
 
 <br />
 
-"Octaves" were also used in generating the pattern in the images. Thee concept of "octave" was briefly introduced in Siraj's video. Basically, you make the original image you want to modify smaller using interploation, followed the iterations to generate details by gradient ascent, resize the image larger using interploation, and use the larger image to generate more details by gradient ascent. I am not sure without this trick how the image looks like. I may investigate this in the future if I get chance.
+"Octaves" were also used in generating the pattern in the images and the concept of "octave" was briefly introduced in Siraj's video. Basically, you make the original image you want to modify smaller using interploation, followed the iterations to generate details by gradient ascent, resize the image larger using interploation, and use the larger image to generate more details by gradient ascent. I am not sure without this trick how the image looks like. I may investigate this in the future if I get chance.
