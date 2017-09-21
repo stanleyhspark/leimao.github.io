@@ -45,6 +45,7 @@ To check the available layer names and channel numbers for the deepdream program
 {% highlight shell %}
 python deepdream_api.py -l
 {% endhighlight %}
+
 **Output**
 {% highlight shell %}
 import/conv2d0_pre_relu/conv 64
@@ -121,6 +122,8 @@ python deepdream_api.py -r inputs/pilatus800.jpg mixed4d_3x3_bottleneck_pre_relu
 </div>
 
 ### More Functions
+
+In the [Google Official DeepDream Tutorial in TensorFlow](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/deepdream/deepdream.ipynb), they introduced Laplacian Pyramid Gradient Normalization to boost the low frequencies of the gradient. I basically have no idea of what that is. So I did not implement this in my API.
 
 
 
