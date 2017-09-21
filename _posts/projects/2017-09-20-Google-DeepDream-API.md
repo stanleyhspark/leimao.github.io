@@ -125,7 +125,7 @@ python deepdream_api.py -r inputs/pilatus800.jpg mixed4d_3x3_bottleneck_pre_relu
 
 In the [Google Official DeepDream Tutorial in TensorFlow](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/deepdream/deepdream.ipynb), they introduced Laplacian Pyramid Gradient Normalization to boost the low frequencies of the gradient. I basically have no idea of what that is. So I did not implement this in my API.
 
-
+I also tried to add the features from a guide image to customize the pattern. However, it seems that my understanding of the optimzation objective is not correct (see my post on [StackFlow](https://stackoverflow.com/questions/46324533/controlling-dreams-in-tensorflow)). Therefore, I will hold this until I totally resolve my confusions.
 
 ### References
 
