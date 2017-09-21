@@ -40,6 +40,8 @@ The development of this API is still in progress. More functions will be added i
 
 ### Usage
 
+Here I am using Georges Seurat's "Sunday Afternoon On The Island Of La Grande Jatte" as an example to illustrate the usage of this Google DeepDream API.
+
 #### List the available layers and the number of channels
 
 To check the available layer names and channel numbers for the deepdream program. 
