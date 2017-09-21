@@ -69,7 +69,11 @@ In the output, the layer name is on the left, the number of channels in the laye
 
 To preview the feature pattern learned in a certain channel of a certain layer in the neural network. This is helpful for the user to select layers and channels used for image modification.
 
+<br />
+
 **Input**
+
+<br />
 
 -p layer_name channel_number, --preview layer_name channel_number
 
@@ -88,7 +92,11 @@ python deepdream_api.py -p mixed4d_3x3_bottleneck_pre_relu 20 feature_pattern.jp
 
 Apply feature pattern learned in a certain channel of a certain layer in the neural network to the image that the user provided.
 
+<br />
+
 **Input**
+
+<br />
 
 -r image_path layer_name channel_number, --render image_path layer_name channel_number
 
