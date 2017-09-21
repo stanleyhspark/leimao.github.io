@@ -120,6 +120,10 @@ python deepdream_api.py -r inputs/pilatus800.jpg mixed4d_3x3_bottleneck_pre_relu
 </figure>
 </div>
 
+### More Functions
+
+
+
 ### References
 
 * [Google Official DeepDream Tutorial in Caffe](https://github.com/google/deepdream/blob/master/dream.ipynb)
