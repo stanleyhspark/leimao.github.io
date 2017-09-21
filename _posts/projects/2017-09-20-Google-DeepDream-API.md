@@ -3,7 +3,7 @@ layout: post
 title: "Google DeepDream API"
 excerpt: "Doing Digital Art in Google DeepDream API"
 modified: 2017-09-14T14:17:25-04:00
-categories: article
+categories: project
 tags: [deep learning, digital art]
 comments: true
 share: true
@@ -13,11 +13,7 @@ image:
 
 ### Introduction
 
-I had been learning painting for more than six years during my childhood. But later this hobby ceased due to the heavy coursework in middle school. Since last year, digital art, a new form of modern art, has drawn my attention. Among digital art, it is the digital painting that currently attracts me the most. Using machine learning, deep learning in particular, one is able to generate images of certain object, or change the style of the image. 
-
-<br />
-
-I have seen many such images. Some of these images are just too unrealistic that ordinary people may have difficulties to understand them. For example, [DeepArt](https://deepart.io/) allows your to "Vanghogify" your image by applying different "Van Gogh style filters". But most of the images generated are not really my personal flavor (Maybe I just don't understand Van Gogh). But there is also chance that you can see digital images that are just brilliant and making sense! I got a chance to see a [blog post](https://www.boredpanda.com/inceptionism-neural-network-deep-dream-art/). In this blog post, the author presented images that basically change the style of one image to another using [Ostagram](http://www.ostagram.ru/static_pages/lenta?last_days=30), an image tool developed based on Google DeepDream. This may seem similar to DeepArt, but it was not only restricted to Van Gogh style. 
+The introduction of Google DeepDream and its application in digital art can be found in my article ["Google DeepDream in Python"](https://leimao.github.io/article/Google-DeepDream-Python/).
 
 ### Examples
 
