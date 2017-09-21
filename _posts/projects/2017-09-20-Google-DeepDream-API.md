@@ -83,10 +83,12 @@ python deepdream_api.py -p mixed4d_3x3_bottleneck_pre_relu 20 feature_pattern.jp
 
 **Output**
 
+<div class = "titled-image">
 <figure>
     <img src = "{{ site.url }}/images/projects/2017-09-20-Google-DeepDream-API/feature_pattern.jpeg">
     <figcaption>Feature Pattern Learned in the Neural Layers</figcaption>
 </figure>
+</div>
 
 ### Render the image with the features from the neural network
 
@@ -103,15 +105,20 @@ Apply feature pattern learned in a certain channel of a certain layer in the neu
 {% highlight shell %}
 python deepdream_api.py -r inputs/pilatus800.jpg mixed4d_3x3_bottleneck_pre_relu 20 pilatus800_deepdream.jpeg
 {% endhighlight %}
+
+<div class = "titled-image">
 <figure>
     <img src = "{{ site.url }}/images/projects/2017-09-20-Google-DeepDream-API/pilatus800.jpg">
 </figure>
+</div>
 
 **Output**
 
+<div class = "titled-image">
 <figure>
     <img src = "{{ site.url }}/images/projects/2017-09-20-Google-DeepDream-API/pilatus800_deepdream.jpeg">
 </figure>
+</div>
 
 ### References
 
