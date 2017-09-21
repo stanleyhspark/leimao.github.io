@@ -8,7 +8,7 @@ tags: [deep learning, digital art]
 comments: true
 share: true
 image:
-  teaser: /images/projects/2017-09-20-Google-DeepDream-API/pilatus800_deepdream.jpeg
+  teaser: /images/projects/2017-09-20-Google-DeepDream-API/deepdream_teaser.png
 ---
 
 ### Introduction
@@ -144,7 +144,7 @@ python deepdream_api.py -r inputs/sunday_afternoon.jpg mixed4b_1x1_pre_relu 70 s
 
 <div class = "titled-image">
 <figure>
-    <img src = "{{ site.url }}/images/projects/2017-09-20-Google-DeepDream-API/sunday_afternoon.jpeg">
+    <img src = "{{ site.url }}/images/projects/2017-09-20-Google-DeepDream-API/sunday_afternoon.jpg">
 </figure>
 </div>
 
@@ -174,7 +174,7 @@ python deepdream_api.py -r inputs/sunday_afternoon.jpg mixed4b_1x1_pre_relu 70 s
 
 <div class = "titled-image">
 <figure>
-    <img src = "{{ site.url }}/images/projects/2017-09-20-Google-DeepDream-API/sunday_afternoon.jpeg">
+    <img src = "{{ site.url }}/images/projects/2017-09-20-Google-DeepDream-API/sunday_afternoon.jpg">
 </figure>
 </div>
 
