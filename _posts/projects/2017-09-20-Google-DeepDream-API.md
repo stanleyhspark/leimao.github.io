@@ -2,7 +2,7 @@
 layout: post
 title: "Google DeepDream API"
 excerpt: "Doing Digital Art in Google DeepDream API"
-modified: 2017-09-14T14:17:25-04:00
+modified: 2017-09-20T14:17:25-04:00
 categories: project
 tags: [deep learning, digital art]
 comments: true
