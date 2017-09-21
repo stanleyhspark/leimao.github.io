@@ -139,5 +139,6 @@ I also tried to add the features from a guide image to customize the pattern. Ho
 * [Siraj Raval's Video Tutorial](https://www.youtube.com/watch?v=MrBzgvUNr4w)
 * [Siraj Raval's Code](https://github.com/llSourcell/deep_dream_challenge/blob/master/deep_dream.py)
 
+### Link to GitHub
 
-
+[DeepDream](https://github.com/leimao/DeepDream)
