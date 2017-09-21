@@ -105,6 +105,8 @@ To preview the feature pattern learned in a certain channel of a certain layer i
 
 It should be noted that the feature No.70 in "mixed4b_1x1_pre_relu" layer I generated in this example is almost the same to the [one](http://storage.googleapis.com/deepdream/visualz/tensorflow_inception/mixed4b_1x1_pre_relu.html) archieved in Google's server. 
 
+<br />
+
 **Input**
 
 <br />
