@@ -128,8 +128,6 @@ python deepdream_api.py -p mixed4b_1x1_pre_relu 70 pattern_lap.jpeg
 </figure>
 </div>
 
-
-
 #### Render the image with the features from the neural network
 
 Apply feature pattern learned in a certain channel of a certain layer in the neural network to the image that the user provided.
