@@ -15,15 +15,15 @@ image:
 
 The introduction of Google DeepDream and its application in digital art can be found in my article ["Google DeepDream in Python"](https://leimao.github.io/article/Google-DeepDream-Python/).
 
-## Description
+### Description
 
 The development of this API is still in progress. More functions will be added in the future.
 
-## Requirements
+### Requirements
 
 * Python 3.6
 
-## Dependencies
+### Dependencies
 
 * tensorflow 1.3
 * numpy
@@ -34,9 +34,9 @@ The development of this API is still in progress. More functions will be added i
 * six
 * argparse
 
-## Usage
+### Usage
 
-### List the available layers and the number of channels
+#### List the available layers and the number of channels
 
 To check the available layer names and channel numbers for the deepdream program. 
 
@@ -66,7 +66,7 @@ import/mixed3b_5x5_bottleneck_pre_relu/conv 32
 In the output, the layer name is on the left, the number of channels in the layer is on the right.
 
 
-### Preview the feature pattern of the neural network
+#### Preview the feature pattern of the neural network
 
 To preview the feature pattern learned in a certain channel of a certain layer in the neural network. This is helpful for the user to select layers and channels used for image modification.
 
@@ -91,7 +91,7 @@ python deepdream_api.py -p mixed4d_3x3_bottleneck_pre_relu 20 feature_pattern.jp
 </figure>
 </div>
 
-### Render the image with the features from the neural network
+#### Render the image with the features from the neural network
 
 Apply feature pattern learned in a certain channel of a certain layer in the neural network to the image that the user provided.
 
