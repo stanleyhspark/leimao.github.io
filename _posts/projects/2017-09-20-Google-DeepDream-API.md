@@ -17,6 +17,10 @@ The introduction of Google DeepDream and its application in digital art can be f
 
 ### Description
 
+This API could add pattern features learned by Google DeepDream to your paintings. 
+
+<br />
+
 The development of this API is still in progress. More functions will be added in the future.
 
 ### Requirements
@@ -81,17 +85,44 @@ To preview the feature pattern learned in a certain channel of a certain layer i
 -p layer_name channel_number, --preview layer_name channel_number
 
 {% highlight shell %}
-python deepdream_api.py -p mixed4d_3x3_bottleneck_pre_relu 20 feature_pattern.jpeg
+python deepdream_api.py -p mixed4b_1x1_pre_relu 70 pattern.jpeg
 {% endhighlight %}
 
 **Output**
 
 <div class = "titled-image">
 <figure>
-    <img src = "{{ site.url }}/images/projects/2017-09-20-Google-DeepDream-API/feature_pattern.jpeg">
+    <img src = "{{ site.url }}/images/projects/2017-09-20-Google-DeepDream-API/pattern.jpeg">
     <figcaption>Feature Pattern Learned in the Neural Layers</figcaption>
 </figure>
 </div>
+
+#### Preview the feature pattern of the neural network
+
+To preview the feature pattern learned in a certain channel of a certain layer in the neural network with Laplacian Pyramid Gradient Normalization. High frequency patterns were suppressed by Laplacian Pyramid Gradient Normalization.
+
+<br />
+
+**Input**
+
+<br />
+
+-pl layer_name channel_number, --preview layer_name channel_number
+
+{% highlight shell %}
+python deepdream_api.py -p mixed4b_1x1_pre_relu 70 pattern_lap.jpeg
+{% endhighlight %}
+
+**Output**
+
+<div class = "titled-image">
+<figure>
+    <img src = "{{ site.url }}/images/projects/2017-09-20-Google-DeepDream-API/pattern_lap.jpeg">
+    <figcaption>Feature Pattern Learned in the Neural Layers</figcaption>
+</figure>
+</div>
+
+
 
 #### Render the image with the features from the neural network
 
@@ -106,12 +137,12 @@ Apply feature pattern learned in a certain channel of a certain layer in the neu
 -r image_path layer_name channel_number, --render image_path layer_name channel_number
 
 {% highlight shell %}
-python deepdream_api.py -r inputs/pilatus800.jpg mixed4d_3x3_bottleneck_pre_relu 20 pilatus800_deepdream.jpeg
+python deepdream_api.py -r inputs/sunday_afternoon.jpg mixed4b_1x1_pre_relu 70 sunday_afternoon_deepdream.jpeg
 {% endhighlight %}
 
 <div class = "titled-image">
 <figure>
-    <img src = "{{ site.url }}/images/projects/2017-09-20-Google-DeepDream-API/pilatus800.jpg">
+    <img src = "{{ site.url }}/images/projects/2017-09-20-Google-DeepDream-API/sunday_afternoon.jpeg">
 </figure>
 </div>
 
@@ -119,15 +150,42 @@ python deepdream_api.py -r inputs/pilatus800.jpg mixed4d_3x3_bottleneck_pre_relu
 
 <div class = "titled-image">
 <figure>
-    <img src = "{{ site.url }}/images/projects/2017-09-20-Google-DeepDream-API/pilatus800_deepdream.jpeg">
+    <img src = "{{ site.url }}/images/projects/2017-09-20-Google-DeepDream-API/sunday_afternoon_deepdream.jpeg">
 </figure>
 </div>
 
-### More Functions
+#### Render the image with the features from the neural network
 
-In the [Google Official DeepDream Tutorial in TensorFlow](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/deepdream/deepdream.ipynb), they introduced Laplacian Pyramid Gradient Normalization to boost the low frequencies of the gradient. I basically have no idea of what that is. So I did not implement this in my API.
+Apply feature pattern learned in a certain channel of a certain layer in the neural network to the image that the user provided.
 
 <br />
+
+**Input**
+
+<br />
+
+-rl image_path layer_name channel_number, --render image_path layer_name channel_number
+
+{% highlight shell %}
+python deepdream_api.py -r inputs/sunday_afternoon.jpg mixed4b_1x1_pre_relu 70 sunday_afternoon_deepdream_lap.jpeg
+{% endhighlight %}
+
+<div class = "titled-image">
+<figure>
+    <img src = "{{ site.url }}/images/projects/2017-09-20-Google-DeepDream-API/sunday_afternoon.jpeg">
+</figure>
+</div>
+
+**Output**
+
+<div class = "titled-image">
+<figure>
+    <img src = "{{ site.url }}/images/projects/2017-09-20-Google-DeepDream-API/sunday_afternoon_deepdream_lap.jpeg">
+</figure>
+</div>
+
+
+### More Functions
 
 I also tried to add the features from a guide image to customize the pattern. However, it seems that my understanding of the optimzation objective is not correct (see my post on [StackFlow](https://stackoverflow.com/questions/46324533/controlling-dreams-in-tensorflow)). Therefore, I will hold this until I totally resolve my confusions.
 
