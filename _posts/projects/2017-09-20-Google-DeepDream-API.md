@@ -70,7 +70,7 @@ In the output, the layer name is on the left, the number of channels in the laye
 
 #### Preview the feature pattern of the neural network
 
-To preview the feature pattern learned in a certain channel of a certain layer in the neural network. This is helpful for the user to select layers and channels used for image modification.
+To preview the feature pattern learned in a certain channel of a certain layer in the neural network. This is helpful for the user to select layers and channels used for image modification. While not cessary, you may also preview all the feature patterns learned in the neural network [here](http://storage.googleapis.com/deepdream/visualz/tensorflow_inception/index.html). It should be noted that the high frequencies of the patterns might have been suppressed by Laplacian pyramid decomposition in those images.
 
 <br />
 
