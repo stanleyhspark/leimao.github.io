@@ -42,11 +42,11 @@ To check the available layer names and channel numbers for the deepdream program
 
 **Input**
 
-```
+{% highlight shell %}
 python deepdream_api.py -l
-```
+{% end highlight %}
 **Output**
-```
+{% highlight shell %}
 import/conv2d0_pre_relu/conv 64
 import/conv2d1_pre_relu/conv 64
 import/conv2d2_pre_relu/conv 192
@@ -61,7 +61,7 @@ import/mixed3b_3x3_bottleneck_pre_relu/conv 128
 import/mixed3b_3x3_pre_relu/conv 192
 import/mixed3b_5x5_bottleneck_pre_relu/conv 32
 ...
-```
+{% end highlight %}
 In the output, the layer name is on the left, the number of channels in the layer is on the right.
 
 
@@ -77,9 +77,9 @@ To preview the feature pattern learned in a certain channel of a certain layer i
 
 -p layer_name channel_number, --preview layer_name channel_number
 
-```
+{% highlight shell %}
 python deepdream_api.py -p mixed4d_3x3_bottleneck_pre_relu 20 feature_pattern.jpeg
-```
+{% end highlight %}
 
 **Output**
 
@@ -100,9 +100,9 @@ Apply feature pattern learned in a certain channel of a certain layer in the neu
 
 -r image_path layer_name channel_number, --render image_path layer_name channel_number
 
-```
+{% highlight shell %}
 python deepdream_api.py -r inputs/pilatus800.jpg mixed4d_3x3_bottleneck_pre_relu 20 pilatus800_deepdream.jpeg
-```
+{% end highlight %}
 <figure>
     <img src = "{{ site.url }}/images/projects/2017-09-20-Google-DeepDream-API/pilatus800.jpg">
 </figure>
