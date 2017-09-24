@@ -15,7 +15,11 @@ share: true
 
 [Flappy Bird](https://en.wikipedia.org/wiki/Flappy_bird) is a very popular video game. Here I developed an AI to play Flappy Bird using Deep Q-Learning. 
 
+<br />
+
 The AI takes the real-time game image output as input. It was able to play Flappy Bird extremely well. It could play the game endlessly without failure, which might be considered "perfect".
+
+<br />
 
 Here is a demo showing the AI playing the Flappy Bird game.
 <center><img width="240" height="240" src="{{ site.url }}/images/projects/2017-07-30-Flappy-Bird-AI/Flappy_Bird_gameplay.png"/></center>
@@ -24,11 +28,15 @@ Here is a demo showing the AI playing the Flappy Bird game.
 
 The Flappy Bird AI was developed using Deep Convolutional Q-Learning Neural Network. It was written in Python using Keras, which makes the code for neural network neat and easy to understand. It was also wrapped as class, which makes it universal for all different kind of easy video game APIs.
 
+<br />
+
 Some tricks, which accelerates the training efficiency and performance, were used in AI training. These tricks were not observed in other Flappy Bird AIs developed using Deep Convolutional Q-Learning Neural Network.
 
 ### Installation and Dependence
 
 All the Python source codes could be downloaded from my [GitHub](https://github.com/leimao/Flappy_Bird_AI).
+
+<br />
 
 To run the game and AI, the following dependences are required.
 * Python 2.7

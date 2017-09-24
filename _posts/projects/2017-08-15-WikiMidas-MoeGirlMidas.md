@@ -19,9 +19,11 @@ share: true
 
 I named the two programs after "midas". Because I like the "feel" that you touch something and something becomes useful.
 
+<div class = "titled-image">
 <figure>
   <img src="{{ site.url }}/images/projects/2017-08-15-WikiMidas-MoeGirlMidas/midas.gif"/>
 </figure>
+</div>
 
 ### Learning Experience
 
