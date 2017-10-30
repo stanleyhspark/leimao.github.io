@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Google DeepDream in Python"
-excerpt: "Digital Art is Soooooo Cool! Learning to Become an Amatuer Digital Artist."
+excerpt: "Digital art is soooooo cool! Learning to become an amatuer digital artist."
 modified: 2017-09-14T14:17:25-04:00
 categories: article
 tags: [deep learning]
