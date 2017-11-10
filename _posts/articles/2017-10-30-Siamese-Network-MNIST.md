@@ -28,8 +28,8 @@ Usually, the embeding feature is a high dimensional vector. The similarity of th
 Here is a typical Siamese Network with two input channels. The two identical sister networks shares the same weights. It should be noted that the two sister networks could be of the same or different architecture. Even if the two sister networks are of the same architecture, they do not have to share weights and use distinct weights. Usually, if the inputs are of different "type", the sister networks usually use distinct weights even if the architectures are the same.
 
 <div class = "titled-image">
-<figure style="width: 300px" class = "titled-image">
-    <img src = "{{ site.url }}/images/articles/2017-10-30-Siamese-Network-MNIST/siamese_example.jpeg">
+<figure class = "titled-image">
+    <img src = "{{ site.url }}/images/articles/2017-10-30-Siamese-Network-MNIST/siamese_example.png">
     <figcaption>Siamese Network</figcaption>
 </figure>
 </div>
