@@ -34,4 +34,9 @@ Here is a typical Siamese Network with two input channels. The two identical sis
 </figure>
 </div>
 
-I will first give an example
+The two statue images were input into the two channels of the Siamese Network. The L2 distance (Euclidean distance) of the outputs of the two channels were calculated and subjected to minimizing the loss function l.
+
+http://hi.cs.waseda.ac.jp/~esimo/en/research/deepdesc/ 
+
+
+I will first give an example of Siamese Network implementation using identical architectures with shared weights for the sister networks. Followed by an more complex example using different architectures or different weights with the same architecture.
