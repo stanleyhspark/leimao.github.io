@@ -42,7 +42,9 @@ I will first give an example of my implementation of the Siamese Network using i
 
 ### Siamese Network on MNIST Dataset
 
-The whole Siamese Network implementation was wrapped as Python object. One can easily modify the counterparts in the object to achieve more advanced goals, such as replacing FNN to more advanced neural networks, changing loss functions, etc. See [Siamese Network on MNIST](https://github.com/leimao/Siamese_Network_MNIST) in my GitHub repository.
+The whole Siamese Network implementation was wrapped as Python object. One can easily modify the counterparts in the object to achieve more advanced goals, such as replacing FNN to more advanced neural networks, changing loss functions, etc. See the [Siamese Network on MNIST](https://github.com/leimao/Siamese_Network_MNIST) in my GitHub repository.
+
+<br />
 
 The sister networks I used for the MNIST dataset are three layers of FNN. All the implementaion of the network are nothing special compared to the implementaions of other networks in TensorFlow, except for three caveats.
 
