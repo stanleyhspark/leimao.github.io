@@ -42,10 +42,23 @@ I will first give an example of my implementation of the Siamese Network using i
 
 ### Siamese Network on MNIST Dataset
 
-The sister networks I used for the MNIST dataset are three layers of FNN.
+The whole Siamese Network implementation was wrapped as Python object. One can easily modify the counterparts in the object to achieve more advanced goals, such as replacing FNN to more advanced neural networks, changing loss functions, etc. See [Siamese Network on MNIST](https://github.com/leimao/Siamese_Network_MNIST) in my GitHub repository.
+
+The sister networks I used for the MNIST dataset are three layers of FNN. All the implementaion of the network are nothing special compared to the implementaions of other networks in TensorFlow, except for three caveats.
+
+#### Share Weights Between Networks
+
+Use ```scope.reuse_variables()``` to tell TensorFlow the variables used in the scope for ```output_1``` needs to be reused for ```output_2```. Although I have not tested, the variables in the scope could be reused as many times as possible as long as ```scope.reuse_variables()``` is stated after the useage of the variables.
+
+```python
+    def network_initializer(self):
+        # Initialze neural network
+        with tf.variable_scope("siamese") as scope:
+            output_1 = self.network(self.tf_input_1)
+            # Share weights
+            scope.reuse_variables()
+            output_2 = self.network(self.tf_input_2)
+        return output_1, output_2
+```
 
 
-
-
-
-The whole Siamese Network implementation was wrapped as Python object. One can easily modify the counterparts in the object to achieve more advanced goals, such as replacing FNN to more advanced neural networks, changing loss functions, etc.
