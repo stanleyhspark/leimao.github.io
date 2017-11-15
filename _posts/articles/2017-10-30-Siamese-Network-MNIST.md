@@ -34,9 +34,8 @@ Here is a typical Siamese Network with two input channels. The two identical sis
 </figure>
 </div>
 
-The two statue images were input into the two channels of the Siamese Network. The L2 distance (Euclidean distance) of the outputs of the two channels were calculated and subjected to minimizing the loss function $$l(x_1, x_2, \delta)$$.
+The two statue images were input into the two channels of the Siamese Network. Because the two inputs are the same kind of inputs (image of objects), the two sister CNN shares weights between each other. The L2 distance (Euclidean distance) of the outputs of the two channels were calculated and subjected to the loss function $$l(x_1, x_2, \delta)$$ minimization. Here, the loss function is a function called contrastive divergence loss function, which I will elaborate in the following sections. If the two images are representing the same object, the two outputs should be very close in the higher dimensional space, i.e., small L2 distance. Otherwise, the two outputs should be very far away from each other in the higher dimensional space, i.e., large L2 distance.
 
-http://hi.cs.waseda.ac.jp/~esimo/en/research/deepdesc/ 
-
+<br />
 
 I will first give an example of Siamese Network implementation using identical architectures with shared weights for the sister networks. Followed by an more complex example using different architectures or different weights with the same architecture.
