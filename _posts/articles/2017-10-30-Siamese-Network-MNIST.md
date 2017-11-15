@@ -42,3 +42,10 @@ I will first give an example of my implementation of the Siamese Network using i
 
 ### Siamese Network on MNIST Dataset
 
+The sister networks I used for the MNIST dataset are three layers of FNN.
+
+
+
+
+
+The whole Siamese Network implementation was wrapped as Python object. One can easily modify the counterparts in the object to achieve more advanced goals, such as replacing FNN to more advanced neural networks, changing loss functions, etc.
