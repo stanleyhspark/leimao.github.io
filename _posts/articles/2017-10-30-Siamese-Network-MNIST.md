@@ -61,4 +61,11 @@ Use ```scope.reuse_variables()``` to tell TensorFlow the variables used in the s
         return output_1, output_2
 ```
 
+#### Implementation of the Contrastive Loss
+
+
+
+
+#### Choice of the Optimizers
+
 
