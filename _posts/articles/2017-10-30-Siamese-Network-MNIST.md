@@ -25,7 +25,7 @@ Usually, the embeding feature is a high dimensional vector. The similarity of th
 
 <br />
 
-Here is a typical Siamese Network with two input channels. The two identical sister networks, which are Convolutional Neural Networks (CNN) in this case, share the same weights. In addition to CNN, the architecture generally could be any neural networks. It should be noted that the two sister networks could be of the same or different architecture.  Even if the two sister networks are of the same architecture, they do not have to share weights but use distinct weights. Usually, if the inputs are of different "type", the sister networks usually use different architectures, or use distinct weights for the same architecture.
+Here is a typical Siamese Network with two input channels ([Deep Convolutional Feature Point Descriptors](http://hi.cs.waseda.ac.jp/~esimo/en/research/deepdesc/)). The two identical sister networks, which are Convolutional Neural Networks (CNN) in this case, share the same weights. In addition to CNN, the architecture generally could be any neural networks. It should be noted that the two sister networks could be of the same or different architecture.  Even if the two sister networks are of the same architecture, they do not have to share weights but use distinct weights. Usually, if the inputs are of different "type", the sister networks usually use different architectures, or use distinct weights for the same architecture.
 
 <div class = "titled-image">
 <figure class = "titled-image">
@@ -38,4 +38,7 @@ The two statue images were input into the two channels of the Siamese Network. B
 
 <br />
 
-I will first give an example of Siamese Network implementation using identical architectures with shared weights for the sister networks. Followed by an more complex example using different architectures or different weights with the same architecture.
+I will first give an example of my implementation of the Siamese Network using identical architectures with shared weights on MNIST dataset. Followed by an more complex example using different architectures or different weights with the same architecture.
+
+### Siamese Network on MNIST Dataset
+
