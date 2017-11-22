@@ -34,13 +34,13 @@ net stop Thinkpad-Mysql
 However, it is still not enough. Next time you start the computer, the "Thinkpad-Mysql" service will automatically run since startup. To prevent his, run the following command.
 
 ```shell
-sc config mysql start= disabled
+sc config Thinkpad-Mysql start= disabled
 ```
 
 To restart "Thinkpad-Mysql" service, basically reverse the command we have run.
 
 ```shell
-sc config mysql start= auto
+sc config Thinkpad-Mysql start= auto
 net start Thinkpad-Mysql
 ```
 
@@ -48,12 +48,23 @@ net start Thinkpad-Mysql
 
 I also tried to set the "Thinkpad-Mysql" service "manual" by running the following command.
 ```shell
-sc config mysql start= manual
+sc config Thinkpad-Mysql start= manual
 ```
 
 However, I failed. But the following command seems to work for "mannual" (Check [Microsoft Documentation](https://technet.microsoft.com/en-us/library/cc990290(v=ws.11).aspx)). 
 
 ```shell
-sc config mysql start= demand
+sc config Thinkpad-Mysql start= demand
 ```
 
+If the service becomes "demand", it could be turned on or off by running single commands.
+
+```shell
+net start Thinkpad-Mysql
+```
+
+or
+
+```shell
+net stop Thinkpad-Mysql
+```
