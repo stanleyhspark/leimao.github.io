@@ -51,7 +51,7 @@ I also tried to set the "Thinkpad-Mysql" service "manual" by running the followi
 sc config mysql start= manual
 ```
 
-However, I failed. But the following command seems to work for "mannual".
+However, I failed. But the following command seems to work for "mannual" (Check [Microsoft Documentation](https://technet.microsoft.com/en-us/library/cc990290(v=ws.11).aspx)). 
 
 ```shell
 sc config mysql start= demand
