@@ -13,7 +13,7 @@ This is a memo of the tools that I commonly use but often forget where to find.
 
 #### [CodePen](https://codepen.io/pen/)
 
-Online CSS/HTML/JS Viewer.
+Online CSS/HTML/JS Previewer.
 
 [https://codepen.io/pen/](https://codepen.io/pen/)
 
