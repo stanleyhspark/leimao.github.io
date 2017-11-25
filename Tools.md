@@ -15,5 +15,4 @@ This is a memo of the tools that I commonly use but often forget where to find.
 
 Online CSS/HTML/JS Previewer.
 
-[https://codepen.io/pen/](https://codepen.io/pen/)
 
