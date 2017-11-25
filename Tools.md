@@ -20,8 +20,8 @@ Online CSS/HTML/JS Previewer.
 
 #### [MobaXterm](https://mobaxterm.mobatek.net/)
 
-Extremely powerful SSH/FTP tools for Windows.
+Extremely powerful SSH/FTP tool for Windows.
 
 #### [FileZilla](https://filezilla-project.org/)
 
-FTP tools for Linux.
+FTP tool for Linux.
