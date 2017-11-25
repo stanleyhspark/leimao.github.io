@@ -40,7 +40,8 @@ links:
     url: /readings/
   - title: Publications
     url: /publications/
-
+  - title: Tools
+    url: /tools/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Chicago
