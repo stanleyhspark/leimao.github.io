@@ -39,11 +39,11 @@ Because it is a relative young course, many features of the dukiebot have not be
 
 ### My Feelings
 
-Although at first glance, you would be just playing with a robot and try to make it work as expected, the course is actually hard. Unfortunately I did not have time to review the course content after the class when I was auditing, but if I am going to really take it in the next year, I will expect I have to spend non-trivial amount of time to understand all the theories behind. This couse also reminded me that I am still to ignorant and I have to work harder to catch up the PhD stduents and state-of-art researches. Prof. Walter is a very good professor.
+Although at first glance, you would be just playing with a robot and try to make it work as expected, the course is actually hard and the work load is also heavy. Unfortunately I did not have time to review the course content after the class when I was auditing, but if I am going to really take it in the next year, I will expect I have to spend non-trivial amount of time to understand all the theories behind. This couse also reminded me that I am still to ignorant and I have to work harder to catch up the PhD stduents and state-of-art researches. Prof. Walter is a very good professor.
 
 ### Dukietown Family
 
-The family includes Prof. Walter, TAs, PhD, master and undergraduate students from different backgrounds at the University of Chicago and TTIC (I am the one standing backmost). 
+The family includes Prof. Walter, TAs, PhD, master and undergraduate students from different backgrounds at the University of Chicago and TTIC (I am the one standing backmost). Thanks a lot to the Duckietown course.
 
 <div class = "titled-image">
 <figure class = "titled-image">
@@ -51,5 +51,3 @@ The family includes Prof. Walter, TAs, PhD, master and undergraduate students fr
     <figcaption>The Duckietown Times</figcaption>
 </figure>
 </div>
-
-Thanks a lot to the Duckietown course.
