@@ -47,8 +47,8 @@ The family includes Prof. Walter, TAs, PhD, master and undergraduate students fr
 
 <div class = "titled-image">
 <figure class = "titled-image">
-    <img src = "{{ site.url }}/images/blogs/2017-12-10-2017-Duckie-Town-Experience/The_Duckietown_Times_Vol1.jpg">
-    <figcaption>Siamese Network</figcaption>
+    <img src = "{{ site.url }}/images/blog/2017-12-10-2017-Duckie-Town-Experience/The_Duckietown_Times_Vol1.jpg">
+    <figcaption>The Duckietown Times</figcaption>
 </figure>
 </div>
 
