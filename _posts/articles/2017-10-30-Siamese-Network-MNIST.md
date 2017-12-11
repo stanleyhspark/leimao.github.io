@@ -77,9 +77,13 @@ $I_1$ is the high-dimensional feature vector for input 1, and $I_2$ is the high-
 
 However, in the implementation, using this exact Contrasive Loss function will cause some problems. For example, the loss will keep decreasing during training, but suddenly became infinite which does not make sense at the first glance. This is because that the gradient property for this Contrasive Loss function is not very good.
 
+<br />
+
 Let's see a example.
 
-Suppose $I_1 = (a_1, a_2)$, $I_2 = (b_1. b_2)$, $d(I_1, I_2) = \sqrt((a_1-b_1)^2 + (a_2-b_2)^2)$
+<br />
+
+Suppose $I_1 = (a_1, a_2)$, $I_2 = (b_1, b_2)$, then $d(I_1, I_2) = \sqrt{(a_1-b_1)^2 + (a_2-b_2)^2}$. 
 
 
 #### Choice of the Optimizers
