@@ -83,7 +83,7 @@ Let's see a example.
 
 <br />
 
-Suppose $I_1 = (a_1, a_2)$, $I_2 = (b_1, b_2)$, then $d(I_1, I_2) = \sqrt{(a_1-b_1)^2 + (a_2-b_2)^2}$. 
+Suppose $I_1 = (a_1, a_2)$, $I_2 = (b_1, b_2)$, then $d(I_1, I_2) = \sqrt{(a_1-b_1)^2 + (a_2-b_2)^2}$. We then calculate its partial derivative to $a_1$. $\frac{\partial d(I_1, I_2)}{\partial a_1}$
 
 
 #### Choice of the Optimizers
