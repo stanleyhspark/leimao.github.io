@@ -13,11 +13,15 @@ share: true
 
 In the fall of 2017, I audited the "Self-driving Vehicles: Models and Algorithms for Autonomy (TTIC 31240)" course, which is informally called as "Duckietown", given by Prof. Matthew Walter at the Toyota Technological Institute at Chicago (TTIC). This is actually a new collaborative course which just starts from 2016. I first knew this course from the [TTIC Duckietown website](http://duckietown.org/classes/2017/17-TTIC/). After seeing some videos of autonomous Duckiebot vehicles made by students running in the Duckietown, I became deeply fascinated in this course.
 
+<br />
+
 At the beginning, I was eager to enroll this course despite the fact that the course size is limited. However, I was prevented from enrollment by the department regulation because new student could only take at most three elementary courses in the first semester and the Duckietown course is considered as an advanced course. I was not happy about this but later I found it was actually wise to audit the Duckietown course instead of actually take in my first semester at the University of Chicago because the course work load at the University of Chicago is tremendous. I bearly just survived from the first semester where I took three elementary courses (One of the course I took is "C Programming" in which I spend more than 35 hours weekly on weekly projects). But I wish I could formally attend this course next year when I totally get used to the study demand of the University of Chicago.
 
 ### Course Content
 
 The Duckietown course is actually a very comprehensive advanced PhD level course, although it is very open to master students and undergraduate students (I saw a few of them in the class). Unlikely the lovely duckie logo, the course content is mainly taught using mathematics and statistics. As a computer science student switched from biological science, I felt a lot of pressure from PhD classmates who seem to understand all the course contents orz. I should spend more time enhancing my background in mathematics and statistics in the near future. 
+
+<br />
 
 Here I am going to talk about some of the contents that are most impressive to me.
 
