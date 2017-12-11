@@ -143,12 +143,13 @@ Different optimizers tend to have different training effects. I tried AdamOptimi
     <img id = "result" src = "{{ site.url }}/images/articles/2017-10-30-Siamese-Network-MNIST/embed.jpeg">
     <figcaption>Siamese Network Test Result on MNIST Dataset</figcaption>
 </figure>
-
+<style>
 #result {
   display: block;
   width: 75%;
   height: auto;
 }
+</style>
 </div>
 
 ### Siamese Network with Two Data Souces
