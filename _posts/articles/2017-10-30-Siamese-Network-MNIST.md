@@ -75,7 +75,7 @@ $I_1$ is the high-dimensional feature vector for input 1, and $I_2$ is the high-
 
 <br />
 
-However, in the implementation, using this exact Contrasive Loss function will cause some problems. For example, the loss will keep decreasing during training, but suddenly became infinite which does not make sense at the first glance. This is because that the gradient property for this Contrasive Loss function is not very good.
+However, in the implementation, using this exact Contrasive Loss function will cause some problems. For example, the loss will keep decreasing during training, but suddenly became NaN which does not make sense at the first glance. This is because that the gradient property for this Contrasive Loss function is not very good.
 
 <br />
 
@@ -83,7 +83,44 @@ Let's see a example.
 
 <br />
 
-Suppose $I_1 = (a_1, a_2)$, $I_2 = (b_1, b_2)$, then $d(I_1, I_2) = \sqrt{(a_1-b_1)^2 + (a_2-b_2)^2}$. We then calculate its partial derivative to $a_1$. $\frac{\partial d(I_1, I_2)}{\partial a_1} = \frac{a_1 - b_1}{\sqrt{(a_1-b_1)^2 + (a_2-b_2)^2}}$
+Suppose $I_1 = (a_1, a_2)$, $I_2 = (b_1, b_2)$, then $d(I_1, I_2) = \sqrt{(a_1-b_1)^2 + (a_2-b_2)^2}$. We then calculate its partial derivative to $a_1$. 
+
+$$\frac{\partial d(I_1, I_2)}{\partial a_1} = \frac{a_1 - b_1}{\sqrt{(a_1-b_1)^2 + (a_2-b_2)^2}}$$
+
+When $a_1 = b_1$ and $a_2 = b_2$, or $I_1$ and $I_2$ are extremely close to each other, this derivative is likely to be NaN. This derivative is absolutely required for the training cases whose $l = 0$.
+
+<br />
+
+Although the chance of happenning during training might be low since the label $l$ suggesting that $I_1$ and $I_2$ should be divergent, there is still chance that $I_1$ and $I_2$ are extremely close while $l = 0$. Once this happens once, the loss function should always give NaN for the loss and derivatives.
+
+<br />
+
+To overcome this bad property, I added a small number to the Euclidean distance when $l = 0$, making the Euclidean distance never be zero. Formally, the Contrasive Loss function becomes
+
+$$
+L(I_1, I_2, l) = ld(I_1, I_2)^2 + (1-l)\max(m - d'(I_1, I_2), 0)^2
+$$
+
+Where $d(I_1, I_2)$ is the Euclidean distance of $I_1$ and $I_2$, $d'(I_1, I_2) = \sqrt{d(I_1, I_2)^2 + \lambda}$. Here I used $\lambda = 10^{-6}$ in this case.
+
+```Python
+    def loss_contrastive(self, margin = 5.0):
+        # Define loss function
+        with tf.variable_scope("loss_function") as scope:
+            labels = self.tf_label
+            # Euclidean distance squared
+            eucd2 = tf.pow(tf.subtract(self.output_1, self.output_2), 2, name = 'eucd2')
+            eucd2 = tf.reduce_sum(eucd2, 1)
+            # Euclidean distance
+            # We add a small value 1e-6 to increase the stability of calculating the gradients for sqrt
+            # See https://github.com/tensorflow/tensorflow/issues/4914
+            eucd = tf.sqrt(eucd2 + 1e-6, name = 'eucd')
+            # Loss function
+            loss_pos = tf.multiply(labels, eucd2, name = 'constrastive_loss_1')
+            loss_neg = tf.multiply(tf.subtract(1.0, labels), tf.pow(tf.maximum(tf.subtract(margin, eucd), 0), 2), name = 'constrastive_loss_2')
+            loss = tf.reduce_mean(tf.add(loss_neg, loss_pos), name = 'constrastive_loss')
+        return loss
+```
 
 
 #### Choice of the Optimizers
