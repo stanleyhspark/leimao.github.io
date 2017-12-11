@@ -148,6 +148,7 @@ Different optimizers tend to have different training effects. I tried AdamOptimi
   display: block;
   width: 75%;
   height: auto;
+  margin: 0 auto;
 }
 </style>
 </div>
