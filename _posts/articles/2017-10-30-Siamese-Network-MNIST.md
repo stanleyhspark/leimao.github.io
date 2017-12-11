@@ -65,7 +65,9 @@ Use ```scope.reuse_variables()``` to tell TensorFlow the variables used in the s
 
 #### Implementation of the Contrastive Loss
 
-
+$$
+L(I_g, I_s, l) = ld(I_g, I_s)^2 + (1-l)\max(m - d(I_g, I_s), 0)^2
+$$
 
 
 #### Choice of the Optimizers
