@@ -71,14 +71,9 @@ $$
 L(I_1, I_2, l) = ld(I_1, I_2)^2 + (1-l)\max(m - d(I_1, I_2), 0)^2
 $$
 
-$I_1$ is the high-dimensional feature vector for input 1, and $I_2$ is the high-dimensional feature vector for input 2. $l$ is a binary-valued correspondence variable that indicates whether the two feature vector pair match ($l = 1$) or not ($l = 0$). $d(I_1, I_2)$ is the Euclidean distance of $I_1$ and $I_2$. $m$ ($m > 0$) is the margin for non-matched feature vector pairs.
+$I_1$ is the high-dimensional feature vector for input 1, and $I_2$ is the high-dimensional feature vector for input 2. $l$ is a binary-valued correspondence variable that indicates whether the two feature vector pair match ($l = 1$) or not ($l = 0$). $d(I_1, I_2)$ is the Euclidean distance of $I_1$ and $I_2$. $m$ ($m > 0$) is the margin for non-matched feature vector pair. To understand the margin $m$, when the two feature vector do not pair, $l = 0$, $L(I_1, I_2, l = 0) = \max(m - d(I_1, I_2), 0)^2$. To minimize the loss, $d(I_1, I_2)$ could neither be too large nor too small, but close to the margin $m$. If the dimension of feature vector is fixed, increasing the value of margin $m$ may allow better separation of data clusters, but the training time may also increase given other parameters are fixed.
 
 
-<br />
-
-$
-L(I_g, I_s, l) = ld(I_g, I_s)^2 + (1-l)\max(m - d(I_g, I_s), 0)^2
-$
 
 #### Choice of the Optimizers
 
