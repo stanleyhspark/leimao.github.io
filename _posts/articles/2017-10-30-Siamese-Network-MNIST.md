@@ -144,7 +144,7 @@ Different optimizers tend to have different training effects. I tried AdamOptimi
 
 <div class = "titled-image">
 <figure class = "titled-image">
-    <img src = "{{ site.url }}/images/articles/2017-10-30-Siamese-Network-MNIST/embeded.jpeg">
+    <img src = "{{ site.url }}/images/articles/2017-10-30-Siamese-Network-MNIST/embed.jpeg">
     <figcaption>Siamese Network Test Result on MNIST Dataset</figcaption>
 </figure>
 </div>
