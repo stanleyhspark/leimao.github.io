@@ -44,6 +44,9 @@ I will first give an example of my implementation of the Siamese Network using i
 
 The whole Siamese Network implementation was wrapped as Python object. One can easily modify the counterparts in the object to achieve more advanced goals, such as replacing FNN to more advanced neural networks, changing loss functions, etc. See the [Siamese Network on MNIST](https://github.com/leimao/Siamese_Network_MNIST) in my GitHub repository.
 
+
+
+
 <br />
 
 The sister networks I used for the MNIST dataset are three layers of FNN. All the implementaion of the network are nothing special compared to the implementaions of other networks in TensorFlow, except for three caveats.
@@ -124,4 +127,26 @@ Where $d(I_1, I_2)$ is the Euclidean distance of $I_1$ and $I_2$, $d'(I_1, I_2) 
 
 #### Choice of the Optimizers
 
-Different optimizer tend
+Different optimizers tend to have different training effects. I tried AdamOptimizer, and I found although the feature vectors got separated, the cluster shape was spindly. I later used GradientDescentOptimizer, the cluster shape became circle instead.
+
+```python
+    def optimizer_initializer(self):
+        # Initialize optimizer
+        # AdamOptimizer and GradientDescentOptimizer has different effect on the final results
+        # GradientDescentOptimizer is probably better than AdamOptimizer in Siamese Network
+        #optimizer = tf.train.AdamOptimizer(LEARNING_RATE).minimize(self.loss)
+        optimizer = tf.train.GradientDescentOptimizer(LEARNING_RATE).minimize(self.loss)
+        return optimizer
+```
+
+
+#### Test Result
+
+<div class = "titled-image">
+<figure class = "titled-image">
+    <img src = "{{ site.url }}/images/articles/2017-10-30-Siamese-Network-MNIST/embeded.jpeg">
+    <figcaption>Siamese Network Test Result on MNIST Dataset</figcaption>
+</figure>
+</div>
+
+
