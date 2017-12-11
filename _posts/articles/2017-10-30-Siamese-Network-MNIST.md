@@ -69,6 +69,11 @@ $$
 L(I_g, I_s, l) = ld(I_g, I_s)^2 + (1-l)\max(m - d(I_g, I_s), 0)^2
 $$
 
+<br />
+
+$
+L(I_g, I_s, l) = ld(I_g, I_s)^2 + (1-l)\max(m - d(I_g, I_s), 0)^2
+$
 
 #### Choice of the Optimizers
 
