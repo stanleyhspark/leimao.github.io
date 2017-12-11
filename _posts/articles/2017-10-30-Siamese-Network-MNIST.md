@@ -103,7 +103,7 @@ $$
 
 Where $d(I_1, I_2)$ is the Euclidean distance of $I_1$ and $I_2$, $d'(I_1, I_2) = \sqrt{d(I_1, I_2)^2 + \lambda}$. Here I used $\lambda = 10^{-6}$ in this case.
 
-```Python
+```python
     def loss_contrastive(self, margin = 5.0):
         # Define loss function
         with tf.variable_scope("loss_function") as scope:
@@ -122,7 +122,6 @@ Where $d(I_1, I_2)$ is the Euclidean distance of $I_1$ and $I_2$, $d'(I_1, I_2) 
         return loss
 ```
 
-
 #### Choice of the Optimizers
 
-
+Different optimizer tend
