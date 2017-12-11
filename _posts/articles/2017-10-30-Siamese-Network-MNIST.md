@@ -11,10 +11,6 @@ image:
   teaser: /images/articles/2017-10-30-Siamese-Network-MNIST/siamese_network.png
 ---
 
-
-
-In progress.
-
 ### Introduction
 
 Siamese Network is a semi-supervised learning network which produce the embeding feature representation for the input. By introducing multiple input channels in the network and appropriate loss functions, the Siamese Network is able to learn to represent similar inputs with similar embeding features, and epresent different inputs with different embeding features.
@@ -148,5 +144,11 @@ Different optimizers tend to have different training effects. I tried AdamOptimi
     <figcaption>Siamese Network Test Result on MNIST Dataset</figcaption>
 </figure>
 </div>
+
+### Siamese Network with Two Data Souces
+
+As I mentioned above, Siamese Network could also be used to train data inputs of different "types". One such example is described in one of my reading notes ["Vehicle Localization on Satellite Images via Learning Embeddings"](https://leimao.github.io/reading/2017-Deep-Learning-Vehicle-Localization-Satellite-Image/). The authors of the paper used VGG16 network for both Siamese channels, but unlike the MNIST example, the weights of VGG16 network is not shared because one input image is camera photo and the other input image is a satellite map image.
+
+
 
 
