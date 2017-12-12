@@ -13,15 +13,23 @@ share: true
 
 Backpropagation is always one of my knowledge weaknesses in machine learning. I have understood it many times. However, I always forgot how it really works but simply remember it is basically about the [multivariable chain rules](https://proofwiki.org/wiki/Chain_Rule_for_Real-Valued_Functions). I clearly remember that Andrew Ng once joked he sometimes cannot remember how backpropagation works so he often had to understand backpropagation again before he gave lectures in machine learning courses. Even if I refresh my mind by reading some related materials, I never understood why such tedious and complicated calculus could be programmable in our machine learning tools when we are working on neural networks. 
 
+<br />
+
 If you know how to calculate \\(\frac{\partial{e}}{\partial{b}}\\) in the following figure, you basically know how to do backpropagation.
 
 ![]({{ site.url }}/images/blog/2017-05-17-Programmable-Backpropagation/tree-eval-derivs.png)
 
 [Here](http://colah.github.io/posts/2015-08-Backprop/) is a very simple and good illustration about the backpropagation. However, these materials are often over-simplified. The network they provided are not even the ordinary neural network we are using nowadays. Not even mention including the activation functions. 
 
+<br />
+
 Here, I presented the workflow of backpropagation in a neat way so that people could easily figure out the programmable logic inside the derivations. It is extremely tedious to type equations in MathJax. So I finally chose to use Word and transformed the file to pdf for you guys to download. 
 
+<br />
+
 You can download my simple illustration of programmable backpropagation [<font color="red">here</font>](/downloads/blog/2017-05-17-Programmable-Backpropagation/backpropagation.pdf). 
+
+<br />
 
 Backpropagation was always like a black box when I was working on machine learning tasks. I hope this materials could always remind me the mechanism of backpropagation and the importance of mathematics in computer science.
 
@@ -29,7 +37,11 @@ Backpropagation was always like a black box when I was working on machine learni
 
 [Here](https://github.com/mnielsen/neural-networks-and-deep-learning/blob/master/src/network.py) is a code example of the neural network backpropagation. In case the author makes changes or removes the contents, you may also [download]({{ site.url }}/downloads/blog/2017-05-17-Programmable-Backpropagation/neural-networks-and-deep-learning-master.zip) it from my site. The author also wrote blogs ([page 1](http://neuralnetworksanddeeplearning.com/chap2.html), [page 2](http://neuralnetworksanddeeplearning.com/chap1.html#implementing_our_network_to_classify_digits)) on the implementation of this backpropagation to solve classification problems.
 
+<br />
+
 Although it might twist your brain, the author's implementation has exactly the same logic to mine (He specifically used sigmoid function as activation function and least sum-of-squares function as loss function). The implementation was very neat, which only used Numpy. I think it would take me very long time if I am going to write it myself.
+
+<br />
 
 The key codes of backpropagation are as follows:
 
@@ -121,6 +133,10 @@ class Network(object):
 
 I remember that when I was taking GRE test years agao, there is a topic of "human beings becomes stupid as the technology develops". I might agree with it to some extent, because using too much tools when we are coding or doing numerical analysis makes us stupid. 
 
+<br />
+
 I have seen many deep learning codes which only uses Numpy, and I really admire them very much. We are actually over-using the autograds functions in modern tools, such as Tensorflow. Finally the learning algorithm we developed becomes a black box, which is pretty bad. There are other reasons, in addition to autograds, why we are using such modern tools.
+
+<br />
 
 We have to keep in mind that mathematics always comes first even if we are computer scientists.

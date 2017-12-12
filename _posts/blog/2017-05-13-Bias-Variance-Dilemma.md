@@ -21,11 +21,18 @@ Unfortunately, although the book is overall a good book that covers most of fund
 
 After doing multiple rounds of google searches, I think the combination of these two materials are the most easy to understand. I have annotated them in the pdf file for clarity. After reading both of them, I think you will fully understand what is bias and variance and their relashionships. This [stackflow answer](https://math.stackexchange.com/questions/1654230/confused-about-meaning-of-a-expectation-of-a-function) might also be helpful if you have some troubles reading the derivation. I personally do not recommend the Wikipedia one by the way, though it seems to be correct.
 
+<br />
+
 [Material 1]({{ site.url }}/downloads/blog/2017-05-13-Bias-Variance-Dilemma/BiasVariance_1.pdf)
 
+<br />
 
 It provides the figures to illustarte the origin of bias and variance, which other materials often lack. The derivation seems ok. However, it lacks one key clarification for the uncorrelatonship between two things therefore is not recommended as the rigorous derivation.
 
+<br />
+
 [Material 2]({{ site.url }}/downloads/blog/2017-05-13-Bias-Variance-Dilemma/BiasVariance_2.pdf)
+
+<br />
 
 It provides very detailed derivation step by step. Despite the minor math errors, it is the best one I have seen on the internet. I have already annotated the minor error and some basic statistics lemma/theorems if you cannot remember from the top of your head.

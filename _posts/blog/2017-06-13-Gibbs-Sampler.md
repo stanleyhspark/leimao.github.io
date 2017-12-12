@@ -16,6 +16,8 @@ The basic algorithm for Gibbs Sampler is as follows.
 
 From my understanding, there are two applications of Gibbs sampler as well as general Monte Carlo Markov Chain (MCMC) samplers.
 
+<br />
+
 The first application is to sample multivariable data point from a certain distributions, which is relatively easy. 
 <center><img width="600" height="600" src="{{ site.url }}/images/blog/2017-06-13-Gibbs-Sampler/gibbs_sampling.jpg"/></center>
 
@@ -27,6 +29,8 @@ The second application is to do Bayesian Inference of the parameters behind a ce
 ### Gibbs Sampler Inference
 
 [Here](/downloads/blog/2017-06-13-Gibbs-Sampler/GibbsSampling.pdf) is a very good problem example of Gibbs Sampler Bayesian Inference. The author also provided the implementation [code](http://www2.bcs.rochester.edu/sites/jacobslab/cheat_sheets.html) for solving the problem using Gibbs Sampler, which you could also download it [here]({{ site.url }}/downloads/blog/2017-06-13-Gibbs-Sampler/GibbsSampling.code.py).
+
+<br />
 
 The original code is a little bit confusing, although it is correct. I rewrote and annotated it so that one can understand it more easily. You may download my code [here]({{ site.url }}/downloads/blog/2017-06-13-Gibbs-Sampler/GibbsSampling.code.lei.py).
 
@@ -159,13 +163,19 @@ The output is as follows. The infered parameters matches the ones used for gener
 
 It should be noted that if you changed the parameters in the model (here, a and b for the gamma distribution), or even changed the model (say, uniform distribution to normal distribution, gamma distribution to normal distribution). The good infered parameters might not match the "real ones" exactly, but they should be very close.
 
+<br />
+
 Here, if I change a from 2 to 5, change b from 0.2 to 10. The infered n equals around 23. However, the infered lambda1 and lambda2 were centered at 1.5 and 6, respectively. This is very bad, because for lambda2, the true value, which is 8, was not even sampled once. 
 
 <center><img width="1200" height="1200" src="{{ site.url }}/images/blog/2017-06-13-Gibbs-Sampler/gibbs_sampler_figure_2.png"/></center>
 
 So, how can we find there is a problem here, given we do not know the true parameters in real problems.
 
+<br />
+
 I have an idea but I am not sure whether this is correct in principle, or whether there is any theory to support this.
+
+<br />
 
 For a = 2, b = 0.2, the probability density function of gamma distribution (lambda1, lambda2 ~ Gamma(a = 2, b = 1/0.2)) is like this (click [here]({{ site.url }}/downloads/blog/2017-06-13-Gibbs-Sampler/gamma_pdf.py) to download the code for the probability density function plot of gamma distribution).
 
@@ -173,10 +183,14 @@ For a = 2, b = 0.2, the probability density function of gamma distribution (lamb
 
 After Gibbs sampling, we know that the priors for lambda1 and lambda2 (lambda1 = 2, lambda2 = 8) are very high.
 
+<br />
+
 For a = 5, b = 10, the probability density function of gamma distribution (lambda1, lambda2 ~ Gamma(a = 5, b = 1/10)) is like this.
 
 <center><img width="500" height="500" src="{{ site.url }}/images/blog/2017-06-13-Gibbs-Sampler/gamma_pdf_figure_2.png"/></center>
 
 After Gibbs sampling, we know that the priors for lambda1 and lambda2 (lambda1 = 1.5, lambda2 = 6) are extremely low.
+
+<br />
 
 Although I am not sure whether there is any correlation between the prior probabilities and the "correctness of inference", it should be noted that, even with the inference using a = 5 and b = 10, I can still reconstruct the dataset very well, which means that the choice of these model parameters might not have significant impact on our real studies.

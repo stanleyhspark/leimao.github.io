@@ -20,10 +20,18 @@ When I was working on optimization problems in machine learning tasks, I needed 
 
 It is also called "Second Order" optimization methods. It uses Taylor Expansion upto the second order to approximate the target function. It should be noted that if we do Taylor Expansion approximation only upto the first order, the get the ordinary gradient descent method.
 
+<br />
+
 This method converges much faster than gradient descent because unlike ordinary gradient descent it can better foresee the local maximum or minimum when we are computing the gradients. However, the sacrifice is that the computation cost for the gradients, especially when the dimension of the data (number of features in the data) becomes larger, becomes much higher. Therefore, I actually hardly see this optimization method in solving machine learning tasks.
+
+<br />
 
 The mathmatical details of the Newton method for 1 variable and multiple variables could be found to this [article]({{ site.url }}/downloads/blog/2017-05-31-Optimization-Methods/newtonfull.pdf). You may also check the Wikipedia about the [Newton method](https://en.wikipedia.org/wiki/Newton%27s_method_in_optimization).
 
+<br />
+
 ![]({{ site.url }}/images/blog/2017-05-31-Optimization-Methods/256px-Newton_optimization_vs_grad_descent.svg.png)
+
+<br />
 
 Newton Method (red) vs Gradient Descent (green)

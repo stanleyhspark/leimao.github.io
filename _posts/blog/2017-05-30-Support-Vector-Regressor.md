@@ -29,6 +29,8 @@ Here, the "margin" from the classifier \\( w^Tx+b = 0 \\) to the closest data po
 
 The red line H3 is the support vector machine classifier that maximize the "margin". It should be noted that the constrain garantees that the classifier classify the data points correctly with the miximized "margin".
 
+<br />
+
 For more details of support vector machine, how to solve the above formulated optimization problem, non-linearly separable classification problem, and the kernel trick, you may read the support vector machine [course material](/downloads/blog/2017-05-30-Support-Vector-Regressor/support-vector-machine.pdf) from Andrew Ng's Stanford CS229 Machine Learning course.
 
 ### Support Vector Regression
@@ -39,7 +41,11 @@ For more details of support vector machine, how to solve the above formulated op
 
 So, how do we understand this?
 
+<br />
+
 There is no "maximization of margin", and the margin \\( \frac{1}{\\|w\\|^2} \\) in support vector classification <font color="red">does not</font> have any physical meaning in support vector regression. The purpose of the minimization of \\( \frac{1}{2} \\|w\\|^2 \\) is only to have small weights preventing overfitting. With a good \\( \epsilon \\), the regressor will go through all the data points with error no more than \\( \epsilon \\). However, if \\( \epsilon \\) is not optimal, say, too large. One could anticipate that the constrains are basically doing no job, resulting all the weights to be zero. By choosing different \\( \epsilon \\), you may or may not get a regressor to satisfy all the data points. Because of this instability, there are no implementation of this form of the algorithm in the scikit. To allow some deviation, one may expand this optimization formula further. Here are some handouts ([material 1](https://www.mathworks.com/help/stats/understanding-support-vector-machine-regression.html?requestedDomain=www.mathworks.com), [material 2](/downloads/blog/2017-05-30-Support-Vector-Regressor/support-vector-regressor.pdf)) regarding support vector regression, which I am not going to further discuss here. Because the purpose of this blog article is only to compare the intuition difference between support vector machine and support vector regression. My personal understanding is that their name is similar just because they happen to have a similar optimization fomular, and optimization method (check the reading materials). However, there is no too much internal logic connection between them. 
+
+<br />
 
 There are more parameters in the model. Sometimes, the parameters are very critical for fitting the data to the model, compared to some simple models. Here I generated some data, used ordinary linear regression and support vector regressor to fit the models, and compared their performance. You may see that support vector regressor is very sensitive to model hyperparamters.
 
@@ -47,5 +53,6 @@ There are more parameters in the model. Sometimes, the parameters are very criti
 
 I only changed the C value in the model in the default linear [support vector regressor](http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html#sklearn.svm.SVR) (It does not allow to have C=0!). However, the performance is still far from satisfying compared to the ordinary simple linear regression model. One have to further optimize the \\( \epsilon \\) value in order to achieve good performance (data not shown). The code for the above support vector regressor model is [here](https://github.com/leimao/leimao.github.io/blob/master/downloads/blog/2017-05-30-Support-Vector-Regressor/SVR.ipynb).
 
+<br />
 
 A good idea to determine the right parameters to use might be doing validation using validation dataset during the model optimization.
