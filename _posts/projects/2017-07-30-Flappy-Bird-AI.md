@@ -22,6 +22,9 @@ The AI takes the real-time game image output as input. It was able to play Flapp
 <br />
 
 Here is a demo showing the AI playing the Flappy Bird game.
+
+<br />
+
 <center><img width="240" height="240" src="{{ site.url }}/images/projects/2017-07-30-Flappy-Bird-AI/Flappy_Bird_gameplay.png"/></center>
 
 ### AI Features
@@ -66,4 +69,8 @@ python FlappyBird_AI.py -m test
 ### AI Demo
 
 Here is a demo showing the AI playing the Flappy Bird game.
+
+<br />
+
 <center><img width="240" height="240" src="{{ site.url }}/images/projects/2017-07-30-Flappy-Bird-AI/flappy_bird_AI.gif"/></center>
+
