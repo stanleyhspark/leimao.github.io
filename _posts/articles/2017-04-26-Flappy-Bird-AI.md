@@ -33,7 +33,11 @@ The [NIPS 2013 Deep Q-Learning algorithm](https://www.cs.toronto.edu/~vmnih/docs
 
 The raw screenshot of the game requires to be preprocessed before send as input to the learning algorithm. The size of image matters a lot for the training efficiency and performance. Ben Lau and songrotek used 80 x 80 images as input. However, this did not retain the original height/width ratio of the raw image. So I changed it to 72 x 40, which matches the original height/width ratio. This might also reduce the calculation task to the computer to some extent.
 
+<br />
+
 The Flappy Bird game API used black background, which makes us convenient to manipulate image using OpenCV to maximize the contrast between bird, background, and the barriers. It might be a good habit to always check the preprocessed image using your bare eye. If your bare eye cannot distinguish things from the preprocessed images, the chance that the computer would do a good job on it might be low.
+
+<br />
 
 Game state frame determines how many frames of images are stacked together. Here, game_state_frame = 4. This means that 3 processing images and the current images are stacked into one single image, and are sent as input to the learning algorithm. Because in many games, the optimal actions to take is not only dependent on the current image. One may consider stacking of proceeding images together with the current image as a short video. The human and computer are using video, not single frame image, to determine the optimal actions.
 

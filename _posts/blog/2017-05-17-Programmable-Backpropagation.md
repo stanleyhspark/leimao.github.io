@@ -17,7 +17,11 @@ Backpropagation is always one of my knowledge weaknesses in machine learning. I 
 
 If you know how to calculate \\(\frac{\partial{e}}{\partial{b}}\\) in the following figure, you basically know how to do backpropagation.
 
+<br />
+
 ![]({{ site.url }}/images/blog/2017-05-17-Programmable-Backpropagation/tree-eval-derivs.png)
+
+<br />
 
 [Here](http://colah.github.io/posts/2015-08-Backprop/) is a very simple and good illustration about the backpropagation. However, these materials are often over-simplified. The network they provided are not even the ordinary neural network we are using nowadays. Not even mention including the activation functions. 
 

@@ -17,15 +17,25 @@ Support Vector Machine (SVM) is one of the most popular algorithm in machine lea
 
 Support vector regression has some subtle difference to support vector machine regarding their physical meanings despite the fact that their formula are quite similar. Let us take a glance at support vector machine first. Basically, for a linearly separable classification task, support vector machine finds a line or hyperplane \\( w^Tx+b = 0 \\) that maximize the "margin" from the classifier to the closest data. Every thing seems to be "right". Neigher too big, nor too small. It is "the Goldilocks principle" from the fairy tale "the Goldilocks and the three bears". 
 
+<br />
+
 ![]({{ site.url }}/images/blog/2017-05-30-Support-Vector-Regressor/Goldilocks.jpg)
+
+<br />
 
 To express the whole idea using formula, we have an optimization problem:
 
 \\( \min \frac{1}{2} \\|w\\|^2 \\) subject to \\( y^{(i)}(w^Tx^{(i)}+b)\ge1 \\) for all \\(i = 1,2, ..., n \\)
 
+<br />
+
 Here, the "margin" from the classifier \\( w^Tx+b = 0 \\) to the closest data point is \\( \frac{1}{\\|w\\|^2} \\) where the closest data point \\(x^{(c)}\\) has \\( y^{(c)}(w^Tx^{(c)}+b)=1 \\). Minimizing \\( \frac{1}{2} \\|w\\|^2 \\) is actually maximizing the "margin".
 
+<br />
+
 ![]({{ site.url }}/images/blog/2017-05-30-Support-Vector-Regressor/svm.svg)
+
+<br />
 
 The red line H3 is the support vector machine classifier that maximize the "margin". It should be noted that the constrain garantees that the classifier classify the data points correctly with the miximized "margin".
 
@@ -49,7 +59,11 @@ There is no "maximization of margin", and the margin \\( \frac{1}{\\|w\\|^2} \\)
 
 There are more parameters in the model. Sometimes, the parameters are very critical for fitting the data to the model, compared to some simple models. Here I generated some data, used ordinary linear regression and support vector regressor to fit the models, and compared their performance. You may see that support vector regressor is very sensitive to model hyperparamters.
 
+<br />
+
 ![]({{ site.url }}/images/blog/2017-05-30-Support-Vector-Regressor/svr_demo.png)
+
+<br />
 
 I only changed the C value in the model in the default linear [support vector regressor](http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html#sklearn.svm.SVR) (It does not allow to have C=0!). However, the performance is still far from satisfying compared to the ordinary simple linear regression model. One have to further optimize the \\( \epsilon \\) value in order to achieve good performance (data not shown). The code for the above support vector regressor model is [here](https://github.com/leimao/leimao.github.io/blob/master/downloads/blog/2017-05-30-Support-Vector-Regressor/SVR.ipynb).
 
