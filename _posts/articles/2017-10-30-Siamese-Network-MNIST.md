@@ -2,7 +2,7 @@
 layout: post
 title: "Siamese Network on MNIST Dataset"
 excerpt: "An introduction to Siamese Network and its implementation on MNIST dataset"
-modified: 2017-09-14T14:17:25-04:00
+modified: 2017-12-11T14:17:25-04:00
 categories: article
 tags: [deep learning, siamese network]
 comments: true
