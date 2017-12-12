@@ -25,7 +25,11 @@ I finally found a figure from the Wikipedia that totally explain all of my quest
 
 In an ordinary introduction material of self-organizing map, you will often see such kind of figure illustrating the SOM neural network. I personally think this is not helpful for readers to understand the algorithm, although it is correct.
 
+<br />
+
 <center><img width="300" height="300" src="{{ site.url }}/images/blog/2017-06-05-Self-Organizing-Map/som_representation.jpg"/></center>
+
+<br />
 
 The great figure from the Wikipedia is this:
 ![]({{ site.url }}/images/blog/2017-06-05-Self-Organizing-Map/Somtraining.svg)
