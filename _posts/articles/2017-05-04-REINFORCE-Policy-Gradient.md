@@ -19,6 +19,8 @@ image:
 
 Here I am going to tackle this LunarLander problem using a new alogirthm called "REINFORCE" or "Monte Carlo Policy Gradient".
 
+<br />
+
 ![]({{ site.url }}/images/articles/2017-05-04-REINFORCE-Policy-Gradient/lunarlander.png)
 
 ### Touch the Algorithm
