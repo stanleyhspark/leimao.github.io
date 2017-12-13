@@ -29,7 +29,7 @@ I just came up with this idea. So there is still no documentation of how to use 
 
 ### Talk About Algorithms
 
-### Actor-Critic Policy Gradient
+#### Actor-Critic Policy Gradient
 
 In the [REINFORCE Policy Gradient reinforcement learning algorithm](https://leimao.github.io/article/REINFORCE-Policy-Gradient.html), we calculate the value of the next state after taking the action $G_t$ ($v_t$) from the rewards in the whole episode and use it to guide our gradient descent. So it is a statistically sampled value. One could actually construct another neural network to represent the value of the state and update it routinely until we get the a good estimate of the true value of the state. 
 
@@ -75,7 +75,7 @@ The learning performance of the algorithm was submitted to OpenAI Gym:
 
 <https://gym.openai.com/evaluations/eval_T51WU12pRlWydRLLI9bdg>
 
-### Sarsa Actor-Critic Policy Gradient
+#### Sarsa Actor-Critic Policy Gradient
 
 Sarsa Actor-Critic Policy Gradient is a variant of the Actor-Critic Policy Gradient I talked above. It uses Q-network instead of the value network. You may remember the Q-network is a network to represent the value of state-action pairs. To update the Q-network, instead of using DQN that I used for [Flappy Bird](https://leimao.github.io/journal/Flappy-Bird-AI.html), people tend to use Sarsa (?), a variant method to update Q-network. I should have introduced Sarsa before I introduce Sarsa Actor-Critic Policy Gradient. But when I was doing the implementation, I implemented Sarsa from the Sarsa Actor-Critic Policy Gradient template. I got used to present things in a time-dependent manner, because it is time-saving and easy to tell a story.
 
@@ -105,7 +105,7 @@ The learning performance of the algorithm was submitted to OpenAI Gym:
 
 <https://gym.openai.com/evaluations/eval_fiRpY1pESl2KJCq9nsRq3w>
 
-### Sarsa
+#### Sarsa
 
 The basic concept of Sarsa is almost the same to the critic value network I mentioned above, except for the sampling of action. Sarsa Actor-Critic Policy Gradient uses softmax to sample action, Sarsa here use $\epsilon$-greedy to sample action.
 
