@@ -83,15 +83,17 @@ EXPLORATION_TIME = 10000 # time steps used for decaying epsilon during training 
 
 ### Algorithm Performance
 
-Before Training:
+**Before Training:**
 
 ![]({{ site.url }}/images/articles/2017-04-28-Deep-Q-Learning-CartPole/episode_0.gif)
 
-After Training:
+**After Training:**
 
 ![]({{ site.url }}/images/articles/2017-04-28-Deep-Q-Learning-CartPole/episode_27000.gif)
 
-OpenAI Gym Evaluation
+**OpenAI Gym Evaluation**
+
+<br />
 
 Solved after 9919 episodes. Best 100-episode average reward was 200.00 ± 0.00.
 <https://gym.openai.com/evaluations/eval_ewr0DWHeTmGE6x1NGQ1LiQ>
@@ -203,6 +205,8 @@ Specifically for the problem in OpenAI Gym, to achieve both learning efficiency 
 <br />
 
 I also found that, in addition to Q-Learning, Policy Gradient might work better. I may implement this algorithm in the future.
+
+<br />
 
 <https://github.com/lancerts/Reinforcement-Learning>
 
