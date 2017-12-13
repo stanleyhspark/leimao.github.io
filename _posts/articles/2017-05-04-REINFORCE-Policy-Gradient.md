@@ -25,15 +25,23 @@ Here I am going to tackle this LunarLander problem using a new alogirthm called 
 
 Algorithm from [Sutton Book draft](http://incompleteideas.net/sutton/book/the-book-2nd.html)
 
+<br />
+
 ![]({{ site.url }}/images/articles/2017-05-04-REINFORCE-Policy-Gradient/Sutton_REINFORCE.png)
+
+<br />
 
 Algorithm from [Silver Courseware](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html)
 
+<br />
+
 ![]({{ site.url }}/images/articles/2017-05-04-REINFORCE-Policy-Gradient/Silver_REINFORCE.png)
+
+<br />
 
 Note that the \\(G_t\\) item in Sutton's REINFORCE algorithm and the \\(v_t\\) item in Silver's REINFORCE algorithm are the same thing.
 
-\\[ G_t = R_{t+1} + \gamma \times R_{t+2} + \gamma^2 \times R_{t+3} + ... + \gamma^{T-t+1} \times R_{T} \\]
+$$ G_t = R_{t+1} + \gamma \times R_{t+2} + \gamma^2 \times R_{t+3} + ... + \gamma^{T-t+1} \times R_{T} $$
 
 However, Silver's REINFORCE algorithm lacked a \\( \gamma^t \\) item than Sutton's algorithm. It turned out that both of the algorithms are correct. Sutton's algorithm worked for the episodic case maximizing the value of start state, while Silver's algorithm worked for the continuing case maximizing the averaged value. The lunarlander problem is a continuing case, so I am going to implement Silver's REINFORCE algorithm without including the \\( \gamma^t \\) item.
 
