@@ -64,11 +64,9 @@ One of way to overcome this is to construct a loss function whose minimization d
 FC-16 -> FC-32
 
 ```python
-
 GAMMA = 0.99 # decay rate of past observations
 LEARNING_RATE = 0.005 # learning rate in deep learning
 RAND_SEED = 0 # random seed
-
 ```
 #### Algorithm Performance
 
@@ -80,13 +78,15 @@ After Training:
 
 ![]({{ site.url }}/images/articles/2017-05-04-REINFORCE-Policy-Gradient/episode_3000.gif)
 
-OpenAI Gym Evaluation
+#### OpenAI Gym Evaluation
 
 Solved after 1476 episodes. Best 100-episode average reward was 203.29 ± 4.98.
 
 <https://gym.openai.com/evaluations/eval_6QdRxa5TuOD6GbmpbpsCw>
 
 This algorithm did solve the problem as OpenAI Gym requested. However, it suffered from high vairance problem. I tried to tune the hyperparameters and change the size of neural network. But this did not help significantly.
+
+<br />
 
 ![]({{ site.url }}/images/articles/2017-05-04-REINFORCE-Policy-Gradient/training_record_lunarlander.jpeg)
 
