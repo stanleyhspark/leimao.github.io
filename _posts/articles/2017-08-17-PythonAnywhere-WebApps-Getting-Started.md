@@ -74,7 +74,7 @@ Those two are simple webpages. However, what's different to ordinary HTML webpag
 
 In the second part of the tutorial, it taught us how to make a database backended comment application.
 
-{% highlight python %}
+```python
 # A very simple Flask Hello World app for you to get started with...
 from flask import Flask, render_template
 
@@ -117,7 +117,7 @@ def index():
         </div>
     </body>
 </html>
-{% endhighlight %}
+```
 
 Go to [http://leimao.pythonanywhere.com/](http://leimao.pythonanywhere.com/). The main_page.html will be presented. 
 
@@ -127,7 +127,7 @@ Go to [http://leimao.pythonanywhere.com/](http://leimao.pythonanywhere.com/). Th
 
 Let us add some elements to make the site fancier.
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <--!main_page.html-->
 <html>
@@ -183,7 +183,7 @@ Let us add some elements to make the site fancier.
     </body>
 </html>
 
-{% endhighlight %}
+```
 
 The interface now looks like this:
 
@@ -194,7 +194,7 @@ The interface now looks like this:
 So far, we have finished making the web application interface. However, the application is not functional because it is not able to receive message from the user. What we are going to do next is to add this feature. For the moment, we use temporary list to show the comments.
 
 
-{% highlight python %}
+```python
 from flask import Flask, redirect, render_template, request, url_for
 
 app = Flask(__name__)
@@ -209,10 +209,10 @@ def index():
 
     comments.append(request.form["contents"])
     return redirect(url_for('index'))
-{% endhighlight %}
+```
 
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <--!main_page.html-->
 <html>
@@ -260,7 +260,7 @@ def index():
 
     </body>
 </html>
-{% endhighlight %}
+```
 
 <figure>
     <img src = "{{ site.url }}/images/articles/2017-08-17-PythonAnywhere-WebApps-Getting-Started/post_comment_3.png">
@@ -270,7 +270,7 @@ def index():
 
 As is mentioned in the PythonAnywhere documentation, "SQLite is pretty slow on PythonAnywhere, and doesn't scale well for larger sites anyway. Postgres is a paid feature on PythonAnywhere because of its larger server power requirements, and we don't have built-in support for MongoDB. So we're going to use MySQL, which you can use from a free PythonAnywhere account." So probably the best choice is to go with MySQL.
 
-{% highlight python %}
+```python
 from flask import Flask, redirect, render_template, request, url_for
 from flask_sqlalchemy import SQLAlchemy
 
@@ -308,7 +308,7 @@ def index():
     db.session.add(comment)
     db.session.commit()
     return redirect(url_for('index'))
-{% endhighlight %}
+```
 
 The final web application looks like this:
 <figure>
