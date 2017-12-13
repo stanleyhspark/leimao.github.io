@@ -46,7 +46,7 @@ I wondered what hell the "Flask" is. [Wikipedia]((https://en.wikipedia.org/wiki/
 
 In the firt part of the tutorial, it taught you how to manage your source code files on PythonAnywhere. I was surprised that they even have a source code control system, just like GitHub, in their system. You will have to do all these "git" things in their console (I got too used to do "git" things in "clickable" GitHub Destop). For editing or submitting your source code, you can edit the file in the text editor in the broswer or just submit from your own local machine. Everything is easy and straightforward. Here is the first web-hosted application I made. It should be noted that the application might be expired because of the limit of the free account.
 
-{% highlight python %}
+```python
 # A very simple Flask Hello World app for you to get started with...
 from flask import Flask
 
@@ -61,7 +61,7 @@ def hello_world():
 @app.route('/foo')
 def hello_world_2():
     return 'Welcome to the foo inside Flask!'
-{% endhighlight %}
+```
 
 Go to [http://leimao.pythonanywhere.com/](http://leimao.pythonanywhere.com/), it will show a "hello world" message.
 Go to [http://leimao.pythonanywhere.com/foo](http://leimao.pythonanywhere.com/foo), it will show another "hello world" message.
@@ -86,9 +86,9 @@ app.config["DEBUG"] = True
 @app.route("/")
 def index():
     return render_template("main_page.html")
-{% endhighlight %}
+```
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <--!main_page.html-->
 <html>
