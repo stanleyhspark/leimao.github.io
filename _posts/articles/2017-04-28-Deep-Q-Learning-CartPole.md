@@ -29,15 +29,13 @@ The environments in OpenAI Gym could be categorized into two classes regarding t
 
 CartPole environment is probably the most simple environment in OpenAI Gym. However, when I was trying to load this environment, there is an issue regarding the box2d component. To fix this, please take the following steps. Many thanks to this [blogger](http://kelisv.blogspot.com/2016/12/attributeerror-module-object-has-no.html) for the straightforward instruction. This bug might be fixed in the future release of OpenAI Gym according to someone related to OpenAI.
 
-```
-
+```shell
 pip uninstall Box2D box2d-py
 git clone https://github.com/pybox2d/pybox2d
 cd pybox2d/
 python setup.py clean
 python setup.py build
 python setup.py install
-
 ```
 
 At first I thought it would be super easy to train the Q-Learning algorithm, given a similar Q-Learning algorithm was doing extremely well in Flappy Bird game after training with 60,000 game frames. However, I was wrong in some aspects. With some parameter setting details from [songrotek's code](https://gym.openai.com/evaluations/eval_kBouPnRtQCezgE79s6aA5A), I was able to overcome the problems and learned a lot. So I have to thank songrotek here.
@@ -71,7 +69,6 @@ It turned out that the learning rate of 0.0001 is the right one to use in CartPo
 FC-20
 
 ```python
-
 GAME_STATE_FRAMES = 1  # number of game state frames used as input
 GAMMA = 0.9 # decay rate of past observations
 EPSILON_INITIALIZED = 0.5 # probability epsilon used to determine random actions
@@ -82,7 +79,6 @@ FRAME_PER_ACTION = 1 # number of frames per action
 REPLAYS_SIZE = 1000 # maximum number of replays in cache
 TRAINING_DELAY = 1000 # time steps before starting training for the purpose of collecting sufficient replays to initialize training
 EXPLORATION_TIME = 10000 # time steps used for decaying epsilon during training before epsilon decreases to zero
-
 ```
 
 ### Algorithm Performance
@@ -116,10 +112,11 @@ I used one single layer of fully-connected neural network with only 20 hidden un
 
 Parameters
 
+<br />
+
 FC-128 -> FC-128
 
 ```python
-
 GAME_STATE_FRAMES = 1  # number of game state frames used as input
 GAMMA = 0.95 # decay rate of past observations
 EPSILON_INITIALIZED = 0.5 # probability epsilon used to determine random actions
@@ -130,10 +127,11 @@ FRAME_PER_ACTION = 1 # number of frames per action
 REPLAYS_SIZE = 2000 # maximum number of replays in cache
 TRAINING_DELAY = 2000 # time steps before starting training for the purpose of collecting sufficient replays to initialize training
 EXPLORATION_TIME = 10000 # time steps used for decaying epsilon during training before epsilon decreases to zero
-
 ```
 
 OpenAI Gym Evaluation
+
+<br />
 
 Solved after 293 episodes. Best 100-episode average reward was 197.39 ± 1.68.
 
@@ -147,10 +145,11 @@ Links to GitHub
 
 Parameters
 
+<br />
+
 FC-128 -> FC-128
 
 ```python
-
 GAME_STATE_FRAMES = 1  # number of game state frames used as input
 GAMMA = 0.95 # decay rate of past observations
 EPSILON_INITIALIZED = 0.5 # probability epsilon used to determine random actions
@@ -161,10 +160,11 @@ FRAME_PER_ACTION = 1 # number of frames per action
 REPLAYS_SIZE = 5000 # maximum number of replays in cache
 TRAINING_DELAY = 1000 # time steps before starting training for the purpose of collecting sufficient replays to initialize training
 EXPLORATION_TIME = 10000 # time steps used for decaying epsilon during training before epsilon decreases to zero
-
 ```
 
 OpenAI Gym Evaluation
+
+<br />
 
 Solved after 138 episodes. Best 100-episode average reward was 196.58 ± 1.34.
 
