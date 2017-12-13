@@ -110,7 +110,7 @@ I used one single layer of fully-connected neural network with only 20 hidden un
 
 #### 2017-04-29-v1
 
-Parameters
+**Parameters**
 
 <br />
 
@@ -129,21 +129,27 @@ TRAINING_DELAY = 2000 # time steps before starting training for the purpose of c
 EXPLORATION_TIME = 10000 # time steps used for decaying epsilon during training before epsilon decreases to zero
 ```
 
-OpenAI Gym Evaluation
+**OpenAI Gym Evaluation**
 
 <br />
 
 Solved after 293 episodes. Best 100-episode average reward was 197.39 ± 1.68.
 
+<br />
+
 <https://gym.openai.com/evaluations/eval_Jr2oXkrS8KMUQEkCBurAw>
 
-Links to GitHub
+<br />
+
+**Links to GitHub**
+
+<br />
 
 <https://github.com/leimao/OpenAI_Gym_AI/tree/master/CartPole-v0/Deep_Q-Learning/2017-04-29-v1>
 
 #### 2017-04-29-v2
 
-Parameters
+**Parameters**
 
 <br />
 
@@ -162,15 +168,21 @@ TRAINING_DELAY = 1000 # time steps before starting training for the purpose of c
 EXPLORATION_TIME = 10000 # time steps used for decaying epsilon during training before epsilon decreases to zero
 ```
 
-OpenAI Gym Evaluation
+**OpenAI Gym Evaluation**
 
 <br />
 
 Solved after 138 episodes. Best 100-episode average reward was 196.58 ± 1.34.
 
+<br />
+
 <https://gym.openai.com/evaluations/eval_F90GxQxrQK2J6ESQkLVaA>
 
-*Links to GitHub*
+<br />
+
+**Links to GitHub**
+
+<br />
 
 <https://github.com/leimao/OpenAI_Gym_AI/tree/master/CartPole-v0/Deep_Q-Learning/2017-04-29-v2>
 
