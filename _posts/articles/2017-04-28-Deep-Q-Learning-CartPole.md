@@ -170,7 +170,7 @@ Solved after 138 episodes. Best 100-episode average reward was 196.58 ± 1.34.
 
 <https://gym.openai.com/evaluations/eval_F90GxQxrQK2J6ESQkLVaA>
 
-Links to GitHub
+*Links to GitHub*
 
 <https://github.com/leimao/OpenAI_Gym_AI/tree/master/CartPole-v0/Deep_Q-Learning/2017-04-29-v2>
 
