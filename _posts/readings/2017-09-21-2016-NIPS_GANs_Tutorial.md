@@ -13,7 +13,11 @@ share: true
 
 [Summarized paper](https://github.com/leimao/Deep_Learning_Papers/raw/master/Generative_Adversarial_Networks/2016_NIPS_Tutorial_GANs/2016_NIPS_GANs_Tutorial.pdf)
 
+<br />
+
 [Tutorial slides](https://github.com/leimao/Deep_Learning_Papers/raw/master/Generative_Adversarial_Networks/2016_NIPS_Tutorial_GANs/2016_NIPS_GANs_Tutorial_Slides.pdf)
+
+<br />
 
 
 The video of this tutorial:
