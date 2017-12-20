@@ -13,6 +13,8 @@ The new career has just begun. But I wish I could have some in the near future.
 
 ### Biostatistics @ Driving-Force Therapeutics
 
+#### Journal Articles
+
 * **Traditional Herbal Medicine-Derived Sulforaphene Promotes Mitophagic Cell Death in Lymphoma Cells Through CRM1-Mediated p62/SQSTM1 Accumulation and AMPK Activation.** <br />
   Haina Wang, Fuqiang Wang, Sijin Wu, Zhiheng Liu, Tingting Li, **Lei Mao**, Jie Zhang, Cheng Li, Caigang Liu, Yongliang Yang <br />
   *Chemico-Biological Interactions, 2018. 281: p. 11-23*<br />
